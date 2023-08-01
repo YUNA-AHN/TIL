@@ -6,13 +6,15 @@
 **어떠한 문제를 해결하기 위한 절차**
 
 컴퓨터 분야에서 알고리즘을 표현하는 방법
-- 의사코드(슈토코드)
+- 의사코드(슈도코드)
 
-![img.png](img.png)
+![img](https://github.com/YUNA-AHN/TIL/assets/130244216/b3d04efa-6dac-4794-99bf-d6e0d32ca33e)
+
   
 - 순서도  
 
-![img_1.png](img_1.png)
+![img_1](https://github.com/YUNA-AHN/TIL/assets/130244216/357af3d8-5e10-4981-88ef-bdd19461746b)
+
 
 ## 알고리즘의 성능
 목표 : 보다 좋은 알고리즘을 이해하고 활용하는 것
@@ -40,7 +42,8 @@ ex ) 1부터 100까지 합을 구하는 문제
 - 실제 걸리는 시간을 측정
 - 실행되는 명령문의 개수를 계산
 
-![img_2.png](img_2.png)
+![img_2](https://github.com/YUNA-AHN/TIL/assets/130244216/4c461cf2-7333-4db3-a5d0-34733e965ebe)
+
   
 
 시간 복잡도 = 빅-오(O) 표기법 ⭐⭐⭐⭐⭐
@@ -54,7 +57,8 @@ O(3n+2) =  o(3n) =  O(n)
   
 - 요소 수가 증가함에 따라 각기 다른 시간복잡도의 알고리즘은 아래와 같은 연산 수를 보인다.
 
-![img_3.png](img_3.png)
+![img_3](https://github.com/YUNA-AHN/TIL/assets/130244216/8cdeb8bd-119d-4dcd-8ca0-7954802a39e8)
+
   
 # 배열
 일정한 자료형의 변수들을 하나의 이름으로 열거하여 사용하는 자료구조
