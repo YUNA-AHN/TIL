@@ -102,7 +102,8 @@ print(pop())
 
 # 재귀호출
 자기 자신을 호출하여 순환 수행되는 것  
-함수에서 실행해야하는 작업의 튻ㅇ에 따라 일반적인 호출방싣보다 프로그램의 크기를 줄이고 간단하게 작성 가능  
+함수에서 실행해야하는 작업의 특성에 따라 일반적인 호출방싣보다 프로그램의 크기를 줄이고 간단하게 작성 가능  
+시스템호출 ! 
 ex) factorial
 
 ![img_2.png](img_2.png)
@@ -146,38 +147,16 @@ memo[1] = 1
 
 ```python
 # 보통은!
+memo = [0] * 1001
+
 def fibo1(n):
-  global memo
-  if n >= 2 and memo[n] == 0:
-    memo[n] = (fibo1(n-1) + fibo1(n-2))
-  return memo[n]
+    global memo
+    # 기저조건
+    if n > 2:
+        return n
+    if memo[n] != 0:
+        return memo[n]
 
-memo = [0] * (n+1)
-memo[0] = 0
-memo[1] = 1
+    memo[n] = fibo1(n - 1) + fibo1(n - 2)
+    return memo[n]
 ```
-
-# DP(Dynamic Programmming)
-동적 계획 알고리즘 == 메모이제이션  
-**최적화 문제**를 해결하는 알고리즘
-
-동적 계획 알고리즘은 먼저 입력 크기가 작은부분 문제들을 모두 해결한 후에 그 해들을 이용하여 보다 큰 크기의 부분 문제드를 해결하여, 최종적으로 원래 주어진 입력의문젤르 해결하는 알고리즘이다.
-
-점화식 형태
-fibo(n) = fio(n-1) + fibo(n-2)
-memo[n] = memo[n-1] + memo[n-2]
-
-### 피보나티 수 DP 적용 알고리즘
-```python
-def fibo2(n):
-    f = [0] * (n + 1)
-    f[0] = 0
-    f[1] = 1
-    for i in range(2, n + 1):
-        f[i] = f[n-1] +f[n-2]
-    return f[n]
-```
-
-memoization을 재귀적 구조에 사용하는 것보다 반복적 구조로 DP를 구현한 것이 성능면에서 보다 효율적이다.
-
-재귀적 구조는 내부에 시스템 호출 스택을 사용하는 오버헤드가 발생하기 때문이다.
