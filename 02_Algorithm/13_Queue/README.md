@@ -188,7 +188,8 @@ front 변수
 
 # 우선순위 큐(Prority Queue)
 ### 우선순위 큐의 특성
-- 수선순위를 가진 항목들을 저장하는 큐
+- 우선순위를 가진 항목들을 저장하는 큐
+- 내부 구현이 다르다 !
 - FIFO 순서가 아니라 우선순위가 높은 순서대로 먼저 나가게 된다.
 
 우선순위 큐의 적용 분야
@@ -199,6 +200,42 @@ front 변수
 - 리스트를 이용한 우선순위 큐
 
 ![img_9.png](img_9.png)
+
+배열을 이용하여 우선순위 큐 구현
+- 배열을 이용하여 자료 저장
+- 원소를 삽입하는 과정에서 우선순위를 비교하여 적절한 위치에 삽입하는 구조(새치기하는 코드)
+- 가장 앞에 최고 우선순위의 원소가 위치하게 됨
+
+문제점
+- 배열을 사용하므로, 삽입이나 삭제 연산이 일어날 때 원소의 재배치가 발생함
+- 이에 소요되는 시간이나 메모리 낭비가 큼
+```python
+# 파이썬의 컬렌션들은 클래스.. 자료형, 메소드로 사용 0from random import randint
+# 리스트를 하나 생성
+heap = []
+for i in range(10):
+    heap.append(randint(1, 1000))
+
+print(heap)
+
+from heapq import heapify, heappop, heappush
+
+# heap 자료구조에 맞게 변형 : heapify
+heapify(heap)
+
+print(heap)
+# heap에서 데이터를 뽑아낸다.
+item = heappop(heap)
+print(item)
+item = heappop(heap)
+print(item)
+item = heappop(heap)
+print(item)
+item = heappop(heap)
+print(item)
+
+heappush(1000)
+```
 
 # 연결 큐의 구조
 단순 연결 시스트(Linked List)를 이용한 큐
