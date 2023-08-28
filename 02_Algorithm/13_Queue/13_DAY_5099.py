@@ -12,18 +12,29 @@ N새의 피자 동시에 구울 수 있는 화덕
 
 T = int(input())
 for tc in range(1, T+1):
-    n, m = map(int, input().split) # n개의 화덕자리, m개의 피자
+    n, m = map(int, input().split()) # n개의 화덕자리, m개의 피자
     arr = list(map(int, input().split())) # 치즈 리스트
 
-    # 화덕
-    que = []
-    for i in range(n):
-        que.append(i)
+    # 화덕 개수만큼 que에 !인덱스! 채워 두기
+    que = list(range(n))
 
-    while i < m:
+    # 시작점은 화덕에 마지막으로 들어간 피자 번호
+    i = que[-1]
+    # 큐가 존재하는 동안에
+    while que:
+        # 해당 인덱스에 치즈가 다 녹았다면 pop
         if arr[que[0]] == 0:
             que.pop(0)
-            que.append(arr[i + 1])
+            # 아직 피자 개수대로 다 안돌았다면 que에 추가해주기
+            if i < m-1:
+                i += 1
+                que.append(i)
+                # 넣고도 한 바퀴 돌리니까! 치즈 반으로 녹음
+                arr[i] //= 2
         else:
-            arr[que[0]] //= 2
-            que.append(que.pop(0))
+            # 아직 치즈가 덜 녹았다면 맨 뒤로 보낸다
+            t = que.pop(0)
+            que.append(t)
+            # 치즈도 반 녹이기
+            arr[t] //= 2
+    print(f'#{tc} {t + 1}')
