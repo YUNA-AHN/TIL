@@ -8,9 +8,16 @@ mxn 크기의 보드
 import sys
 input = sys.stdin.readline
 
-n, m = map(int, input().strip())
+n, m = map(int, input().strip().split())
 arr = [list(input().strip()) for _ in range(n)]
+
+case_a = ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B']
+case_b = ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W']
 
 for i in range(n-8+1):
     for j in range(m-8+1):
-        pass
+        for k in range(8):
+            if k % 2:
+                pass
+            else:
+                pass
