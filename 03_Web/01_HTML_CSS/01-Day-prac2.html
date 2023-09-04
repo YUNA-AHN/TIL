@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  서버에 데이터를 전달하기 위한 form 태그-->
+        
+        <form action="">
+            <!-- text: 기본적인 글자를 입력할 수 있는 입력 태그-->
+            <div>
+                <label type="username">이름</label>
+                <input type="text" id="username" name="nickname">
+            </div>
+            <div>
+                <!-- label 태그를 사용해서 체크박스를 클릭한 것 같처럼 상호 작용
+                해당 input 태그에 id 값을 lavel태그에 있는 for 값과 동일한 값을 가지게끔 하면 된다
+            -->
+                <label for="check">체크하시겠습니까?</label>
+                <input type="checkbox" id="check" name="q">
+            </div>    
+            <!-- 서버에 데이터를 최종적으로 제출하는 버튼 -->
+            <input type="submit" value="제출">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* CSS 코드가 들어가는 부분 */
+        /* 전체 선택자 */
+        * {
+            color: red;
+        }
+        /* 요소 선택자 */
+        h2 {
+            color: orange;
+        }
+
+        h3, h4 {
+            font-size: 10px;
+        }
+        /* 클래스 선택자 */
+        .green {
+            color: green;
+        }
+        /* id 선택자 */
+        #purple {
+            color: purple;
+        }
+        .purple{
+            color: purple;
+        }
+        /* 자식 결합자 */
+        .box > p {
+            font-size: 3px;
+        }
+        /* 자손 결합자 */
+        .box p {
+            color: blue;
+        }
+        .box > div > p {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="green">SSAFY</h1>
+    <h2>선택자 연습</h2>
+    <div class="green box">
+        box contents
+        <div>
+            <p>지역 목록</p>
+            <ul>
+                <li class="purple">서울</li>
+                <li id="purple">인천</li>
+                <li>강원</li>
+                <li>경기</li>
+            </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatum sint similique omnis? Fugiat illum iure placeat quasi obcaecati, in, culpa totam repellendus nesciunt asperiores voluptatibus porro debitis dolorem. Tempora?
+        Natus numquam modi libero autem magni. Odit tenetur autem est rerum nulla, accusantium obcaecati. Vel optio eius asperiores voluptatem quasi deleniti consectetur laboriosam, eveniet, ipsa beatae modi, nostrum sunt aperiam.
+        </p>
+    </div>
+    <h3>HELLO</h3>
+    <h4>CSS</h4>
+</body>
+</html>

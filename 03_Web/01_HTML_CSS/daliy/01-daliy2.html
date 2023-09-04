@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우선 순위 연습</title>
+  <style>
+    /* 클래스 선택자 */
+    .blue-text {
+      color: blue !important; /* !important를 사용하여 가장 높은 우선순위를 부여 */
+    }
+    
+    p {
+      color: red;
+    }
+    
+    /* 자식 선택자 */
+    ul > li {
+      color: green;
+    }
+
+    /* 아이디 선택자 */
+    #orange-text {
+      color: orange;
+    }
+    
+    /* 요소 선택자 */
+    .purple {
+      color: purple;
+    }
+    
+    /* 클래스 선택자 */
+    .yellow-text {
+      color: yellow;
+    }
+  </style>
+</head>
+<body style="background-color: #d1d1d1;">
+  <div>
+    <h1>우선 순위 연습</h1>
+    <p>이 텍스트는 빨간색입니다.</p>
+    <p class="purple">이 텍스트는 보라색입니다.</p>
+    <ul>
+      <li>이 텍스트는 초록색입니다.</li>
+      <li>
+        <p class="yellow-text">이 텍스트는 노란색입니다.</p>
+        <p class="yellow-text">이 텍스트는 노란색입니다.</p>
+      </li>
+      <li style="color: gray;">이 텍스트는 회색입니다.</li>
+      <li id="orange-text">이 텍스트는 주황색입니다.</li>
+    </ul>
+  </div>
+  <p class="blue-text">이 텍스트는 파란색입니다.</p>
+</body>
+</html>
