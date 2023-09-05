@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <!-- method post로 설정해두면 body로 값이 넘어감 -->
+  <form action="" method="post">
+    <!-- username & input 태그 -->
+    <div>
+        <!-- id, name 명 동일하게 설정, id는 작동과의 연동, name은 값을 서버에 넘김 -->
+        <label for="username">USERNAME:</label>
+        <input type="text" placeholder="아이디를 입력 해 주세요." name="username" id="username">
+    </div>
+    <div>
+        <label for="password">PWD:</label>
+        <input type="password" id="password">
+        <input type="submit" value="로그인" name="" >
+    </div>
+  </form>
+</body>
+</html>

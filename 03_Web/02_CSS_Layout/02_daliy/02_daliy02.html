@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    .card {
+        width: 600px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+        padding: 20px;
+        margin: 20px;
+    }
+    .card-header-image {
+        width: 150px;
+        height: 150px;
+    }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+        padding: 0px 20px;
+    }
+    .card-section-name {
+        text-align: center;
+        font-weight: bolder;
+    }
+    .card-description {
+        text-align: end;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="profile.jpg" alt="Profile Image" class="card-header-image">
+      <h2>Company Name</h2>
+    </div>
+    <div class="card-section">
+      <div class="card-section-name">
+        <h3>한글 이름</h3>
+        <h4>English Name</h4>
+      </div>
+      <div class="card-section-dept">
+        <p>Phone Number</p>
+        <p>Email</p>
+      </div>
+    </div>
+    <hr>
+    <div class="card-description">
+      <p>description</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 200px;
+      /* 박스 내 패딩 값 조정을 통해 박스의 이동 없이 cotent 위치 조정 */
+      padding-left: 25px;
+      padding-bottom: 25px;
+      /* 가장 바깥쪽 영역을 조정하여 박스 옮기기 */
+      margin-left: 25px;
+      margin-top: 50px;
+      /* 박스의 테두리 생성 */
+      border-width: 3px;
+      border-style: solid;
+      border-color: black;
+    }
+
+    .box2 {
+      width: 200px;
+      /* border에 한 번에 width, style, color 입력 */
+      border: 1px dashed black;
+      /* 가운데 정렬
+      margin-left: auto;
+      margin-right: auto; */
+      /* 상하좌우 */
+      margin: 100px auto;
+      padding: 25px 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Position</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 1500px;
+    }
+
+    .container {
+      /* 상대 위치 */
+      /* absoulte의 기준이 되어 준다. */
+      position: relative;
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+    }
+
+    .static {
+      /* 기본값 */
+      position: static;
+      background-color: lightcoral;
+    }
+
+    .absolute {
+      /* 절대 위치 */
+      /* 본인의 static을 버림 -> 이에따라 relative가 영향을 받음 */
+      position: absolute;
+      background-color: lightgreen;
+      top: 100px;
+      left: 100px;
+    }
+
+    .relative {
+      /* 상대 위치 : 본인의 static 위치 기준*/
+      /* 본인의 과거 영역을 가지고 있음 */
+      position: relative;
+      background-color: lightblue;
+      /* 아래로, 오른족으로 */
+      top: 100px;
+      left: 100px;
+    }
+
+    .fixed {
+      position: fixed;
+      background-color: gray;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box static">Static</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box relative">Relative</div>
+    <div class="box fixed">Fixed</div>
+  </div>
+</body>
+
+</html>
