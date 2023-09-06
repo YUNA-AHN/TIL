@@ -1,0 +1,87 @@
+/* 아래 코드는 수정하지 않습니다. */
+body {
+    font-family: Arial;
+    width: 800px;
+  }
+  
+  section {
+    float: left;
+    margin-left: 4px;
+  }
+  
+  aside { 
+    float: right;
+    margin-right: 4px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  /* 이곳에 코드를 작성합니다. */
+  /* 모든 스타일 요소를 ***클래스 선택자***로 정의합니다. */
+
+  /* 1. article 태그는 white로 나머지 시멘틱 태그는 lightgrey로 배경색을 설정합니다. */
+
+  /* 2. header, nav, footer 태그의 margin을 4px로 설정합니다. */
+
+  /* 3. 모든 semantic 태그의 padding을 4px로 설정합니다. */
+  
+  /* 4. h1 태그를 수평 중앙에 정렬합니다. */
+  
+  /* 5. section 태그는 width 490px height 300px, 
+     aside 태그는 width 280px height 300px로 설정합니다.*/
+  
+  /* 6. 모든 semantic 태그의 border 두께를 1px, 실선, 검은색으로 설정합니다. */
+  
+  /* 7. 모든 semantic 태그의 border 모서리 반경을 4px로 설정합니다. */
+  * {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  article {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0px 10px;
+    margin: 5px 0px;
+  }
+  
+  header {
+    margin: 4px;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 4px;
+  }
+  nav, footer{
+    margin: 4px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+  }  
+  
+  section {
+        width: 490px;
+        height: 300px;
+        background-color: lightgray;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 10px 5px;
+        box-sizing: content-box;
+    }
+    aside {
+        width: 280px;
+        height: 300px;
+        background-color: lightgray;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 10px 3px;
+        box-sizing: content-box;
+    }
+
+  
