@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol, ul {
+            list-style: none;
+        }
+        /* 자손 선택자 */
+        ul li {
+            color: blue;
+        }
+        /* 자식 선택자 > */
+        ul > li {
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li> 자식
+            <ol>
+                <li>손자</li>
+            </ol>
+        </li>
+        <li>자식</li>
+    </ul>
+</body>
+</html>

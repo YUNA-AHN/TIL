@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WS 4 4</title>
+  <style>
+    /* 순서대로 실행되기 때문에 조건이 더 좁은 것부터 먼저 작성 */
+    /* 360 먼저 작성 후 280 작성시 280 조건만 적용이된다 */
+    @media (min-width: 280px) {
+        .greeting{
+            color: violet;
+            font-size: small;
+        }
+    }
+    @media (min-width: 360px) {
+        .greeting{
+            color: green;
+            font-size: large;
+        }
+    }
+    @media (min-width: 375px) {
+        .greeting{
+            color: blue;
+            font-size: x-large;
+        }
+    }
+    @media (min-width: 414px) {
+        .greeting{
+            color: red;
+            font-size: xx-large;
+        }
+    }
+  </style>
+</head>
+<body>
+    <span class="greeting">수강생 여러분 화이팅!</span>
+</body>
+</html>
