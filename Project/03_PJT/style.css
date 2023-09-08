@@ -1,0 +1,40 @@
+/* 배경 이미지 */
+header.frontpage {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("images/code-1076536_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+.footer{
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* not-provided 클래스를 기본적으로 보이지 않도록 설정 */
+.not-provided {
+    display: none;
+}
+
+/* 470px 밑으로 가면 .not-provided 얘만 보이도록 설정 */
+@media (max-width: 470px) {
+    main,
+    section,
+    .nav,
+    footer {
+        display: none;
+    }
+    .not-provided {
+        display: block;
+    }
+}
