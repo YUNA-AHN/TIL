@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>{{pick}}은 {{pcik|length}} 글자입니당 </p>
+    <p>{{foods | join:", "}} </p>
+    <p>{{info | default:"없음"}} </p>
+
+    <p>메뉴판</p>
+    <ul>
+        {% for food in foods %}
+        {% if forloop.first %}
+            <li><strong>{{forloop.counter}}.{{food}} </strong></li>
+        {% else %}
+            <li>{{forloop.counter}}.{{food}}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <a href="{% url "articles:home" %}"> 뒤로</a>
+</body>
+</html>

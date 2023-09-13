@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hola!</h1>
+    <a href="{% url "articles:greeting" %}">이름 출력하기</a>
+    <a href="{% url "articles:greeting2" %}">자기소개</a>
+    <a href="{% url "pages:dinner" %}">식사메뉴정하기</a>
+{% endblock content %}

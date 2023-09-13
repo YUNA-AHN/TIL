@@ -1,7 +1,8 @@
-"""my_pjt URL Configuration
+"""
+URL configuration for firstpjt project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,9 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from my_app import views
+from articles import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello', views.hello)
+    path('articles/', views.index),
+    path('dinner/', views.dinner),
+    path('search/', views.search),
+    path('throw/', views.throw),
+    path('catch/', views.catch),
+    # path('hello/<name>/', views.greeting),
+    path('hello/<str:name>/', views.greeting),
+    path('articles/<int:num>/', views.detail),
 ]
