@@ -1,7 +1,7 @@
 <!-- 1. menus 리스트를 반복문을 활용하여 0번부터 출력하시오 -->
 
-{% for __(a)__ in menus %}
-  <p>{{ __(b)__ }}번째 메뉴 : {{ menu }}</p>
+{% for menu in menus %}
+  <p>{{ forloop.counter }}번째 메뉴 : {{ menu }}</p>
 {% endfor %}
 
  
@@ -9,26 +9,26 @@
 
 {% for user in users %}
   <p>{{ user }}</p>
-{% __(c)__ %}
+{% empty %}
   <p>현재 가입한 유저가 없습니다.</p>
 {% endfor %}
 
 <!-- 3. 첫 번째 반복문일 때와 아닐 때를 조건문으로 분기처리하시오  -->
 
-{% __(d)__ forloop.first %}
+{% if forloop.first %}
   <p>첫 번째 반복문입니다.</p>
-{% __(e)__ %}
+{% else %}
   <p>첫 번째 반복문이 아닙니다.</p>
 {% endif %}
 
 <!-- 4. 출력된 결과가 주석과 같아지도록 하시오  -->
 
 <!-- 5 -->
-<p>{{ 'hello'|__(f)__ }}</p>
+<p>{{ 'hello'|length }}</p>
 <!-- My Name Is Tom -->
-<p>{{ 'my name is tom'|__(g)__}}</p>
+<p>{{ 'my name is tom'|title}}</p>
 
 <!-- 5. 변수 today에 datetime 객체가 들어있을 때 출력된 결과가 주석과 같아지도록 작성하시오  -->
 
 <!-- 2020년 02월 02일 (Sun) PM 02:02 -->
-{{ today|date:"__(h)__" }}
+{{ today|date:"Y년 m월 d일 (D) A h:i" }}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} 과일 리스트 순회 {% endcomment %}
+    {% for fruit in fruit_list %}
+    {% comment %} 싫어하는 과일에 있지 않다면! {% endcomment %}
+    {% if not fruit in hate %}
+      {% comment %} 이름 길이가 2이상인 경우에만 {% endcomment %}
+      {% if fruit|length >= 2 %}
+        <p>{{fruit|truncatechars:3}}</p>
+      {% endif %}  
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
