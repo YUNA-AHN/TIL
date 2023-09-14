@@ -14,13 +14,13 @@
 ## Django framework
 Django : python 기반의 대표적인 웹 프레임 워크  
 검증된 웹 프레임워크로 대규모 서비스에서도 안정적인 서비스 제공
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ## 클라이언트와 서버
 ### 웹의 동작 방식
 '클라이언트-서버' 구조 (1 request 2 respone)
 
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 Client(클라이언트)
 - 서비스를 요청하는 주체 (웹 사용자의 인터넷이 연결된 장치. 웹 브라우저)
@@ -30,7 +30,7 @@ Server(서버)
 
 우리가 웹 페이이지를 보게되는 과정
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 1. 웹 브라우저(클라이언트)에서 'google.com'을 입력
 2. 브라우저는 인터넷에 연결된 전세계 어딘 가에 있는 구글 컴퓨터(서버)에게 'Google 홈페이지.html' 파일을 달라고 요청
@@ -45,11 +45,11 @@ Python 애플리케이션과 그에 따른 패키지들을 격리하여 관리 �
 - 같은 패키지이지만 다른 버전을 사용해야하는 경우
 - 함께 사용하면 충동일 일어나는 패키지를 사용해야하는 경우
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 가상환경 venve 생성
 ```bash
@@ -75,9 +75,9 @@ $ deactivate
 $ pip list
 ```
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 - 가상환경에 대한 모습 즉 **패키지 목록**이 공유되어야 한다.
 
 의존성 패키지
@@ -86,7 +86,7 @@ $ pip list
 
 ex) requests 설치 후 설치되는 패키지 목록 변환 (1개만 설치되는 것이 아님)  
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 의존성 패키지 관리의 중요성
 - 개발 환경에서는 각각의 프로젝트가 사용하는 패키지와 그 버전을 정확히 관리하는 것이 중요
@@ -97,7 +97,7 @@ ex) requests 설치 후 설치되는 패키지 목록 변환 (1개만 설치되�
 ```bash
 $ pip freeze > requirements.txt
 ```
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 의존성 패키지 목록으로 패키지 설치
 ```bash
@@ -160,9 +160,9 @@ ctrl + c 로 서버 종료해두기
 ### Django appplication
 독립적으로 작동하는 기능 단위 모듈 (각자 특정한 기능을 담당하며 다른 앱들과 함게 하나의 프로젝트를 구성)
 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
 
 ### 앱 사용 과정
 앱(App) == 하나의 큰 기능 단위
@@ -193,13 +193,13 @@ settings.py > install_apps 에 저장
 - View : UI (시각적)
 - Controller : 입력
 
-![Alt text](image-17.png)
+![Alt text](images/image-17.png)
 
 ### MTV 디자인 패턴 (Model, Template, View)
 Django에서 애플리케이션을 구조화하는 패턴 (기존 MVC 패천과 동일하나 명칭을 다르게 정의한 것)
 
-![Alt text](image-19.png)
-![Alt text](image-12.png)
+![Alt text](images/image-19.png)
+![Alt text](images/image-12.png)
 
 ### 프로젝트 구조
 settings.py
@@ -259,16 +259,16 @@ Applitcation
 
 ## 요청과 응답
 
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ### URLs
-![Alt text](image-14.png)
+![Alt text](images/image-14.png)
 
 ### View
-![Alt text](image-15.png)
+![Alt text](images/image-15.png)
 
 ### Template
-![Alt text](image-16.png)
+![Alt text](images/image-16.png)
 
 ### Django에서 template을 인식하는 경로 규칙
 app폴더/templates/articles/index.html  
