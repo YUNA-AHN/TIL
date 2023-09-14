@@ -12,9 +12,6 @@ def dinner(request):
     }
     return render(request, 'pages/dinner.html', context)
 
-def dummy(request):
-    return HttpResponse('<h1>여기로 빠졌수다.</h1>')
-
 def throw(request):
     return render(request, 'pages/throw.html')
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load mathfilters %}
+    <p>{{num1}} + {{num2}} = {{num1|add:num2}}</p>
+    <p>{{num1}} * {{num2}} = {{num1|mul:num2}}</p>
+    <p>{{num1}} - {{num2}} = {{num1|sub:num2}}</p>
+    {% if num2 == '0' %}
+    <p>계산할 수 없습니다.</p>
+    {% else %}
+    <p>{{num1}} / {{num2}} = {{num1|div:num2}}</p>
+    {% endif %}
+    
+</body>
+</html>

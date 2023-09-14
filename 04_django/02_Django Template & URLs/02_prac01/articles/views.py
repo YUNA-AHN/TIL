@@ -22,3 +22,6 @@ def greeting2(request):
         'info' : info,
     }
     return render(request, 'articles/greeting2.html', context)
+
+def dummy(request, text):
+    return HttpResponse(f'<h1>여기로 빠졌수다.{text}</h1>')
