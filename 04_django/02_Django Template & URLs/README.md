@@ -6,7 +6,7 @@
 - Template System의 기본 목표를 숙지
 
 HTML의 콘텐츠를 변수 값에 따라 바꾸고 싶다면?  
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ### Django Template Language(DTL)
 - Django template에서 사용하는 built-in template system
@@ -65,12 +65,12 @@ if, for, block, extends, include <- 조건과 반복을 보여줄 때에
 ```
 4. Comments
 - DTL에서의 주석
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 DTL 예시
 
-![Alt text](image-2.png)
-![Alt text](image-3.png)
+![Alt text](images/image-2.png)
+![Alt text](images/image-3.png)
 
 [태그와 필터 참고](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/)
 
@@ -84,13 +84,13 @@ DTL 예시
 - 기본적으로 코드의 재사용성에 초점을 맞춤
 
 ### 상속 구조 구축
-![Alt text](image-4.png)  
-![Alt text](image-5.png)
+![Alt text](images/image-4.png)  
+![Alt text](images/image-5.png)
 
 ## 전체 프로젝트 공용으로 사용하기
 setting에서 템플릿 기본 주소 변경 뒤, 해당 위치로 폴더 생성
 
-![Alt text](image-20.png)
+![Alt text](images/image-20.png)
 
 ### 'extends' tag
 > {% extends 'path' %}
@@ -106,7 +106,7 @@ setting에서 템플릿 기본 주소 변경 뒤, 해당 위치로 폴더 생성
 - 가독성을 높이기 위해 선택적으로 endblock 태그에 이름을 지정할 수 있음
 
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 # HTML form (요청과 응답)
 ### 데이터를 보내고 가져오기 (Sending and Retrieving form data)
@@ -114,17 +114,17 @@ HTML form element를 통해 사용자와 애플리케이션 간의 상호작용 
 
 HTML form은 HTTP 요청을 서버에 보내는 가장 편리한 방법
 
-![Alt text](image-7.png)  
-![Alt text](image-8.png)
+![Alt text](images/image-7.png)  
+![Alt text](images/image-8.png)
 
 ### 'form' elemnet
 사용자로부터 할당된 데이터를 서버로 전송
 - 웹에서 사용자 정도를 입력하는 여러 방식(text, password, checkbox 등)을 제공
 
-![Alt text](image-9.png)  
-![Alt text](image-10.png)  
-![Alt text](image-11.png)  
-![Alt text](image-12.png)  
+![Alt text](images/image-9.png)  
+![Alt text](images/image-10.png)  
+![Alt text](images/image-11.png)  
+![Alt text](images/image-12.png)  
 
 ## 'action' & 'method'
 form의 핵심 속성 2가지
@@ -152,21 +152,21 @@ method
 > https://host:port/path?key-value&key=value
 
 ## form 활용
-![Alt text](image-14.png)
-![Alt text](image-15.png)
-![Alt text](image-16.png)
+![Alt text](images/image-14.png)
+![Alt text](images/image-15.png)
+![Alt text](images/image-16.png)
 
 ## HTTP request 객체
 form으로 전송한 데이터 뿐만 아니라 모든 요청 관련 데이터가 담겨 있음 (view 함수의 첫번째 인자)
 
-![Alt text](image-17.png)
-![Alt text](image-18.png)
-![Alt text](image-19.png)
+![Alt text](images/image-17.png)
+![Alt text](images/image-18.png)
+![Alt text](images/image-19.png)
 
 # Django URLs
 웹 어플리케이션은 URL을 통한 클라이언트의 요청에서부터 시작함
 
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ## URL dispatcher (운항 관리자, 분배기)
 URL 패턴을 정의하고 해당 패턴이 일치하는 요청을 처리할 view 함수를 연결(매핑)
@@ -186,12 +186,12 @@ URL 일부에 변수를 포함시키는 것, URL 주소를 변수로 사용하�
 ### Variable Routing 작성법
 > <path_converter:variable_name>
 
-![Alt text](image-21.png)
+![Alt text](images/image-21.png)
 
 ## Path converters
 URL 변수의 타입을 지정 (str, int 등 5가지 타입 지원)
-![Alt text](image-22.png)  
-![Alt text](image-23.png)
+![Alt text](images/image-22.png)  
+![Alt text](images/image-23.png)
 
 # App과 URL
 ### App URL mapping
@@ -201,27 +201,27 @@ URL 변수의 타입을 지정 (str, int 등 5가지 타입 지원)
 1. 앱이 2개 이상인 경우 발생할 수 있는 문제
 - view 함수 이름이 같거나 같은 패턴의 url 주소르 사용하게 되는 경우
 - 아래의 방법으로 해결이 가능함
-![Alt text](image-25.png)
+![Alt text](images/image-25.png)
 
 
 2. 각각의 app 폴더 안에 urls.py를 작성
 - 하나의 프로젝트에 여러앱이 존재한다면, 각각의 앱 안에 urls.py을 만들고 프로젝트 urls.py에서 각 앱의 urls.py 파일로 URL 매핑을 위탁할 수 있음
 
-![Alt text](image-24.png)
-![Alt text](image-26.png)
+![Alt text](images/image-24.png)
+![Alt text](images/image-26.png)
 
 ### including other URLconfs
 - urlpattern은 언제든지 URLconf 모듈을 포함(include)할 수 있음
 **includeehlsms doqdml url.py에 urlpatterns가 작성되어 있지 않다면 에러가 발생**
 - 예를 들어, pages앱의 urlpatterns가 빈 리스트라도 작성되어 있어야 함
 
-![Alt text](image-28.png)
+![Alt text](images/image-28.png)
 
 ### include()
 프로젝트 내부 앱들의 URL을 참조할 수 있도록 매핑하는 함수
 - URL의 일치하는 부분가지 잘라내고, 남은 문자열 부분은 후속 처리를 위해 include된 URL로 전달
 
-![Alt text](image-27.png)
+![Alt text](images/image-27.png)
 
 
 # URL 이름 지정
@@ -232,15 +232,15 @@ URL에 이름을 지정하는 것
 - URL 설정에 정의된 특정한 경로들의 의존성 제거 가능, view함수와 템플릿에서 특정 주소 쉽게 참조 가능
 - url 구조 변경에 따라 해당 주소 사용하는 모든 위치를 찾아가 변경해주어야하는 번거로움을 덜 수 있음
 
-![Alt text](image-29.png)
-![Alt text](image-30.png)
+![Alt text](images/image-29.png)
+![Alt text](images/image-30.png)
 
 ### 'url'tag
 > {% url 'url-name' arg1 arg2 %}
 
 주어진 URL 패턴의 이름과 일치하는 절대 경로 주소를 반환
 
-![Alt text](image-31.png)
+![Alt text](images/image-31.png)
 
 # URL 이름 공간
 URL namespace를 사용하면 서로 다른 앱에서 동이란 URL 이름을 사용하는 경우에도 이름이 지정된 URL을 고유하게 사용할 수 있음
@@ -248,8 +248,8 @@ URL namespace를 사용하면 서로 다른 앱에서 동이란 URL 이름을 �
 ### app_name
 app_name attribute를 작성해 URL nameapce를 설정
 
-![Alt text](image-32.png)
+![Alt text](images/image-32.png)
 
 ### URL tag의 최종 변화
 마지막으로 url 태그가 사용하는 모든 곳의 표기 변경하기
-![Alt text](image-33.png)
+![Alt text](images/image-33.png)
