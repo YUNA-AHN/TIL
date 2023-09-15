@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>전체 게시글 조회</h1>
+<hr>
+  {% for article in articles %}
+  <div>
+    <p>글 번호 : {{article.id}} </p>
+    <p>글 제목 : {{article.title}} </p>
+    <p>글 내용 : {{article.content}} </p>
+    <p><a href="{% url "articles:delete" article.id%}">글 삭제</a></p>
+    <hr>
+  </div>
+  {% endfor %}
+  <a href="{% url "articles:create" %}">글 생성</a>
+{% endblock content %}
