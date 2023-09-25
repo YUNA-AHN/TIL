@@ -14,8 +14,8 @@ Web page
 - HTML, CSS 등의 웹 기술을 이용하여 만들어진, **"Web site"를 구성하는 하나의 요소**
 
 Web page 구성 요소
-![Alt text](image.png)  
-![Alt text](image-1.png)
+![Alt text](img/image.png)  
+![Alt text](img/image-1.png)
 
 html -  구조  
 css - 스타일링  
@@ -34,10 +34,10 @@ Markup Language
 - ex) HTML, Markdown
 
 Markup Language 예시
-![Alt text](image-2.png)  
-![Alt text](image-3.png)  
-![Alt text](image-4.png)  
-![Alt text](image-5.png)  
+![Alt text](img/image-2.png)  
+![Alt text](img/image-3.png)  
+![Alt text](img/image-4.png)  
+![Alt text](img/image-5.png)  
 
 ## Structure of HTML
 ```html
@@ -73,13 +73,13 @@ Markup Language 예시
 
 
 ### HTML Element(요소)
-![Alt text](image-6.png)
+![Alt text](img/image-6.png)
 
 하나의 요소는 여는 태그와 닫는 태그 그리고 그 안의 내용으로 구성됨  
 닫는태그는 태그 이름 앞에 슬래시가 포함되며 닫는 태그가 없는 태그도 존재
 
 ### HTML Attributes(속성)
-![Alt text](image-7.png)
+![Alt text](img/image-7.png)
 
 속성명="속성값" : 공백은 NO  
 - 속성을 통해 태그의 부가적인 정보를 설정할 수 있음  
@@ -114,13 +114,13 @@ HTML Global Attribute
 <body>
     <p>This is my page</p> <!-- 기본 속성이 없는 태크 -->
     <a href="https://www.google.co.kr">Google</a> <!-- a 태그에 href을 입력 -->
-    <img src = 'images/sample.png' alt="sample-img"> <!-- 이미지 주소 입력 : 로컬, 인터넷 모두 가능 -->
-    <img src = 'https://random.imagecdn.app/600/150' alt="sample-img"> <!-- 스크린 읽기에서 alt 값을 읽음 -->
+    <img src = 'img/images/sample.png' alt="sample-img"> <!-- 이미지 주소 입력 : 로컬, 인터넷 모두 가능 -->
+    <img src = 'https://random.img/imagecdn.app/600/150' alt="sample-img"> <!-- 스크린 읽기에서 alt 값을 읽음 -->
 </body>
 </html>
 ```
 
-![Alt text](image-8.png)
+![Alt text](img/image-8.png)
 
 ## TEXT Strucutre
 HTML TEXT Structure
@@ -135,7 +135,7 @@ HTML : HyperText Markup Language
 
 
 ### 대표적인 HTML Text structure
-![Alt text](image-9.png)
+![Alt text](img/image-9.png)
 
 - h1 : 제목 , p: anseks
 - list : ol, ul, li
@@ -212,11 +212,11 @@ HTML요소를 선택하고, 스타일을 지정한다.
     - 값(Value) : 어떻게 스타일 기능을 변경할지 결정
 
 css를 적용하지 않은 웹 사이트 모습
-![Alt text](image-12.png)
+![Alt text](img/image-12.png)
 
 
 CSS 구문
-![Alt text](image-11.png)
+![Alt text](img/image-11.png)
 
 선언 마침을 나타내는 세미콜론(;)이 필요
 
@@ -224,18 +224,18 @@ CSS 적용 방법
 1. 인라인(inline) 스타일
     - HTML 요소 안에 style 속성 값으로 작성
 
-    ![Alt text](image-10.png)
+    ![Alt text](img/image-10.png)
 
 2. 내부(Internal) 스타일 시트
     - head 태그 안에 style 태그에 작성
 
-    ![Alt text](image-13.png)
+    ![Alt text](img/image-13.png)
 
 3. 외부(External) 스타일 시트
     - 별도의 CSS 파일 생성 후 HTML link 태그를 사용해 불러오기
     - 가장 권장! 재사용성이 높음
 
-    ![Alt text](image-14.png)
+    ![Alt text](img/image-14.png)
 
 ## CSS with 개발자 도구
 - styles : 해당 요소에 선언된 모든 CSS
@@ -321,7 +321,7 @@ h1 {
     - id > class > 요소
 4. 소스 코드 순서
 
-![Alt text](image-19.png)
+![Alt text](img/image-19.png)
 ```
 정의 부분의 순서가 중요! 클래스명 순서는 상관이 없다
 오렌지 > 파랑 > 초록 > 초록 > 빨강 > 다크바이올렛 > 노랑 > 다크바이올렛
@@ -341,10 +341,10 @@ CSS는 상속을 통해 부모 요소의 속성을 자식에게 상속하여 재
     - position 관련 요소(position, top/right/bottom/left/z-index) 등
 
 # 참고
-![Alt text](image-15.png)  
-![Alt text](image-16.png)  
-![Alt text](image-17.png)  
-![Alt text](image-18.png)  
+![Alt text](img/image-15.png)  
+![Alt text](img/image-16.png)  
+![Alt text](img/image-17.png)  
+![Alt text](img/image-18.png)  
 
 # 조언
 검색이 mdn 키워드 포함  

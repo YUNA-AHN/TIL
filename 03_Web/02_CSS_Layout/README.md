@@ -4,27 +4,27 @@
 
 박스 요소들로 구조화된 웹 페이지
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ## 구성요소
 CSS Box Model : 모든 HTML 요소를 사각형 박스로 표현하는 개념  
 -> **내용(content), 안쪽 여백(padding), 테두리(border), 외부 간격(margin)으로 구성되는 개념**
 
 ### Box 구성 요소  
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 Content : 콘텐츠가 표시되는 영역
 Padding : 콘텐츠 주위에 위치하는 공백 영역
 Border :  콘텐츠와 패딩을 감싸는 테두리 영역
 Margin : 이 박스와 다른 요소 사이의 공백, 가장 바깥쪽 영역  
 
 ### Box 구성의 방향별 명칭  
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
-![Alt text](image-33.png)
+![Alt text](images/image-33.png)
 
 ### Box 구성 요소 예시
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 ```html
   <style>
@@ -60,18 +60,18 @@ Margin : 이 박스와 다른 요소 사이의 공백, 가장 바깥쪽 영역
 요소의 너비와 높이를 지정.  
 이때 지정되는 요소의 너비와 높이는 콘텐츠 영역을 대상으로 함
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 ### CSS가 width 값을 계산하는 기준
 CSS는 border가 아닌 content의 크기를 width 값으로 지정
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 box-sizing 속성
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 ### box-sizing 예시
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 ```html
   <style>
     .box {
@@ -102,15 +102,15 @@ box-sizing 속성
 ## 박스 타입
 Block & Inline  
 
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 ### Normal flow
 CSS를 적용하지 않았을 경우 웹페이지 요소가 기본적으로 배치되는 방향
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 ### 박스 타입 예시
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 
 ```html
 <head>
@@ -174,9 +174,9 @@ CSS를 적용하지 않았을 경우 웹페이지 요소가 기본적으로 배�
 inline이 정렬하는게 아닌 부모가(block) 정렬해주는 것!  
 부모에서 여백을 만들고 text-align을 지정함
 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
 
-![Alt text](image-34.png)
+![Alt text](images/image-34.png)
 
 ### 기타 display 속성
 1. 'inline-block'
@@ -189,7 +189,7 @@ inline이 정렬하는게 아닌 부모가(block) 정렬해주는 것!
 - 요소가 줄 바꿈 되는 것을 원하지 않으면서 너비와 높이를 적용하고 싶은 경우에 사용
 
 예시
-![Alt text](image-12.png)
+![Alt text](images/image-12.png)
 ```html
   <style>
     span {
@@ -244,7 +244,7 @@ ex) Display, Position, Float, Flex box 등
 -> 다른 요소 위에 올리기, 화면의 특정 위치에 고정시키기 등
 
 ### Position 이동 방향
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ### Position 유형
 1. static
@@ -254,7 +254,7 @@ ex) Display, Position, Float, Flex box 등
 5. sticky
 
 ### Position 예시
-![Alt text](image-14.png)
+![Alt text](images/image-14.png)
 ```html
 <style>
         .container {
@@ -306,7 +306,7 @@ ex) Display, Position, Float, Flex box 등
 ```
 
 ### Position 예시 - sticky
-![Alt text](image-15.png)
+![Alt text](images/image-15.png)
 ```html
 <style>
 body {
@@ -348,12 +348,12 @@ body {
 - 만약 다음 sticky 요소가 나오면 다음 sticky 요소가 이전의 sticky 요소의 자리를 대체
     - 이전 stick 요소가 고정되어 있던 위치와 다음 sticky 요소가 고정되어야 할 위치가 겹치게 되기 때문
 
-![Alt text](image-16.png)  
-![Alt text](image-17.png)  
-![Alt text](image-18.png)  
+![Alt text](images/image-16.png)  
+![Alt text](images/image-17.png)  
+![Alt text](images/image-18.png)  
 
 ### absolute 예시
-![Alt text](image-19.png)
+![Alt text](images/image-19.png)
 
 ```html
 <style>
@@ -387,7 +387,7 @@ body {
 - 더 큰 값을 가진 요소가 작은 값의 요소를 덮음
 
 ### z-index 예시
-![Alt text](image-20.png)
+![Alt text](images/image-20.png)
 
 ```html
 <style>
@@ -437,8 +437,8 @@ body {
 - 박스를 왼쪽 혹은 오른쪽으로 이동시켜 텍스트를 포함 인라인 요소들이 주변을  wrapping 하도록 함
 - 요소가 Normal flow를 벗어나도록 함
 
-![Alt text](image-35.png)
-![Alt text](image-36.png)
+![Alt text](images/image-35.png)
+![Alt text](images/image-36.png)
 
 속성
 - none: 기본값
@@ -457,10 +457,10 @@ body {
 
 ## 구성요소
 요소를 행과 열 형태로 배치하는 **1차원** 레이아웃 방식  
-![Alt text](image-21.png)
+![Alt text](images/image-21.png)
 
 Flexbox 기본 사항  
-![Alt text](image-22.png)
+![Alt text](images/image-22.png)
 
 main axis (주 축)
 - flex item들이 배치되는 기본 축
@@ -494,27 +494,27 @@ Flex Item(자식 요소)
 - align-self (개별 아이템)
 
 ## 레이아웃 구성
-![Alt text](image-37.png)
+![Alt text](images/image-37.png)
 1. Flex Conatiner 지정
 - flex item은 기본적으로 행으로 나열
 - flex item은 주축의 시작 선에서 시작
 - flex item은 교차축의 크기를 채우기 위해 늘어남
 
-![Alt text](image-23.png)
+![Alt text](images/image-23.png)
 
 2. flex-direction 지정
 - flex item이 나열되는 방향을 지정
 - column으로 지정할 경우 주 축이 변경됨
 - -reverse로 지정하면서 시작 선과 끝 선이 서로 바뀜
 
-![Alt text](image-25.png)
+![Alt text](images/image-25.png)
 
 3. flex-wrap
 - flex item 목록이 flex container의 하나의 행에 들어가지 않을 경우 다른 행에 배치할지 여부 설정
 - 기본적으로 컨체이너 영역을 벗어나지 않도록 함
 - 줄 넘김 여부를 묻는 것
 
-![Alt text](image-26.png)
+![Alt text](images/image-26.png)
 
 +) flex-flow  
 - flex-direction과 flex-wrap의 shorthand
@@ -528,9 +528,9 @@ Flex Item(자식 요소)
 - space-around : 각 item 양 옆의 공백이 동일하도록
 - space-evenly : 양 끝과 item 사이의 공백이 모두 동일하도록
 
-![Alt text](image-38.png)
+![Alt text](images/image-38.png)
 
-![Alt text](image-27.png)
+![Alt text](images/image-27.png)
 
 5. align-content
 - 교차 축을 따라 flex item과 주위에 공간을 분배
@@ -549,21 +549,21 @@ Flex Item(자식 요소)
 - space-around : 아이템을 둘러싼 영역을 균일하게 분배 (가질 수 있는 영역을 반으로 나눠서 양쪽에)
 - space-evenly : 전체 영역에서 아이템 간 간격을 균일하게 분배
 
-![Alt text](image-28.png)
+![Alt text](images/image-28.png)
 
 6. align-items
 - 교차 축을 따라 flex item 행을 정렬
 
-![Alt text](image-39.png)
+![Alt text](images/image-39.png)
 
 - stretch : 해당된 영역의 끝까지
 
-![Alt text](image-29.png)
+![Alt text](images/image-29.png)
 
 7. align-self
 - 교차 축으로 따라 개별 flex item을 정렬
 
-![Alt text](image-30.png)
+![Alt text](images/image-30.png)
 
 ### Flexbox 속성
 - Flex Container 관련 속성
@@ -572,13 +572,13 @@ Flex Item(자식 요소)
 - Flex Item 관련 속성
     - align-self, flex-grow, flex-basis, order
 
-![Alt text](image-31.png)
+![Alt text](images/image-31.png)
 
-![Alt text](image-32.png)
+![Alt text](images/image-32.png)
 
 8. flwx-grow
 - 남는 행 여백을 비율에 따라 각 flex item에 분배
     - 아이템이 컨테이너 내에서 확장하는 비율을 지정
 - flex-grow의 반대는 flex-shrink
 
-![Alt text](image-40.png)
+![Alt text](images/image-40.png)

@@ -10,13 +10,13 @@
 최소 신장 트리(Minimum spanning Tree)
 - 무방향 가중치 그래프에서 신장 트리를 구성하는 간선들의 가중치의 합이 최소인 신장 트리
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 1) 갈 수 있는 곳 중 제일 짧은 곳으로 간다! 
     - BFS와 유사 + 가중치 활용 => 우선순위 큐 활용
     
 2) 전체 간선들 중에서 제일 가중치가 적은 곳부터 선택하자
 
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 ## Prim 알고리즘
 하나의 정점에서 연결된 간선들 중에 하나씩 선택하면서 MST를 만들어 가는 방식
@@ -28,11 +28,11 @@
 - 트리 정점들(tree vertices) - MST를 만들기 위해 선택된 정점즐
 - 비트리 정점들(nontree vertices) - 선택되지 않은 정점들
 
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![images/img_2.png](images/img_2.png)
+![images/img_3.png](images/img_3.png)
 
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
+![images/img_4.png](images/img_4.png)
+![images/img_5.png](images/img_5.png)
 
 ## Kruskal 알고리즘
 간선을 하나씩 선택해서 MST를 찾는 알고리즘
@@ -41,10 +41,10 @@
    - 사이클이 존재하면 다음으로 가중치가 낮은 간선 선택
 3. n-1개의 간선이 선택될때까지 2를 반복
 
-![img_9.png](img_9.png)  
-![img_8.png](img_8.png)  
-![img_7.png](img_7.png)  
-![img_6.png](img_6.png)  
+![images/img_9.png](images/img_9.png)  
+![images/img_8.png](images/img_8.png)  
+![images/img_7.png](images/img_7.png)  
+![images/img_6.png](images/img_6.png)  
 
 # 최단 경로
 간선의 가중치가 있는 그래프에서 두 정점 사이의 경로들 중에 간선의 가중치의 합이 최소인 경로
@@ -65,26 +65,26 @@
 - 이때, 최단경로는 s에서 x까지의 최단 경로와 x에서 t까지의 최단 경로 구성된다
 - 탐욕 기법을 사용한 알고리즘으로 MST의 프림 알고리즘과 유사하다.
 
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
 
 
-![img_19.png](img_19.png)
+![images/img_19.png](images/img_19.png)
 a 정점에 대해서 현재 정점까지의 최소 비용 계산
 
-![img_18.png](img_18.png)
+![images/img_18.png](images/img_18.png)
 D에는 해당 노드가지 최소 거리를 입력
 
-![img_17.png](img_17.png)
+![images/img_17.png](images/img_17.png)
 방문하지 않고, 우선 순위 큐에 따라 b가 u에 입력
 
-![img_16.png](img_16.png)
+![images/img_16.png](images/img_16.png)
 b에서 방문할 수 있는 c의 최단 거리 계산
 
-![img_15.png](img_15.png)
-![img_14.png](img_14.png)
-![img_13.png](img_13.png)
-![img_12.png](img_12.png)
-![img_11.png](img_11.png)
+![images/img_15.png](images/img_15.png)
+![images/img_14.png](images/img_14.png)
+![images/img_13.png](images/img_13.png)
+![images/img_12.png](images/img_12.png)
+![images/img_11.png](images/img_11.png)
 
 ### 총정리
 그래프 탐색

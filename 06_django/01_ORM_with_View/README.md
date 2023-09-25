@@ -4,16 +4,16 @@ Django shell에서 연습했던 QuerySet API를 직접 view 함수에서 사용�
 # READ
 2가지 조회 진행
 1. 전체 게시글 조회
-![Alt text](image-1.png)  
-![Alt text](image.png)
+![Alt text](images/image-1.png)  
+![Alt text](images/image.png)
 
 2. 단일 게시글 조회
-![Alt text](image-2.png)  
-![Alt text](image-3.png)
+![Alt text](images/image-2.png)  
+![Alt text](images/image-3.png)
 
 3. 단일 게시글 페이지 링크 작성  
-![Alt text](image-5.png)
-![Alt text](image-4.png)
+![Alt text](images/image-5.png)
+![Alt text](images/image-4.png)
 
 # CREATE
 create 로직을 구현하기 위해 필요한 view 함수의 개수는?
@@ -21,14 +21,14 @@ create 로직을 구현하기 위해 필요한 view 함수의 개수는?
 2. create : 사용자가 입력한 데이터를 받아 DB에 저장
 
 1. new 기능 구현  
-![Alt text](image-8.png)  
-![Alt text](image-7.png)  
-![Alt text](image-6.png)
+![Alt text](images/image-8.png)  
+![Alt text](images/image-7.png)  
+![Alt text](images/image-6.png)
 
 2. create 기능 구현
-![Alt text](image-12.png)
-![Alt text](image-10.png)
-![Alt text](image-9.png)
+![Alt text](images/image-12.png)
+![Alt text](images/image-10.png)
+![Alt text](images/image-9.png)
 
 # HTTP request methods
 ## HTTP
@@ -49,8 +49,8 @@ create 로직을 구현하기 위해 필요한 view 함수의 개수는?
 특정 리소스에 **변경(생성, 수정, 삭제)을 요구하는** 요청  
 (POST로 데이터를 전달하명 HTTP Body에 담겨 보내짐)
 
-![Alt text](image-13.png)
-![Alt text](image-14.png)
+![Alt text](images/image-13.png)
+![Alt text](images/image-14.png)
 
 ## HTTP response status code
 특정 HTTP 요청이 성공적으로 완료되었는지를 3자리 숫자로 표현하기로 약속한 것
@@ -58,7 +58,7 @@ create 로직을 구현하기 위해 필요한 view 함수의 개수는?
 ## 403 Forbidden
 서버에 요청이 전달되었지만, **권환** 때문에 거절되었다는 것을 의미
 
-![Alt text](image-15.png)
+![Alt text](images/image-15.png)
 
 ## CSRF : Cross-Site-Request-Forgery
 사이트간 요청 위조
@@ -84,7 +84,7 @@ create 로직을 구현하기 위해 필요한 view 함수의 개수는?
 - 게시글 생성 후 개발자 도구를 사용해 Form Data가 전송되는 것 확인
 - 더 이상 URL에 데이터가 표기되지 않음
 
-![Alt text](image-16.png)
+![Alt text](images/image-16.png)
 
 # redirect
 게시글 작성 후 완료를 알리는 페이지를 응답하는 것은 적절한 응답이 아님
@@ -98,24 +98,41 @@ create 로직을 구현하기 위해 필요한 view 함수의 개수는?
 redirect() 함수 적용
 - create view 함수 개선
 
-![Alt text](image-17.png)
+![Alt text](images/image-17.png)
 
 redirect 특징
 - 해당 redirect에서 클라이언트는 detail.url로 요청을 다시 보내게 됨
 - 결과적으로 detail view 함수가 호출되어 detail view 함수의 반환 결과인 detail 페이지를 응답 받음
 - 결국 사용자는 게시글 작성 후 작성된 게시글의 detail 페이지로 이동하는 것으로 느끼게 되는 것
 
-![Alt text](image-18.png)
+![Alt text](images/image-18.png)
 
 게시글 작성 결과
 - 게시글 작성 후 생성된 게시글의 detail 페이지로 redirect 되었는지 확인
 - create 요청 이후에 detail로 다시 요청을 보냈다는 것을 알 수 있음
 
-![Alt text](image-19.png)
+![Alt text](images/image-19.png)
 
 # DELETE
 DELETE 기능 구현
-![Alt text](image-21.png)  
-![Alt text](image-20.png) 
+![Alt text](images/image-21.png)  
+![Alt text](images/image-20.png) 
 
-## 49p
+# UPDATE
+Update 로직을 구현하기 위해 필요한 view 함수의 개수
+1. edit : 사용자 입력 데이터를 받을 페이지를 렌더링
+2. update : 사용자가 입력한 데이터를 받아 DB에 저장
+
+edit 기능 구현  
+![Alt text](images/image-22.png)  
+![Alt text](images/image-23.png)  
+![Alt text](images/image-24.png)
+![Alt text](images/image-25.png)
+
+update 기능 구현  
+![Alt text](images/image-26.png)  
+![Alt text](images/image-27.png)
+
+# 참고
+![Alt text](images/image-28.png)  
+![Alt text](images/image-29.png)

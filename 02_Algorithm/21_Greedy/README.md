@@ -1,7 +1,7 @@
 # 21. Greedy
 # 조합
 - 서로 다른 n개의 원소 중 r개를 순서 없이 골라낸 것을 조합(combination)이라고 부른다.
-![img.png](img.png)
+![images/img.png](images/img.png)
   
 재귀 호출을 이용한 조합 생성 알고리즘
 ```python
@@ -17,12 +17,12 @@ def comb(n, r):
         comb(n-1, r-1) # 선택한 것을 포함
         comb(n-1, r) # 선택한 것을 포함시키지 안흔 ㄴ것
 ```
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 10개의 원소중 3개를 고르는 조합
 - i < j < k라고 하면,
 
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
 ```python
 for i in range(8): # j, k로 선택될 원소를 남김
     for j in range(i+1,9) # k로 선택될 원소를 남김
@@ -31,7 +31,7 @@ for i in range(8): # j, k로 선택될 원소를 남김
 ```
 
 n개에서 r개를 고르는 조합
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
 ```python
 def nCr(n, r, s) # n개에서 r개를 고르는 조합, s 선택할 수 있는 구간의 시작
 if r == 0:
@@ -62,13 +62,13 @@ else:
 
 최적해를 반드시 구한다는 보장이 없다.
 
-![img_4.png](img_4.png)
+![images/img_4.png](images/img_4.png)
 
 ### 배낭 짐싸기(Knapsack)
 - 도둑이 훔친 물건을 배낭에 담아오려고 한다. 배남은 담을 수 있는 물건의 총 무게(W)가 정해져 있다.
 - 창고에는 여러 개(n개)의 물건들이 있고 각각의 물건에는 무게와 값이 정해져 있다.
 - 수용 가능한 무게를 초과하지 않으면서, 값이 최대가 되는 물건들을 담자
-![img_5.png](img_5.png)
+![images/img_5.png](images/img_5.png)
   
 ### Knapsack 문제 유형
 0-1 Knapsack
@@ -80,19 +80,19 @@ Fractional Knapsack
 - 물건을 쪼갤 수 있는 경우
 
 0-1 Knapsack에 대한 완전 검색 방법
-![img_6.png](img_6.png)
+![images/img_6.png](images/img_6.png)
 
 0-1 Knapsack에 대한 탐욕적 방법 1
-![img_8.png](img_8.png)
+![images/img_8.png](images/img_8.png)
 
 0-1 Knapsack에 대한 탐욕적 방법 2
-![img_9.png](img_9.png)
+![images/img_9.png](images/img_9.png)
 
 0-1 Knapsack에 대한 탐욕적 방법 3
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
 
 Fractional Knapsack문제
-![img_11.png](img_11.png)
+![images/img_11.png](images/img_11.png)
 
 ## 활동 선택(Activity-selection) 문제
 ### 회의실 배정하기
@@ -104,14 +104,14 @@ Fractional Knapsack문제
 10
 1 4 1 6  6 10 5 7 3 8 5 9 3 5 8 11 2 13 12 14
 ```
-![img_12.png](img_12.png)
-![img_13.png](img_13.png)
-![img_14.png](img_14.png)
-![img_15.png](img_15.png)
-![img_16.png](img_16.png)
-![img_19.png](img_19.png)
-![img_18.png](img_18.png)
-![img_20.png](img_20.png)
+![images/img_12.png](images/img_12.png)
+![images/img_13.png](images/img_13.png)
+![images/img_14.png](images/img_14.png)
+![images/img_15.png](images/img_15.png)
+![images/img_16.png](images/img_16.png)
+![images/img_19.png](images/img_19.png)
+![images/img_18.png](images/img_18.png)
+![images/img_20.png](images/img_20.png)
 
 ```
 A : 정렬된 활동들의 집합
@@ -147,4 +147,4 @@ Recusive_Selection(i, j)
 |Top-down 방식|Bottom-up 방식|
 |일반적으로, 빠르고 간결하다.|좀 더 느리고, 복잡하다.|
 
-![img_21.png](img_21.png)
+![images/img_21.png](images/img_21.png)

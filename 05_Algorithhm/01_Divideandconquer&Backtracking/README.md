@@ -18,7 +18,7 @@
 - 정복(Conquer): 나눈 작은 문제를 각각 해결한다.
 - 통합(Combine): (필요하다면) 해결된 해답을 모은다.
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 
 # 병합 정렬 (Merge sort)
 여러 개의 정렬된 자료의 집합을 병합하여 한 개의 정렬된 집합으로 만드는 방식(나눌 수 없을 때까지, 문제를 쉽게 해결할 수 있을 때까지)
@@ -33,12 +33,12 @@
 ## 병합 정렬 과정
 - 분할 단계: 전체 자료 집합에 대하여, 최소 크기의 부분집합이 될 때까지 분할 작업을 계속한다.
 
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 - 병합 단계 : 2개의 부분집합을 정렬하면서 하나의 집합으로 병합
 - 8개의 부분집합이 1개로 병합될 때가지 반복함
 
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
 
 분할과정
 - 구조가 변하지 않는다면 재귀 호출
@@ -87,37 +87,37 @@ merge(:ist left, List right
 1. 병합 정렬은 그냥 두 부분으로 나누는 반면에. 퀵 정렬은 분할할 대, 기준 아이템(pivot item) 중심으로, 이보다 작은 것은 왼편, 큰 것은 오르편에 위치시킨다.
 2. 각 부분 정렬이 끝난 후, 병합 정렬은 "병합"이란 후처리 작업이 필요하나, 퀵 정렬은 필요로 하지 않는다.
 
-![img_5.png](img_5.png)
+![images/img_5.png](images/img_5.png)
 
 ## Hoare-Partition
-![img_6.png](img_6.png)
+![images/img_6.png](images/img_6.png)
 ## 아이디어
 - P(피봇)값들보다 큰 값은 오른족, 작은 값들은 왼쪽 집합에 위치하도록 한다.
 
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
   
 - 피봇을 두 집합의 가운데에 위치시킨다.
 
-![img_4.png](img_4.png)
+![images/img_4.png](images/img_4.png)
 
 - 피봇 선택
 
-![img_7.png](img_7.png)
+![images/img_7.png](images/img_7.png)
   
-![img_8.png](img_8.png)
+![images/img_8.png](images/img_8.png)
 
-![img_9.png](img_9.png)
+![images/img_9.png](images/img_9.png)
 
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
 
-![img_11.png](img_11.png)
+![images/img_11.png](images/img_11.png)
 
-![img_12.png](img_12.png)
+![images/img_12.png](images/img_12.png)
 
 ## lomuto position 알고리즘
-![img_13.png](img_13.png)
+![images/img_13.png](images/img_13.png)
 
-![img_14.png](img_14.png)
+![images/img_14.png](images/img_14.png)
 
 
 # 이진 검색 (Binary Search) ⭐⭐⭐ 코테 단골
@@ -134,11 +134,11 @@ merge(:ist left, List right
 3. 목표 값이 중앙 원소의 값보다 작으면 오른쪽 반에 대해서 새로 검색을 수행한다.
 4. 찾고자 하는 값을 찾을 때가지 1~3 반복
 
-![img_15.png](img_15.png)
+![images/img_15.png](images/img_15.png)
 
-![img_16.png](img_16.png)
+![images/img_16.png](images/img_16.png)
 
-![img_17.png](img_17.png)
+![images/img_17.png](images/img_17.png)
 
 ### 분할 정복의 활용
 - 병합 정렬은 외부 정렬의 기본이 되는 알고리즘이다. 또한, 멀티코어(Multi-Core) CPU나 다수의 프로세서에서 정렬 알고리즘을 병렬화하기 위해 병합 정렬 알고리즘이 활용된다.

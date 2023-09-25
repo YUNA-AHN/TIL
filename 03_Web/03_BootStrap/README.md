@@ -14,8 +14,8 @@ mt-5 : {property}{sides}-{size}
 mx-auto : 수평 중앙정렬
 
 ### Bootsrtap에서 클래스 이름으로 Spacing을 표현하는 방법
-![Alt text](image.png)
-![Alt text](image-1.png)
+![Alt text](images/image.png)
+![Alt text](images/image-1.png)
 
 **Bootstrap에는 특정한 규칙이 있는 클래스 이름으로 이미 스타일 및 레이아웃이 작성되어 있음**
 
@@ -25,7 +25,7 @@ mx-auto : 수평 중앙정렬
 ### Displaly headings
 기존 Heading보다 더 눈에 띄는 제목이 필요한 경우 ( 더 크고 약간 다른 스타일)
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 ```html
   <!-- display heading -->
@@ -38,7 +38,7 @@ mx-auto : 수평 중앙정렬
 ### Inline text elements
 HTML inline 요소에 대한 스타일
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 ```html
   <!-- inlint text element -->
@@ -55,7 +55,7 @@ HTML inline 요소에 대한 스타일
 ### Lists
 HTML list 요소에 대한 스타일
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 ```html
   <ul class="list-unstyled">
@@ -81,11 +81,11 @@ Bootstrap이 지정하고 제공하는 색상 시스템
 ### Colors
 Text, border, Background 및 다양한 요소에 사용하는 Boorstrap의 색상 키워드
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 ### Text colors
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 ```html
 <p class="text-primary">.text-primary</p>
@@ -96,7 +96,7 @@ Text, border, Background 및 다양한 요소에 사용하는 Boorstrap의 색�
 ```
 ### Background colors
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 
 ```html
 <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
@@ -111,7 +111,7 @@ Text, border, Background 및 다양한 요소에 사용하는 Boorstrap의 색�
 너비와 높이가 각각 200px인 정사각형 작성하기  
 (너비와 높이를 제외한 스타일은 모두 bootstrap으로 작성)
 
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 ```html
   <div class="box border border-dark bg-info m-3"></div>
@@ -128,7 +128,7 @@ Bootstrap에서 제공하는 **UI 관련 요소**
 - Cards
 - Navbar
 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
 
 ```html
   <!-- Alerts -->
@@ -222,7 +222,7 @@ h1 : 문서의 최상위 제목 의미를 제공하는 semantic 요소
 div와 기능상에서는 큰 차이가 없지만 이를 통해 의미를 이해하기 쉬워짐
 
 ### Semantic Element 예시
-![Alt text](image-12.png)
+![Alt text](images/image-12.png)
 
 ## Semantic in CSS
 ### OOCSS(object Oriented CSS)  
@@ -248,10 +248,10 @@ CSS를 효율적이고 유지 보수가 용이하게 작성하기 위한 일련�
 - 서버와 사용자의 물리적인 거리를 줄여 콘텐츠 로딩에 소요되는 시간을 최소화(웹 페이지 로드 속도를 높임)
 - 지리적을 사용자와 가까운 CDN 서버에 콘텐츠를 저장해서 사용자에게 전달
 
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
-![Alt text](image-14.png)
+![Alt text](images/image-14.png)
 
-![Alt text](image-15.png)
+![Alt text](images/image-15.png)
 
-![Alt text](image-16.png)
+![Alt text](images/image-16.png)

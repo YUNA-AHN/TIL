@@ -13,7 +13,7 @@
 - 가중치 그래프(Weighted Graph)
 - 사이클 없는 방향 그래프(DAG, Directed Acyclic Graph)
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 
 - 완전 그래프
     - 정점들에 대해 가능한 모든 간선들을 가진 그래프
@@ -21,14 +21,14 @@
 - 부분 그래프
     - 원래 그래프에서 일부의 정점이나 간선을 제외한 그래프
     
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 ### 인접정점
 인접(Adjacency)
 - 두 개의 정점에 간선이 존재(연결됨)하면 서로 인접해 있다고 한다.
 - 완전 그래프에 속한 임이의 두 정점들은 모두 인접해 있다.
 
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
 
 ### 그래프 경로
 경로란 간선들을 순서대로 나열한 것
@@ -41,7 +41,7 @@
 시작한 정점에서 끝나는 경로를 **사이클(Cycle)**이라고 한다.
 - 1-3-5-1
 
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
 
 ### 그래프 표현
 - 간선의 정보를 저장하는 방식. 메모리나 성능을 고려해서 결정
@@ -65,14 +65,14 @@
     - 열 i의 합 = Vi의 진입 차수
 - 장점 : 구현이 쉽다. / 단점 : 메모리 낭비
 
-![img_4.png](img_4.png)
+![images/img_4.png](images/img_4.png)
 
 ### 인접 리스트
 - 각 정점에 대한 인접 정점들을 순차적으로 표현
 - 하나의 정점에 대한 인접 정점들을 각각 노드로 하는 연결 리스트로 저장
 
-![img_5.png](img_5.png)  
-![img_6.png](img_6.png)
+![images/img_5.png](images/img_5.png)  
+![images/img_6.png](images/img_6.png)
 
 ## 그래프 순회(탐색)
 그래프 순회는 비선형구조인 그래프로 표현된 모든 자료(정점)를 빠짐없이 탐색하는 것을 의미
@@ -103,14 +103,14 @@
 - Find-Set(x) : X라는 요소가 어느 그룹에 속해있는지 찾는 연산
 - Union(x, y) : x외 y가 속한 두 그룹을 하나의 그룹으로 만드는 연산 / 대표자 저장(같은 그룹으로 묶기)
 
-![img_7.png](img_7.png)
+![images/img_7.png](images/img_7.png)
 
 ### 상호 배타 집합 표현 - 연결리스트
 - 같은 집합의 원소들은 하나의 연결리스트로 관리한다.
 - 연결리스트의 맨 앞의 원소를 집합의 대표 원소로 삼는다.
 - 각 원소는 집합의 대표원소를 가리키는 링크를 갖는다.
 
-![img_8.png](img_8.png)
+![images/img_8.png](images/img_8.png)
 
 연결리스트 연산 예
 - Find-Set(a) return a
@@ -121,16 +121,16 @@
 - 하나의 집합 (a disjoint set)을 하나의 트리로 표현한다.
 - 자식 노드가 부모 노드를 가리키며 루트 노드가 대표자사 된다.
 
-![img_9.png](img_9.png)
+![images/img_9.png](images/img_9.png)
 
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
 - make로 초기화
 - union하여 대표자를 가르키도록..
 
-![img_11.png](img_11.png)
+![images/img_11.png](images/img_11.png)
 - 대표자 중에 하나를 골라 합치기
 
-![img_12.png](img_12.png)
+![images/img_12.png](images/img_12.png)
 - 조상이 동일하다면 같은 멤버
 
 ### 상호배타 집합에 대한 연산

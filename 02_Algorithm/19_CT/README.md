@@ -12,7 +12,7 @@
   주장 : 만약 한 쪽이 D이면 반대쪽은 3
 - 주장이 사실인지 확인하기 위해 다음 카드 중 뒤집어 보아야하는 것은 몇개인가?
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 
 - 답은 D와 7
 - 3 뒤에 D가 있든 없든 주장이 사실인지 여부에 영향이 없음
@@ -22,7 +22,7 @@
 규칙: 20세 이하인 사람은 맥주를 마실 수 없음
 - 나이 혹은 마시고 있는 것을 표시한 다음 4명 중 확인이 필요한 사람은 몇명이고 누구인가?
 
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 - 답은 17세와 맥주
 - 카드 문제와 논리적 구성이 완전히 동일함
@@ -49,25 +49,25 @@ Hard VS Soft Logic
 - 부정 NOT
   - p 가 명제일 일때, 명제의 진리값이 반대
   - ~p (not p 또는 p의 부정으로 읽음)  
-  ![img_2.png](img_2.png)
+  ![images/img_2.png](images/img_2.png)
     
 - 논리곱 AND
   - p, q가 명제일 떄, p, q 모두 참일 때만 참이 되는 명제
   - p ^ q ( p and q, p 그리고 q)
-  ![img_3.png](img_3.png)
+  ![images/img_3.png](images/img_3.png)
     
 - 논리합 OR
   - p, q가 명제일 떄, p, q 모두 거짓일 때만 거짓이 되는 명제
   - p V q ( p and q, p 또는 q)  
-  ![img_4.png](img_4.png)
+  ![images/img_4.png](images/img_4.png)
     
 - 배타적 논리합 XOR
   - p, q가 명제일 떄, p, q 하나만 참일 때 참이 되는 명제
-  ![img_5.png](img_5.png)
+  ![images/img_5.png](images/img_5.png)
     
 합성
 - 연산자 우선순위⭐⭐⭐⭐⭐
-  - ![img_6.png](img_6.png)
+  - ![images/img_6.png](images/img_6.png)
   - not > or, and > -> <- (조건 명제)
 - 항진명제 : 진리값이 항상 참
 - 모순명제 : 진릿값이 항상 거짓
@@ -75,18 +75,18 @@ Hard VS Soft Logic
 - 조건 명제
   - p,q가 명제일 떼, 명제 p가 조건(또는 원인), q가 결론(또는 결과)로 제시되는 명제
   - p -> q (p이면 q이다.)  
-  ![img_7.png](img_7.png)
+  ![images/img_7.png](images/img_7.png)
     
 - 쌍방 조건 명제
   - p,q가 명제일 떼, 명제 p와 q가 모두 조건이면서 결론인 명제  
-    ![img_8.png](img_8.png)
+    ![images/img_8.png](images/img_8.png)
     
 - 조건 명제의 역, 이 대우
-![img_9.png](img_9.png)
+![images/img_9.png](images/img_9.png)
   
 논리 연습
 - p이면 q이다에서 p가 거짓이라면 q의 진리 여부와 상관 없이 모순 명제이다.  
-![img_10.png](img_10.png)
+![images/img_10.png](images/img_10.png)
   
 증명
 - 증명은 정확한 명제식으로 표현할 수 있는 것이라야함
@@ -96,8 +96,8 @@ Hard VS Soft Logic
 수학적 귀납법에서는 P(n) -> P(n+1)이 참임을 보이는 것일 분이므로, P(n)이 정말로 참일 필요는 없음
 
 증명 방법  
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
+![images/img_11.png](images/img_11.png)
+![images/img_12.png](images/img_12.png)
 
 # 4. 기초 수식 ⭐⭐⭐⭐⭐
 - 알고리즘의 시간 복잡도를 표현할 수 있는 다양한 수식들이 존재
@@ -112,7 +112,7 @@ Hard VS Soft Logic
 - n-1에서 문제를 풀 수 있으면 n에서도 문제를 풀 수 있다.  
 위 두 가지가 사실이면 모든 가능한 n에 대해 문제를 풀 수 있다는 것이 사실
   
-![img_13.png](img_13.png)
+![images/img_13.png](images/img_13.png)
 
 - 문제 해결 과정에서 부분 문제가 동일한 문제인 경우!
 

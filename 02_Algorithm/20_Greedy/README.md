@@ -16,7 +16,7 @@
 - 업데이트 (loop update)
     - 무한 루프(infinite loop)가 되지 않게 조건이 거짓(false)이 되게 한다.
     
-![img.png](img.png)
+![images/img.png](images/img.png)
 
 ### 반복을 이용한 선택 정렬
 ```python
@@ -60,7 +60,7 @@ def fact(n):
     ekse:
         return n * fact(n-1)    // Inductive part
   ```
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
 ## 반복 또는 재귀?
 - 해결할 문제를 고려해서 반복이나 재귀의 방법을 선택
@@ -117,7 +117,7 @@ def power_of_2(k):
 Brute-force 탐색(sequential search)
 - 자료들의 리스트에서 키 값을 찾기 위해 첫 번재 자료부터 비교하면서 진행한다.
 - 결과 : 탐색 성공 / 탐색 실패
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
   
 ## 완전 검색으로 시작하라.
 - 모든 경우의 수를 생성하고 쳄스트하기 때문에 수행 속도는 느리지만, 해답을 찾아내지 못할 확률이 작음
@@ -139,7 +139,7 @@ Brute-force 탐색(sequential search)
 - 완전 검색은 조합적 문제에 대한 brute force 방법이다.
 
 # 여행사 BiG sale
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
 
 # 순열 (Permutation)
 - 서로 다른 것들 중 몇개를 뽑아서 한줄로 나열하는 것
@@ -159,7 +159,7 @@ nPr
 ### 단순하게 순열을 생성하는 방법
 예) [1, 2, 3]을 포함하는 모든 순열을 생성하는 함수
 - 동일한 숫자가 포함되지 않았을 때, 각 자리 수 별로 loop을 아용해 아래와 같이 구현할 수 있다.
-![img_4.png](img_4.png)
+![images/img_4.png](images/img_4.png)
   
 - 사전적 순서(Lexicographuc-Order)
     - [1, 2, 3], n = 3인 경우 다음과 같이 생성된다.
@@ -182,8 +182,8 @@ def perm(i, k):
             p[i], p[j] = p[j], p[i]
 ```
 
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
+![images/img_5.png](images/img_5.png)
+![images/img_6.png](images/img_6.png)
 ```python
 # p[] : 데이터가 저장된 배열
 # k : 원소의 개수, n: 선택된 원소의 수
@@ -209,7 +209,7 @@ def perm(i, k):
   
 ### 단순하게 모든 부분 집합 생성하는 방법
 4개 원소를 포함한 집합에 대한 power set 구하기
-![img_7.png](img_7.png)
+![images/img_7.png](images/img_7.png)
 
 바이너리 카운팅을 통한 사전적 순서(Lexicographic Order)
 - 부분집합을 생성하기 위한 가장 자연스로운 방법이다.
@@ -218,7 +218,7 @@ def perm(i, k):
 바이너리 카운팅(Binary Counting)
 - 원소 수에 해당하는 N개의 비트열을 이용한다.
 - n번째 비트값이 1이면 n번째 원소가 포함되었음을 의미한다.
-![img_8.png](img_8.png)
+![images/img_8.png](images/img_8.png)
   
 바이너리 카운팅을 통한 부분집합 생성 코드 예
 ```python

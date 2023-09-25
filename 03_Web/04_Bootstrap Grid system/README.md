@@ -6,7 +6,7 @@
 목적
 - 반응형 디자인을 지원해 웹 페이지를 모바일, 태블릿, 데스크탑 등 다양한 기기에서 적절하게 표시할 수 있도록 도움
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ## Grid system 클래스와 기본 구조
 ### Grid system 기본 요소
@@ -14,12 +14,12 @@
 2. Column : 실제 컨첸프를 포함하는 부분
 3. Gutter : 컬럼과 컬럼 사이의 여백 영역
 
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+![Alt text](images/image-1.png)
+![Alt text](images/image-2.png)
 
 1개의 row안에 12칸의 column 영역이 구성, 각 요소는 12칸 중 몇개를 차지할 것인지 지정됨
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 ```html
     <div class="container">
@@ -31,7 +31,7 @@
     </div>
 ```
 ### Grid system 실습 - 기본
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 ```html
   <div class="container">
@@ -57,7 +57,7 @@
 ```
 
 ### Grid system 실습 - 중첩(Nesting)
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 ```html
   <div class="container">
@@ -78,7 +78,7 @@
 ```
 
 ### Grid system 실습 - 상쇄(Offset)
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 ```html
   <div class="container">
@@ -105,10 +105,10 @@ Grid system에서 column 사이에 여백 영역
 x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
 - 상대적으로 x축의 공간이 한정적이기 때문에 padding을 통하여 스스로의 몸집을 조절한다.
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 
 ### Grid system 실습 - Gutters
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 ```html
   <div class="container">
@@ -163,7 +163,7 @@ x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
 # Grid system for responsible web
 ### Responsive Web Design : 반응형 웹 디자인
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 - 디바이스 종류나 화면 크기에 상관없이, 어디서든 일관된 레이아웃 및 사용자 경험을 제공하는 디자인 기술
 - 반응형 레이아웃 작성에 도움이 되는 사례들의 모음 등을 기술하는데 사용되는 용어
@@ -173,13 +173,13 @@ x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
 웹 페이지를 다양한 화면 크기에서 적절하게 배치하기 위한 분기점
 - 화면 너비에 따라 6개의 분기점 제공(xs, sm, md, lgm xl, xxl)
 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 
 - 각 breakpoints 마다 설정된 최대 너비 값이 **이상으로** 화면이 커지면 grid system 동작이 변경됨
 - col-sm-4 : 576px 이상 768px 미만일 때 4칸 차지
 
 ### Breakpoints 실습
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
 
 ```html
   <h2 class="text-center">Breakpoints</h2>
@@ -200,7 +200,7 @@ x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
     </div>
 ```
 
-![Alt text](image-12.png)
+![Alt text](images/image-12.png)
 
 ```html
     <h2 class="text-center">Breakpoints + offset</h2>
@@ -221,13 +221,13 @@ x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
   </div>
 ```
 
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ## CSS Layout 정리
-![Alt text](image-14.png)  
-![Alt text](image-15.png)  
-![Alt text](image-16.png)  
-![Alt text](image-17.png)
+![Alt text](images/image-14.png)  
+![Alt text](images/image-15.png)  
+![Alt text](images/image-16.png)  
+![Alt text](images/image-17.png)
 
 
 각각의 기술은 용도와 장단점이 있음!  
@@ -240,7 +240,7 @@ x축은 padding(내부여백), y축은 margin(외부여백)으로 여백 생성
 - 가장 기본적으로 안쪽에 있는 요소들의 오와 열을 맞추는 것에서 기인
 - 정보 구조와 배열을 체계적으로 작성하여 정보의 질서를 부여하는 시스템
 
-![Alt text](image-18.png)
+![Alt text](images/image-18.png)
 
 ## Grid cards
 row-cols 클래스를 사용하여 행당 표시할 열(카드) 수를 손쉽게 제어할 수 있음

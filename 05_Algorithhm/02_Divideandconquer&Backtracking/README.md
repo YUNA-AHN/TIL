@@ -22,7 +22,7 @@
 퀸 8개를 크기의 체스판 안에 서로를 공경할 수 없도록 배치하는 모든 경우를 구하는 문제  
 후보 해의 수가 44억 개로 엄청 많은 것에 비해 실제 해의 수는 92개..
 
-![img.png](img.png)
+![images/img.png](images/img.png)
 
 백트래킹 기법  
 - 어떤 노드의 유망성을 점검한 후에 유망(promising)하지 않다고 결정되면 그 노드의 부모로 되돌아가(backtracking) 다음 자식 노드로 감
@@ -34,26 +34,26 @@
 2. 각 노드가 유망하지를 점검
 3. 만일 그 노드가 유망하지 않으면, 그 노드의 부모 노드로 돌아가서 검색을 계속한다.
 
-![img_1.png](img_1.png)
+![images/img_1.png](images/img_1.png)
 
-![img_2.png](img_2.png)
+![images/img_2.png](images/img_2.png)
 
 상태공간트리를 구축하여 문제를 해결  
 
-![img_3.png](img_3.png)
+![images/img_3.png](images/img_3.png)
 
 ### {1, 2, 3) powerset 구하는 백트래킹 알고리즘
-![img_5.png](img_5.png)
-![img_4.png](img_4.png)
+![images/img_5.png](images/img_5.png)
+![images/img_4.png](images/img_4.png)
 
-![img_7.png](img_7.png)
-![img_6.png](img_6.png)
-![img_8.png](img_8.png)
+![images/img_7.png](images/img_7.png)
+![images/img_6.png](images/img_6.png)
+![images/img_8.png](images/img_8.png)
 
 ### 백트래킹을 이용하여 순열 구하기
-![img_11.png](img_11.png)
-![img_10.png](img_10.png)
-![img_9.png](img_9.png)
+![images/img_11.png](images/img_11.png)
+![images/img_10.png](images/img_10.png)
+![images/img_9.png](images/img_9.png)
 
 # 트리
 트리는 싸이클이 없는 무향 연결 그래프
