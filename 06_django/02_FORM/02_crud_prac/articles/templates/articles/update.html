@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>EDIT</h1>
+  <form action="{% url 'articles:update' article.pk%}" method="POST">
+    {% csrf_token %}
+    <label for="title">Title: </label>
+    <input type="text" name="title" id="title" value = "{{article.title}}"><br>
+    <label for="content">Content: </label>
+    <textarea name="content" id="content">
+        {{article.content}}
+    </textarea>
+    {% comment %} <input type="textarea" name="content" id="content"><br> {% endcomment %}
+    <input type="submit" value = "수정하기">
+  </form>
+  <hr>
+  <a href="{% url 'articles:index' %}">뒤로가기</a>
+{% endblock content %}

@@ -136,3 +136,34 @@ update 기능 구현
 # 참고
 ![Alt text](images/image-28.png)  
 ![Alt text](images/image-29.png)
+
+# Article (게시글) CRUD
+- 전역 경로 : articles/
+
+뷰 함수 유형
+1. 사용자에게 보여줘야할 html 파일을 랜더링  render
+2. 사용자로부터 데이터를 받아서 처리
+
+HTTP Method :  GET / POST  
+HTTP Method -> 서버가 수행해야할 동작 지정(알려주기 위해)  
+- GET : 조회 / 특정 리소스 또는 전체 리소스를 "조회"하기 위해 요청  
+- POST : 생성 / 특정 리소스를 수정(생성/수정/삭제)하기 위해  
+- PUT / PATCH : 수정
+- DELETE : 삭제
+
+                                        경로 <-> 뷰 함수
+
+'R'ead(조회)
+- 전체 게시글 조회 :                                <-> index
+- 상세 게시글 조회 :                    <int:pk>/   <-> deatil
+
+'C'reate (생성)
+- 게시글 생성에 필요한 폼을 사용자에게 제공 :   new/    <-> new // 사용자가 해당 폼을 요청 GET
+- 사용자로부터 정보를 받아 게시글 생성 :        create/  <-> create
+
+'U'pdate(생성)
+- 게시글 수정에 필요한 폼을 사용자에게 제공 :   <int:pk>/edit <-> eidt
+- 사용자로부터 정보를 받아 게시글 수정 :        <int:pk>/update <-> update
+
+'D'elete (삭제)
+- 사용자로부터 삭제요청, 게시글을 삭제 :        <int:pk>/delete <-> delete
