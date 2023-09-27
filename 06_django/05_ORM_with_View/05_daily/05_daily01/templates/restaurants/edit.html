@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>식당 수정 페이지</h1>
+    <form action="{% url "restaurants:update" article.pk %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit">
+    </form>
+    <hr>
+{% endblock content %}

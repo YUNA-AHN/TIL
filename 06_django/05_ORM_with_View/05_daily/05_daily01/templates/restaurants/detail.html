@@ -9,7 +9,7 @@
     <p>전화 번호: {{restaurant.phone_number}}</p>
 </div>
 <hr>
-<a href="">[UPDATE]</a>
+<a href="{% url "restaurants:edit" restaurant.pk%} ">[UPDATE]</a>
 <form action="">
     <input type="submit" value="DELETE">
 </form>

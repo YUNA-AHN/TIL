@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static "articles/style.css" %} ">
+</head>
+<body>
+  {% comment %} static은 built-in되지 않은 태그이므로 load 해주어야 함 {% endcomment %}
+  <img src="{% static "articles/sample-1.png" %}" alt="img">
+  <img src="{% static "sample-2.png" %}" alt="img">
+  <h1>INDEX</h1>
+  <a href="{% url 'articles:create' %}">CREATE</a>
+  <hr>
+  {% for article in articles %}
+    <p>글 번호 : {{ article.pk }}</p>
+    <a href="{% url "articles:detail" article.pk %}">
+      <p>글 제목 : {{ article.title }}</p>
+    </a>
+    <p>글 내용 : {{ article.content }}</p>
+    <hr>
+  {% endfor %}
+</body>
+</html>

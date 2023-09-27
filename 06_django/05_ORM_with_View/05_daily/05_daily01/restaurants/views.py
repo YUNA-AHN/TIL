@@ -43,3 +43,15 @@ def detail(request, pk):
         'restaurant':restaurant,
     }
     return render(request, 'restaurants/detail.html', context)
+
+def edit(request, pk):
+    restaurant = Restaurant.objects.get(pk=pk)
+    form = RestaurantForm(instance = restaurant)
+    context = {
+        'restaurant':restaurant,
+        'form':form
+    }
+    return render(request, 'restaurants/edit.html', context)
+
+def update(request):
+    pass
