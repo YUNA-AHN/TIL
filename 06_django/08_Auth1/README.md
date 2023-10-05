@@ -1,4 +1,4 @@
-# 08. Aythentication System1
+# 08. Authentication System 1
 # Cookie & Session
 ![Alt text](images/image.png)
 

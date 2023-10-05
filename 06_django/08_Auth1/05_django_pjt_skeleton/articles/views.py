@@ -7,17 +7,10 @@ from .forms import ArticleForm
 # Create your views here.
 @require_safe
 def index(request):
-    user = request.user
-    if user.is_authenticated:
-        authenticated = "로그인이 되어 있습니다."
-    else:
-        authenticated = "로그인이 되어 있지 않습니다."
     # DB에 전체 데이터를 조회
     articles = Article.objects.all()
     context = {
-        'my_user': user,
         'articles': articles,
-        'authenticated':authenticated,
     }
     return render(request, 'articles/index.html', context)
 

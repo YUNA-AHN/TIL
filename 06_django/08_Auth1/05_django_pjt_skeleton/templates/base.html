@@ -9,16 +9,14 @@
 </head>
 <body>
   <div class="container">
-    {% if user.is_authenticated %}
-    <form action="{% url "accounts:logout" %}" method = "POST">
-        {% csrf_token %}
-        <input type="submit" value='로그아웃'>
-    </form>
-    <span>{{user}} 님 환영합니다 </span>
-    {% else %}
+    {% if not user.is_authenticated %}
     <a href="{% url "accounts:login" %}">로그인</a>
+    {% else %}
+    <form action="{% url "accounts:logout" %}" method="post">
+      {% csrf_token %}
+      <input type="submit" value="로그아웃">
+    </form>
     {% endif %}
-    
     {% block content %}
     {% endblock content %}
   </div>

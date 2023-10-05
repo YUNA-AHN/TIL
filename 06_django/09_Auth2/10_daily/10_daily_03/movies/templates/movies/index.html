@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Movies</h1>
+  {% if request.user.is_authenticated %}
+    <a href="{% url 'movies:create' %}">[CREATE]</a>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">[새 글을 작성하려면 로그인하세요.]</a>
+  {% endif %}
+  <hr>
+  {% for movie in movies %}
+    <p>제목 : {{ movie.title }}</p>
+    <p>감독 : {{ movie.director }}</p>
+    <a href="{% url 'movies:detail' movie.pk %}">[detail]</a>
+    <hr>
+  {% endfor %}
+{% endblock %}
+
