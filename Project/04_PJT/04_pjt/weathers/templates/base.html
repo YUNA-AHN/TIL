@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    {% block style %}
+    {% endblock style %}
+    </style>
+</head>
+<body>
+       <a href="{% url "weathers:problem1" %}">문제1</a> |
+       <a href="{% url "weathers:problem2" %}">문제2</a> |
+       <a href="{% url "weathers:problem3" %}">문제3</a> |
+       <a href="{% url "weathers:problem4" %}">문제4</a> |
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
