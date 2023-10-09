@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% if message is None %}
+  <p> catch : 아무것도 받지 못함</p>
+{% else %}
+  <p> catch : {{message}} 을/를 받음! </p>
+{% endif %}
+<form action="{% url "throw_catch:first" %}" method = 'GET'>
+    throw : <input type="text" id  = 'message' name = 'message'>
+    <input type="submit" value = '휙' >
+</form>
+{% endblock content %}

@@ -303,3 +303,5 @@ pip-selfcheck.json
 .idea/.gitignore
 .idea/ssafy.iml
 prac.py
+.idea/TIL.iml
+.idea/workspace.xml
