@@ -709,10 +709,41 @@ wildcards
 
 ### IN operator
 - 값이 값 목록 결과에 있는 값과 일치하는지 확인
-- 표현시깅 값 목록의 값과 일치하는지 여부에 따라 true 또는 false 를 반환
+- 표현식이 값 목록의 값과 일치하는지 여부에 따라 true 또는 false 를 반환
 - IN 연산자의 결과를 부정하려면 NOT IN 연산자를 사용
 
 ### IN 실습
 ![Alt text](image-136.png)  
 ![Alt text](image-137.png)  
 ![Alt text](image-138.png)
+
+### BETWEEN operator
+![Alt text](image-139.png)
+- 값이 값 범위에 있는지 테스트
+- 값이 지저된 범위에 있으면 true 반환
+- SELECT, DELETE 및 UPDATE 문의 WHERE절에서 사용할 수 있음
+- BETWEEN 연산자의 결과를 부정하려면 NOT BETWEEN 연산자를 사용
+
+### BETWEEN 실습
+![Alt text](image-140.png)  
+![Alt text](image-141.png)  
+![Alt text](image-142.png)
+![Alt text](image-143.png)
+
+### LIMIT caluse
+![Alt text](image-144.png)
+- 쿼리에서 반환되는 행 수를 제한
+- SELECT 문에서 선택적으로 사용할 수 있는 절
+- row_count는 반환되는 행수를 지정하는 양의정수를 의미
+
+### LIMIT 실습
+![Alt text](image-145.png)  
+![Alt text](image-146.png)  
+![Alt text](image-147.png)
+
+### OFFSET keyword
+LIMIT 절을 사용하면 첫 번재 데이터부터 지정한 수 만큼의 데이터를 받아올 수 있지만, OFFSET과 함께 사용하면 특정 지정된 위치에서부터 데이터를 조회할 수 있음
+
+![Alt text](image-148.png)
+
+# GROUP BY

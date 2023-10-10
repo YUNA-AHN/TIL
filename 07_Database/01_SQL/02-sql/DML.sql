@@ -102,11 +102,36 @@ SELECT first_name, country
 FROM users
 WHERE country NOT IN ("강원도", "경기도");
 
+-- BETWEEN
+-- 나이가 20살 이상, 30살 이하인 사람들의 이름과 나이 조회하기
+SELECT first_name, age
+FROM users
+WHERE age BETWEEN 20 AND 30
+
+-- 나이가 20살 이상, 30살 이하가 아닌 사람들의 이름과 나이 조회하기
+SELECT first_name, age
+FROM users
+WHERE age NOT BETWEEN 20 AND 30
+
+-- LIMIT
+-- 첫 번째부터 열 번째 데이터까지 rowid와 이름 조회하기
+SELECT rowid, first_name
+FROM users
+LIMIT 10;
+
 -- 계좌 잔고가 가장 많은 10명의 이름과 계좌 잔고 조회하기
 SELECT first_name, balance
 FROM users
 ORDER BY balance DESC
 LIMIT 10;
+
+-- 나이가 가장 어린 5명의 이름과 니으 조회
+SELECT first_name, age
+FROM users
+ORDER BY age
+LIMIT 5;
+
+---------------------------------------
 
 -- USERS 테이블의 행의 갯수 출력하기, 별칭 영어면 '', AS 생략 가능
 SELECT COUNT(*) AS 'ROW_COUNT'
