@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>DETAIL</h2>
+  <h3>{{ article.pk }} 번째 글</h3>
+  <hr>
+  <p>제목: {{ article.title }}</p>
+  <p>내용: {{ article.content }}</p>
+  <p>작성 시각: {{ article.created_at }}</p>
+  <p>수정 시각: {{ article.updated_at }}</p>
+  <hr>
+  {% if article.author == request.user %}
+  <a href="{% url "articles:update" article.pk %}">UPDATE</a>
+  <form action="{% url "articles:delete" article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="삭제">
+  </form>
+  {% endif %}
+  <h2>댓글</h2>
+  {% for comment in comments %}
+    <li>{{comment.content}} </li>
+    <form action="{% url "articles:comment_delete" article.pk comment.pk  %}" method='POST'>
+      {% csrf_token %}
+      <input type="submit" value = '삭제'>
+    </form>
+  {% endfor %}
+  <form action="{% url "articles:comment_create" article.pk %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value = '댓글 작성'>
+  </form>
+  <a href="{% url "articles:index" %}">[back]</a>
+</body>
+</html>
