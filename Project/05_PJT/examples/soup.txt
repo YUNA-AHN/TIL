@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"/>
+  <title>
+   파이썬 - Google 검색
+  </title>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a="1"===c||"q"===c&&!a.elements.q.value?!0:!1}else a=!1;a&&(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&&a!==document.documentElement;a=a.parentElement)if("A"===a.tagName){a="1"===a.getAttribute("data-nohref");break a}a=!1}a&&b.preventDefault()},!0);}).call(this);(function(){var a=window.performance;window.start=Date.now();a:{var b=window;if(a){var c=a.timing;if(c){var d=c.navigationStart,f=c.responseStart;if(f>d&&f<=window.start){window.start=f;b.wsrt=f-d;break a}}a.now&&(b.wsrt=Math.floor(a.now()))}}window.google=window.google||{};var h=function(g){g&&g.target.setAttribute("data-iml",String(Date.now()))};document.documentElement.addEventListener("load",h,!0);google.rglh=function(){document.documentElement.removeEventListener("load",h,!0)};}).call(this);(function(){window._skwEvts=[];})();(function(){window.google.erd={jsr:1,bv:1881,de:true};})();(function(){var sdo=false;var mei=10;
+var h=this||self;var k,l=null!=(k=h.mei)?k:1,n,p=null!=(n=h.sdo)?n:!0,q=0,r,t=google.erd,v=t.jsr;google.ml=function(a,b,d,m,e){e=void 0===e?2:e;b&&(r=a&&a.message);void 0===d&&(d={});d.cad="ple_"+google.ple+".aple_"+google.aple;if(google.dl)return google.dl(a,e,d),null;if(0>v){window.console&&console.error(a,d);if(-2===v)throw a;b=!1}else b=!a||!a.message||"Error loading script"===a.message||q>=l&&!m?!1:!0;if(!b)return null;q++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&ei="+b(google.kEI);google.kEXPI&&(c+="&jexpid="+b(google.kEXPI));c+="&srcpg="+b(google.sn)+"&jsr="+b(t.jsr)+"&bver="+
+b(t.bv);var f=a.lineNumber;void 0!==f&&(c+="&line="+f);var g=a.fileName;g&&(0<g.indexOf("-extension:/")&&(e=3),c+="&script="+b(g),f&&g===window.location.href&&(f=document.documentElement.outerHTML.split("\n")[f],c+="&cad="+b(f?f.substring(0,300):"No script found.")));google.ple&&1===google.ple&&(e=2);c+="&jsel="+e;for(var u in d)c+="&",c+=b(u),c+="=",c+=b(d[u]);c=c+"&emsg="+b(a.name+": "+a.message);c=c+"&jsst="+b(a.stack||"N/A");12288<=c.length&&(c=c.substr(0,12288));a=c;m||google.log(0,"",a);return a};window.onerror=function(a,b,d,m,e){r!==a&&(a=e instanceof Error?e:Error(a),void 0===d||"lineNumber"in a||(a.lineNumber=d),void 0===b||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,"SyntaxError"===a.name||"SyntaxError"===a.message.substring(0,11)||-1!==a.message.indexOf("Script error")?3:0));r=null;p&&q>=l&&(window.onerror=null)};})();(function(){var c=[],e=0;window.ping=function(b){-1==b.indexOf("&zx")&&(b+="&zx="+Date.now());var a=new Image,d=e++;c[d]=a;a.onerror=a.onload=a.onabort=function(){delete c[d]};a.src=b};}).call(this);
+  </script>
+  <style>
+   a{color:#1a0dab;text-decoration:none;tap-highlight-color:rgba(0,0,0,.10)}a:visited{color:#4b11a8}a:hover{text-decoration:underline}img{border:0}html{font-family:arial,sans-serif;font-size:14px;line-height:20px;text-size-adjust:100%;color:#3c4043;word-wrap:break-word;background-color:#fff}.bRsWnc{background-color:#fff;border-top:1px solid #dadce0;height:39px;overflow:hidden}.N6RWV{height:51px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Uv67qb{box-pack:justify;font-size:12px;line-height:37px;justify-content:space-between;justify-content:space-between}.Uv67qb a,.Uv67qb span{color:#70757a;display:block;flex:none;padding:0 16px;text-align:center;text-transform:uppercase;}span.OXXup{border-bottom:2px solid #4285f4;color:#4285f4;font-weight:bold}a.eZt8xd:visited{color:#70757a}.FElbsf{border-left:1px solid rgba(0,0,0,.12)}header article{overflow:visible}.Pg70bf{height:39px;display:box;display:flex;display:flex;width:100%}.H0PQec{position:relative;flex:1}.sbc{display:flex;width:100%}.Pg70bf input{margin:2px 4px 2px 8px;}.x{width:26px;color:#70757a;font:27px/38px arial, sans-serif;line-height:40px;}#qdClwb{flex:0 0 auto;width:39px;height:39px;border-bottom:0;padding:0;border-top-right-radius:8px;background-color:#1a73e8;border:1px solid #1a73e8;background-image:url(data:image/gif;base64,R0lGODdhJAAjAPIHAODr/nCk+MPZ/FmV96zK+/7+/5K5+kqL9iwAAAAAJAAjAEADani63P4wykmbKcQRXDscQAEMXmmeaLQVLCukzyC09AjfeK7v/MAajACLhPMVAgwjsUcEiZa8xgAYrVqv2Kx2iwsIAAABknfBBAKrTE4IcMyot8ur8datqIbQfJdnAfo2WE6BV05wXIiJigkAOw==);}.sc{font-size:16px;position:absolute;top:39px;left:0;right:0;box-shadow:0 2px 5px rgba(0,0,0,.2);z-index:2;background-color:#fff}.sc>div{padding:10px 10px;padding-left:16px;padding-left:14px;border-top:1px solid #dfe1e5;}.scs{background-color:#fafafa;}.noHIxc{display:block;font-size:16px;padding:0 0 0 8px;flex:1;height:35px;outline:none;border:none;width:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);overflow:hidden;}.sbc input[type=text]{background:none}.bz1lBb{background-color:#fff;border-radius:8px 8px 0 0;box-shadow:0 0 0 1px #dfe1e5;margin-top:24px;}.KP7LCb{border-radius:0 0 8px 8px;box-shadow:0px 1px 0px 1px #dfe1e5;margin-bottom:30px;overflow:hidden}html{background-color:#fff}body{margin:0 auto 0 156px;max-width:652px;min-width:652px;padding:0 8px}.cOl4Id{letter-spacing:-1px;text-align:center;font:22pt Futura, Arial, sans-serif;height:37px;font-smoothing:antialiased;padding:32px 28px 0 24px;position:absolute;left:0;top:0}.cOl4Id span{display:inline-block}.V6gwVd{color:#4285f4}.iWkuvd{color:#ea4335}.cDrQ7{color:#fcc934}.ntlR9{color:#34a853}.tJ3Myc{-webkit-transform:rotate(-20deg);position:relative;left:-1px;display:inline-block}footer{text-align:center;margin-top:18px}footer a,footer a:visited,.smiUbb{color:#70757a}.xeDNfc{margin:0 13px;display:inline-block}#EOlPnc{margin-top:36px}#EOlPnc>div{margin:20px}.Srfpq{color:#70757a}
+  </style>
+ </head>
+ <body jsmodel="hspDDf">
+  <header id="hdr">
+   <script nonce="86nhzoKFs7eYIRAfekUTuw">
+    (function(){
+var k=this||self,l=function(a){var b=typeof a;return"object"==b&&null!=a||"function"==b},m=function(a,b){function c(){}c.prototype=b.prototype;a.j=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.l=function(d,e,f){for(var g=Array(arguments.length-2),h=2;h<arguments.length;h++)g[h-2]=arguments[h];return b.prototype[e].apply(d,g)}};var n=Array.prototype.indexOf?function(a,b){return Array.prototype.indexOf.call(a,b,void 0)}:function(a,b){if("string"===typeof a)return"string"!==typeof b||1!=b.length?-1:a.indexOf(b,0);for(var c=0;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1};var p=function(a){return"string"==typeof a.className?a.className:a.getAttribute&&a.getAttribute("class")||""},q=function(a,b){"string"==typeof a.className?a.className=b:a.setAttribute&&a.setAttribute("class",b)},r=function(a,b){a.classList?b=a.classList.contains(b):(a=a.classList?a.classList:p(a).match(/\S+/g)||[],b=0<=n(a,b));return b},v=function(){var a=t,b=u;a.classList?a.classList.remove(b):r(a,b)&&q(a,Array.prototype.filter.call(a.classList?a.classList:p(a).match(/\S+/g)||[],function(c){return c!=
+b}).join(" "))};function w(){var a=k.navigator;return a&&(a=a.userAgent)?a:""};var x=function(a){x[" "](a);return a};x[" "]=function(){};var y=-1!=w().indexOf("Gecko")&&!(-1!=w().toLowerCase().indexOf("webkit")&&-1==w().indexOf("Edge"))&&!(-1!=w().indexOf("Trident")||-1!=w().indexOf("MSIE"))&&-1==w().indexOf("Edge");var z=function(a,b){this.type=a;this.target=b};z.prototype.g=function(){};var A=function(){if(!k.addEventListener||!Object.defineProperty)return!1;var a=!1,b=Object.defineProperty({},"passive",{get:function(){a=!0}});try{var c=function(){};k.addEventListener("test",c,b);k.removeEventListener("test",c,b)}catch(d){}return a}();var C=function(a){z.call(this,a?a.type:"");this.relatedTarget=this.target=null;this.button=this.screenY=this.screenX=this.clientY=this.clientX=0;this.key="";this.keyCode=0;this.metaKey=this.shiftKey=this.altKey=this.ctrlKey=!1;this.state=null;this.pointerId=0;this.pointerType="";this.h=null;if(a){var b=this.type=a.type,c=a.changedTouches&&a.changedTouches.length?a.changedTouches[0]:null;this.target=a.target||a.srcElement;var d=a.relatedTarget;if(d){if(y){a:{try{x(d.nodeName);var e=!0;break a}catch(f){}e=
+!1}e||(d=null)}}else"mouseover"==b?d=a.fromElement:"mouseout"==b&&(d=a.toElement);this.relatedTarget=d;c?(this.clientX=void 0!==c.clientX?c.clientX:c.pageX,this.clientY=void 0!==c.clientY?c.clientY:c.pageY,this.screenX=c.screenX||0,this.screenY=c.screenY||0):(this.clientX=void 0!==a.clientX?a.clientX:a.pageX,this.clientY=void 0!==a.clientY?a.clientY:a.pageY,this.screenX=a.screenX||0,this.screenY=a.screenY||0);this.button=a.button;this.keyCode=a.keyCode||0;this.key=a.key||"";this.ctrlKey=a.ctrlKey;this.altKey=a.altKey;this.shiftKey=a.shiftKey;this.metaKey=a.metaKey;this.pointerId=a.pointerId||0;this.pointerType="string"===typeof a.pointerType?a.pointerType:B[a.pointerType]||"";this.state=a.state;this.h=a;a.defaultPrevented&&C.j.g.call(this)}};m(C,z);var B={2:"touch",3:"pen",4:"mouse"};C.prototype.g=function(){C.j.g.call(this);var a=this.h;a.preventDefault?a.preventDefault():a.returnValue=!1};var D="closure_listenable_"+(1E6*Math.random()|0);var E=0;var F=function(a,b,c,d,e){this.listener=a;this.proxy=null;this.src=b;this.type=c;this.capture=!!d;this.h=e;this.key=++E;this.g=this.i=!1},G=function(a){a.g=!0;a.listener=null;a.proxy=null;a.src=null;a.h=null};var H=function(a){this.src=a;this.g={};this.h=0};H.prototype.add=function(a,b,c,d,e){var f=a.toString();a=this.g[f];a||(a=this.g[f]=[],this.h++);var g;a:{for(g=0;g<a.length;++g){var h=a[g];if(!h.g&&h.listener==b&&h.capture==!!d&&h.h==e)break a}g=-1}-1<g?(b=a[g],c||(b.i=!1)):(b=new F(b,this.src,f,!!d,e),b.i=c,a.push(b));return b};var I="closure_lm_"+(1E6*Math.random()|0),J={},K=0,M=function(a,b,c,d,e){if(d&&d.once)return L(a,b,c,d,e);if(Array.isArray(b)){for(var f=0;f<b.length;f++)M(a,b[f],c,d,e);return null}c=N(c);return a&&a[D]?a.g(b,c,l(d)?!!d.capture:!!d,e):O(a,b,c,!1,d,e)},O=function(a,b,c,d,e,f){if(!b)throw Error("a");var g=l(e)?!!e.capture:!!e,h=P(a);h||(a[I]=h=new H(a));c=h.add(b,c,d,g,f);if(c.proxy)return c;d=Q();c.proxy=d;d.src=a;d.listener=c;if(a.addEventListener)A||(e=g),void 0===e&&(e=!1),a.addEventListener(b.toString(),d,e);else if(a.attachEvent)a.attachEvent(R(b.toString()),d);else if(a.addListener&&a.removeListener)a.addListener(d);else throw Error("b");K++;return c},Q=function(){var a=S,b=function(c){return a.call(b.src,b.listener,c)};return b},L=function(a,b,c,d,e){if(Array.isArray(b)){for(var f=0;f<b.length;f++)L(a,b[f],c,d,e);return null}c=N(c);return a&&a[D]?a.h(b,c,l(d)?!!d.capture:!!d,e):O(a,b,c,!0,d,e)},T=function(a){if("number"!==typeof a&&a&&!a.g){var b=a.src;if(b&&b[D])b.s(a);else{var c=a.type,d=a.proxy;b.removeEventListener?b.removeEventListener(c,d,a.capture):b.detachEvent?b.detachEvent(R(c),d):b.addListener&&b.removeListener&&b.removeListener(d);K--;if(c=P(b)){d=a.type;if(d in c.g){var e=c.g[d],f=n(e,a),g;(g=0<=f)&&Array.prototype.splice.call(e,f,1);g&&(G(a),0==c.g[d].length&&(delete c.g[d],c.h--))}0==c.h&&(c.src=null,b[I]=null)}else G(a)}}},R=function(a){return a in J?J[a]:J[a]="on"+a},S=function(a,b){if(a.g)a=!0;else{b=new C(b,this);var c=a.listener,d=a.h||a.src;a.i&&T(a);a=c.call(d,b)}return a},P=function(a){a=a[I];return a instanceof H?a:null},U="__closure_events_fn_"+(1E9*Math.random()>>>0),N=function(a){if("function"===typeof a)return a;a[U]||(a[U]=function(b){return a.handleEvent(b)});return a[U]};var u,t=document.documentElement,V;function W(){T(V);V=L(t,"mousedown",function(){v();X()},{capture:!0})}function X(){T(V);V=M(t,"keydown",function(a){if(9===a.keyCode){a=t;var b=u;if(a.classList)a.classList.add(b);else if(!r(a,b)){var c=p(a);q(a,c+(0<c.length?" "+b:b))}W()}})};u="zAoYTe";X();}).call(this);
+   </script>
+   <div class="cOl4Id">
+    <a href="/?sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQOwgC">
+     <span class="V6gwVd">
+      G
+     </span>
+     <span class="iWkuvd">
+      o
+     </span>
+     <span class="cDrQ7">
+      o
+     </span>
+     <span class="V6gwVd">
+      g
+     </span>
+     <span class="ntlR9">
+      l
+     </span>
+     <span class="iWkuvd tJ3Myc">
+      e
+     </span>
+    </a>
+   </div>
+   <div class="bz1lBb">
+    <form class="Pg70bf" id="sf">
+     <input name="sca_esv" type="hidden" value="573057508"/>
+     <input name="ie" type="hidden" value="ISO-8859-1"/>
+     <div class="H0PQec">
+      <div class="sbc esbc">
+       <input autocapitalize="none" autocomplete="off" class="noHIxc" name="q" spellcheck="false" type="text" value="파이썬"/>
+       <input name="oq" type="hidden"/>
+       <input name="aqs" type="hidden"/>
+       <div class="x">
+        ×
+       </div>
+       <div class="sc">
+       </div>
+      </div>
+     </div>
+     <button id="qdClwb" type="submit">
+     </button>
+    </form>
+   </div>
+   <noscript>
+    <meta content="0;url=/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;gbv=1&amp;sei=Lp0oZbXNONuP2roP87WcuAY" http-equiv="refresh"/>
+    <style>
+     table,div,span,p{display:none}
+    </style>
+    <div style="display:block">
+     몇 초 안에 이동하지 않는 경우
+     <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;gbv=1&amp;sei=Lp0oZbXNONuP2roP87WcuAY">
+      여기
+     </a>
+     를 클릭하세요.
+    </div>
+   </noscript>
+  </header>
+  <div id="main">
+   <div>
+    <div class="KP7LCb">
+     <div class="bRsWnc">
+      <div class="N6RWV">
+       <div class="Pg70bf Uv67qb">
+        <span class="OXXup">
+         전체
+        </span>
+        <a class="eZt8xd" href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;tbm=isch&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUIBigB">
+         이미지
+        </a>
+        <a class="eZt8xd" href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;tbm=vid&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUIBygC">
+         동영상
+        </a>
+        <a class="eZt8xd" href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;tbm=shop&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUICCgD">
+         쇼핑
+        </a>
+        <a href="https://maps.google.com/maps?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUICSgE">
+         지도
+        </a>
+        <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;tbm=nws&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUICigF">
+         뉴스
+        </a>
+        <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;tbm=bks&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ_AUICygG">
+         도서
+        </a>
+        <div class="FElbsf">
+         <a href="/advanced_search" id="st-toggle" role="button" style="white-space:nowrap">
+          검색 도구
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="Pg70bf wEsjbd Gx5Zad xpd EtOod pkphOe" id="st-card" style="display:none">
+     <style>
+      .wEsjbd{background-color:#fff;height:44px;white-space:nowrap}.coPU8c{height:60px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Xj2aue{height:44px;overflow:hidden}.RnNGze{margin:11px 16px}.wEsjbd div,.wEsjbd a,.wEsjbd li{outline-width:0;outline:none}
+     </style>
+     <div class="Xj2aue">
+      <div class="coPU8c">
+       <div class="RnNGze">
+        <style>
+         .PA9J5{display:inline-block}.RXaOfd{display:inline-block;height:22px;position:relative;padding-top:0;padding-bottom:0;padding-right:16px;padding-left:0;line-height:22px;cursor:pointer;text-transform:uppercase;font-size:12px;color:#70757a}.sa1toc{background:#fff;display:none;position:absolute;border:1px solid #dadce0;box-shadow:0 2px 4px rgba(0,0,0,.3);margin:0;white-space:nowrap;z-index:103;line-height:17px;padding-top:5px;padding-bottom:5px;padding-left:0}.PA9J5:hover .sa1toc{display:block}.mGSy8d a:active,.RXaOfd:active{color:#4285f4}
+        </style>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <style>
+           .TWMOUc{display:inline-block;padding-right:14px;white-space:nowrap}.vQYuGf{font-weight:bold}.OmTIzf{border-color:#909090 transparent;border-style:solid;border-width:4px 4px 0 4px;width:0;height:0;margin-left:-10px;top:50%;margin-top:-2px;position:absolute}.RXaOfd:active .OmTIzf{border-color:#4285f4 transparent}
+          </style>
+          <div class="TWMOUc">
+           모든 언어
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <style>
+           .ozatM{font-size:12px;text-transform:uppercase}.ozatM .yNFsl,.ozatM li{list-style-type:none;list-style-position:outside;list-style-image:none}.yNFsl.SkUj4c,.yNFsl a{color:#70757a;text-decoration:none;padding:6px 44px 6px 14px;line-height:17px;display:block}.SkUj4c{background-image:url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);background-position:right center;background-repeat:no-repeat}.SkUj4c:active{background-color:#f8f9fa}
+          </style>
+          <li class="yNFsl SkUj4c">
+           모든 언어
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=lr:lang_1ko&amp;lr=lang_ko&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIDQ">
+            한국어 웹
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <div class="TWMOUc">
+           모든 날짜
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <li class="yNFsl SkUj4c">
+           모든 날짜
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIDw">
+            지난 1시간
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIEA">
+            지난 1일
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIEQ">
+            지난 1주
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIEg">
+            지난 1개월
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIEw">
+            지난 1년
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <div class="TWMOUc">
+           모든 결과
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <li class="yNFsl SkUj4c">
+           모든 결과
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQpwUIFQ">
+            완전일치
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script nonce="86nhzoKFs7eYIRAfekUTuw">
+      (function(){var a=document.getElementById("st-toggle"),b=document.getElementById("st-card");a&&b&&a.addEventListener("click",function(c){b.style.display=b.style.display?"":"none";c.preventDefault()},!1);}).call(this);
+     </script>
+    </div>
+   </div>
+   <style>
+    .Gx5Zad{background-color:#fff;margin-bottom:30px;box-shadow:0 0 0 1px #dfe1e5;border-radius:8px}.pkphOe{font-size:14px;line-height:22px;}.EtOod>*:first-child{border-top-left-radius:8px;border-top-right-radius:8px}.EtOod>*:last-child{border-bottom-left-radius:8px;border-bottom-right-radius:8px}.EtOod.avPKgf>*:last-child{border-bottom-left-radius:4px}.EtOod>.qxDOhb>*:first-child{border-top-left-radius:8px;border-top-right-radius:8px}.EtOod>.qxDOhb>*:last-child{border-bottom-left-radius:8px;border-bottom-right-radius:8px}.fP1Qef{background:transparent !important;box-shadow:none !important;border:none !important}.Gx5Zad.fP1Qef{margin-top:-12px;margin-bottom:18px}.rl7ilb{display:block;clear:both}.egMi0{margin-bottom:-19px}.kCrYT{padding:12px 16px 12px}a.fdYsqf{color:#4b11a8}.sCuL3{position:absolute;width:100%;top:0;left:0;padding-top:1px;margin-bottom:-1px}.j039Wc{padding-top:28px;margin-bottom:-1px}.DnJfK{position:relative}.l97dzf{font-weight:400}.zBAuLc{line-height:normal;margin:0;padding:0}.BNeawe{white-space:pre-line;word-wrap:break-word}.vvjwJb{color:#1a0dab;font-size:20px;line-height:26px}a:visited .vvjwJb,.vvjwJb a:visited{color:#4b11a8}.vvjwJb.HrGdeb{color:#fff}a:visited .vvjwJb.HrGdeb,.vvjwJb.HrGdeb a:visited{color:rgba(255,255,255,.70)}.UPmit{font-size:14px;line-height:22px}.UPmit.HrGdeb{color:rgba(255,255,255,.70)}.UPmit.AP7Wnd{color:#202124}.lRVwie{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.Ap5OSd{padding-bottom:12px}.s3v9rd{font-size:14px;line-height:22px}.s3v9rd.HrGdeb{color:#fff}.s3v9rd.AP7Wnd{color:#202124}.mSx1Ee{padding-left:48px;margin:0}.v9i61e{padding-bottom:8px}.r0bn4c.tr0dw{color:rgba(255,255,255,.70)}.r0bn4c.rQMQod{color:#70757a}.nGphre{float:right;padding-left:16px}.UykT9d{border-radius:8px;display:block}.nYT7Qb{clear:both}.deIvCb{font-size:16px;line-height:20px;font-weight:400}.deIvCb.HrGdeb{color:#fff}.deIvCb.AP7Wnd{color:#202124}.tAd8D{font-size:14px;line-height:20px}.tAd8D.HrGdeb{color:rgba(255,255,255,.70)}.tAd8D.AP7Wnd{color:#70757a}.Xdlr0d{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -8px;padding:2px 0 16px 24px;margin-top:-2px;transform:translate3d(0,0,0)}.idg8be{display:table;border-collapse:separate;border-spacing:8px 0;margin:0 -8px;padding-right:16px}.BVG0Nb{display:table-cell;vertical-align:top;background-color:#fff;border-radius:8px;box-shadow:0 0 0 1px #dfe1e5;overflow:hidden}.WddBJd{display:block;margin:0 auto}.RJI4s{vertical-align:middle}.mHhylf{display:table-cell;vertical-align:middle}.WZ5GJf{align-items:center;padding:0 20px;min-width:112px}.qN9Ked,.DXk5Me{margin:0 auto}.DXk5Me{cursor:pointer;margin-bottom:12px}.Dk7jOe{display:block;margin:0 auto}.Qi9Fd{background:#fff;border:0;border-radius:999px;display:block;height:56px;justify-content:center;width:56px;z-index:0}.Qi9Fd{box-shadow:0 0 0 1px #dfe1e5,inset 0 0 0 0 rgba(0,0,0,.1),inset 0 0 0 0 rgba(255,255,255,.5)}.Qi9Fd:focus{outline:none}.Qi9Fd .hWHuJ{display:block;margin:0 auto}.ji5jpf{text-align:center}.xpc .hwc,.xpx .hwx{display:none}.skVgpb{display:table;table-layout:fixed;width:100%}.VGHMXd{display:table-cell;vertical-align:middle;height:52px;text-align:center}.LpaDrb{margin:0 auto 8px;display:block}.vbShOe{padding-top:0}.x54gtf{height:1px;background-color:#dadce0;margin:0 16px}.Q0HXG{height:1px;background-color:#dadce0}.XLloXe{color:#1a0dab;font-size:14px;line-height:20px}a:visited .XLloXe,.XLloXe a:visited{color:#4b11a8}.XLloXe.HrGdeb{color:#fff}a:visited .XLloXe.HrGdeb,.XLloXe.HrGdeb a:visited{color:rgba(255,255,255,.70)}.AVsepf{padding-bottom:8px}.AVsepf.u2x1Od{padding-bottom:0}hr{border:0;border-bottom:1px solid #dadce0;margin:0}.BUybKe,.HsnFBf{margin-left:16px}.BUybKe,.oM2GA{margin-right:16px}.XO7rhc{margin-right:-16px;margin-left:-16px}.ZM7ZNb{margin-right:-16px}.iIWm4b{box-sizing:border-box;min-height:48px}.fLtXsc{padding:14px;position:relative}.Lym8W{width:14px;height:20px;position:relative;margin:0 auto}.xCgLUe{position:absolute;right:16px;margin-top:-10px;top:50%}.Lym8W div{position:absolute;border-left:7px solid transparent;border-right:7px solid transparent;width:0;height:0;left:0}.IyYaEd{top:7px;border-top:7px solid #70757a}.ECUHQe{top:4px;border-top:7px solid #fff}.AeQQub{bottom:7px;border-bottom:7px solid #70757a}.YCU7eb{bottom:4px;border-bottom:7px solid #fff}.K8tyEc{padding-bottom:12px}.mEUgP{font-weight:bold;font-size:16px;color:#000;margin:0;padding:12px 16px 0 16px}.FCUp0c{font-weight:bold}.C7GS5b{margin-left:12px;display:table-cell;vertical-align:middle}.rkGIWe{padding:14px}.NtmAdb{width:40px;height:40px;overflow:hidden;margin-top:-10px;margin-bottom:-16px;margin-right:8px;border-radius:4px}.xpc .NtmAdb{display:inline-block}.xpx .NtmAdb{display:none}.Lt3Tzc{display:inline-block;padding-right:26px}.qxDOhb{border-radius:0}.yStFkb .xpd{border-radius:8px;box-shadow:none;border:1px solid #dadce0;margin-bottom:0}.oTWEpb{padding-top:12px}.n1Qedd{overflow:hidden;text-align:center}.KMAGC{margin:0 auto;display:block}.ho0sdc{margin:0 -50%;display:inline-block}.Xb5VRe{color:#1a0dab}a:visited .Xb5VRe{color:#4b11a8}.Xb5VRe.tr0dw{color:#fff}a:visited .Xb5VRe.tr0dw{color:rgba(255,255,255,.70)}.P1NWSe{display:table;width:100%;padding-top:16px;padding-bottom:16px;margin-bottom:-12px}.wOMIed{display:table-cell;vertical-align:top}.nkPlDb{vertical-align:middle}.JhFlyf{color:#3c4043;font-size:14px;text-align:center}.VQFmSd{display:block;white-space:pre-line;word-wrap:break-word}.JhFlyf.VQFmSd{line-height:22px}.f4J0H{padding:18px}.lcJF1d{border-radius:8px;margin-left:16px;float:right;}.h1hFNe{display:inline-block;position:relative}.Q6Xouf{overflow:hidden}.G6SP0b{display:inline-block}.eeoFaf{position:relative}.oz9fhd{background-color:rgba(0,0,0,.12)}.S9HcI{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.UhWgBb{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABl0lEQVR4Ae2XveraUBiHY4xD3URx8F+9gHZW9EKEOgi9Cz8uQFtXiwRsobvgIoLXIfYCKrqoaadCk+Xp4HiSc15PQkvB512FB37xvB/Ok/8BXDqMWXMgICIi4MCaEW1cHFOZftBgxpkkTnygbi+osiTCRIhPxUbQ5wdSAnqPCQp84VF8PKmgyA4bthQlggI7bNnimQWfSYNvEvRJyzudoMpP0nKjnCxYkgWLJEFD+6ze8wsZIS/xghk6HN7wDRnTOIHLGR33F/IVCUdyqqCDHudewqhaqmAsEwijGqqCtUwgjGqlCg4ygTCqvSoIZAJhVFdVEMkEwqjCvyiwj+gt8oiy/8j/4G86QosSjZ6BKmhn2iqaqsDllFmz+x7X7Bw+ouMejYxJ/DyoZzRwflNLGpk+WTBPnskVAtJyoaRbW3qkpWtavHzS8Mm82XlssWVDXrb82ik2vJKu7x6+RTj5xw6QHjekXOjanFBlFoSCZzWnZH8EvmbKUdNzJtQER6ChXFoMWbHnSkjIlT0rBjTJyc/Y7OspkNYf1H6eRU02jH0AAAAASUVORK5CYII=);background-repeat:no-repeat;background-position:center}.oyqqef{background:rgba(32, 33, 36, 0.5);position:absolute;border-radius:4px;padding:2px 6px}.gGQDvd{padding:14px;position:relative}.Q71vJc{display:block;position:relative;width:100%}.kjGX2{position:absolute;left:48px;right:0;vertical-align:bottom;display:inline-block;color:#4d5156}.ieB2Dd{overflow:hidden;margin-top:-10px;margin-bottom:-16px;margin-right:8px;border-radius:4px;display:inline-block;border-radius:50%;padding:10px}.OEaqif{width:20px;height:20px;display:block}.rLshyf,.BmP5tf{padding-top:12px;padding-bottom:12px}.YOx3Ab{padding-left:16px;}.w1C3Le,.BmP5tf,.G5NbBd,.CS4w5b{padding-left:16px;padding-right:16px;}.G5NbBd{padding-bottom:12px}.CS4w5b{padding-top:12px}.nMymef{display:flex}.G5eFlf{flex:1;display:block}.nMymef span{text-align:center}.EYqSq{margin:6px 4px 9px 0;border-radius:100%;display:inline-block;height:10px;vertical-align:middle;width:10px}.dfB0uf{color:#3c4043;font-weight:bold}.IffyKc{word-wrap:break-word}
+   </style>
+   <div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAkQAg" href="/url?q=https://namu.wiki/w/Python&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAkQAg&amp;usg=AOvVaw3XuLDfK-Iv66oGGFzwW9bs">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           Python - 나무위키
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          namu.wiki › Python
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           <span class="r0bn4c rQMQod">
+            5일 전
+           </span>
+           <span class="r0bn4c rQMQod">
+            ·
+           </span>
+           Life is short, You need Python. ... 파이썬은 1991년에 발표된 인터프리터 방식의 프로그래밍 언어이다. 파이썬의 강력한 라이브러리와 풍부한 생태계를 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAEQAg" href="/url?q=https://ko.wikipedia.org/wiki/%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAEQAg&amp;usg=AOvVaw1yPJeS_maJjrn6sWk0FayD">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           파이썬 - 위키백과, 우리 모두의 백과사전
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          ko.wikipedia.org › wiki › 파이썬
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           파이썬(영어: Python)은 1991년 네덜란드계 소프트웨어 엔지니어인 귀도 반 로섬이 발표한 고급 프로그래밍 언어로, '인터프리터를 사용하는 객체지향 언어'이자 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAIQAg" href="/url?q=https://docs.python.org/ko/3/tutorial/index.html&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAIQAg&amp;usg=AOvVaw0kegLyCpLOBnUkIjbsJkFJ">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           파이썬 자습서 — Python 3.12.0 문서
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          docs.python.org › tutorial
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           파이썬은 배우기 쉬우면서도 강력한 프로그래밍 언어입니다. 효율적인 자료 구조와 객체 지향 프로그래밍에 대한 간단하고도 효과적인 접근법을 제공합니다.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="kCrYT">
+      <span>
+       <h3 class="zBAuLc l97dzf">
+        <div class="BNeawe deIvCb AP7Wnd">
+         파이썬
+        </div>
+       </h3>
+      </span>
+      <span>
+       <div class="BNeawe tAd8D AP7Wnd">
+        프로그래밍 언어
+       </div>
+      </span>
+     </div>
+     <div>
+      <div>
+       <div>
+        <div class="Xdlr0d">
+         <div class="idg8be">
+          <a class="BVG0Nb" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAQ" href="/imgres?imgurl=https://blogthumb.pstatic.net/MjAxNzAyMTNfMjEg/MDAxNDg2OTcxNzM3NTE5.FKqf5HaO1eoFhgXkGE2jXVKKQ-jVdwXho4N8cIU6L-Ig.KOSZAUeaSF3L8rh1kjDgoQUDuFg5pEX6EsZKJ4lmASEg.JPEG.acornedu/01_%25C7%25C1%25B7%25CE%25B1%25D7%25B7%25A1%25B9%25D6%25BE%25F0%25BE%25EE.jpg?type%3Dw2&amp;imgrefurl=https://m.blog.naver.com/PostView.naver?isHttpsRedirect%3Dtrue%26blogId%3Dacornedu%26logNo%3D220934409189&amp;h=495&amp;w=743&amp;tbnid=pu5Gya1Xs27_HM&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;tbnh=183&amp;tbnw=275&amp;usg=AI4_-kSNNKHrIEdt3hM95m0qN2ScTTuHhw&amp;vet=1&amp;docid=5wfye0ExP21qIM&amp;itg=1&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAQ">
+           <div>
+            <img alt="blogthumb.pstatic.net/MjAxNzAyMTNfMjEg/MDAxNDg2OTc..." class="WddBJd" data-deferred="1" id="dimg_19" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAY" href="/imgres?imgurl=https://i.namu.wiki/i/pHxeJONxIv51qQsN2ac5nX3shPEmiSlKtGVATZXUE22NHGyw9v7_Aqto6aSoCU9ODz3RKtTKCEP0E0OI7TlxMQ.webp&amp;imgrefurl=https://namu.wiki/w/Python&amp;h=296&amp;w=1000&amp;tbnid=zUTgJNBdLP7QwM&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;tbnh=44&amp;tbnw=149&amp;usg=AI4_-kSIjUZKMQzmH1FNXulRrKentWH1dA&amp;vet=1&amp;docid=RdWBTtvSsFGuGM&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAY">
+           <div>
+            <img alt="Python - 나무위키" class="WddBJd" data-deferred="1" id="dimg_21" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAg" href="/imgres?imgurl=https://i.ytimg.com/vi/kWiCuklohdY/maxresdefault.jpg&amp;imgrefurl=https://www.youtube.com/watch?v%3DkWiCuklohdY&amp;h=720&amp;w=1280&amp;tbnid=JF00IKwwZuvbpM&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;tbnh=84&amp;tbnw=150&amp;usg=AI4_-kSQ1R2pUUkECwez28EAa-Fvz6AhqQ&amp;vet=1&amp;docid=L3PiAt_ZyQTarM&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAg">
+           <div>
+            <img alt="파이썬 코딩 무료 강의 (기본편) - 6시간 뒤면 여러분도 개발자가 될 ..." class="WddBJd" data-deferred="1" id="dimg_23" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAo" href="/imgres?imgurl=https://i.ytimg.com/vi/mEeZoDGITGw/maxresdefault.jpg&amp;imgrefurl=https://www.youtube.com/watch?v%3DmEeZoDGITGw&amp;h=720&amp;w=1280&amp;tbnid=15EHnhRjgh9HcM&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;tbnh=84&amp;tbnw=150&amp;usg=AI4_-kRF9FTVlQryTIO8mP3zv0X2U1x3Hg&amp;vet=1&amp;docid=J4GK_BmeSCj9yM&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ9QF6BAgKEAo">
+           <div>
+            <img alt="최신 파이썬 기초 - 1강 파이썬이란 무엇인가? | 2023 점프 투 파이썬 ..." class="WddBJd" data-deferred="1" id="dimg_25" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <div class="mHhylf">
+           <div class="WZ5GJf">
+            <a class="qN9Ked" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ7Al6BAgKEAw" href="https://www.google.com/search?sca_esv=573057508&amp;ie=UTF-8&amp;ei=Lp0oZbXNONuP2roP87WcuAY&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ7Al6BAgKEAw">
+             <button class="DXk5Me Qi9Fd" tabindex="-1">
+              <span class="hWHuJ">
+               <img alt="" class="Dk7jOe" data-deferred="1" id="dimg_27" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:24px;max-height:24px"/>
+              </span>
+             </button>
+             <div class="BNeawe ji5jpf tAd8D AP7Wnd">
+              모두 보기
+             </div>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="xpc">
+      <div>
+       <div class="Q0HXG">
+       </div>
+       <div class="kCrYT">
+        <div>
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <div>
+           <div class="BNeawe s3v9rd AP7Wnd">
+            파이썬은 1991년 네덜란드계 소프트웨어 엔지니어인 귀도 반 로섬이 발표한 고급 프로그래밍 언어로, '인터프리터를 사용하는 객체지향 언어'이자 플랫폼에 독립적인, 동적 타이핑 대화형 언어이다.
+            <span class="BNeawe">
+             <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmhN6BAgKEA4" href="/url?q=https://ko.wikipedia.org/wiki/%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmhN6BAgKEA4&amp;usg=AOvVaw2fVy6bPAupdCfwFak1UkP_">
+              <span class="XLloXe AP7Wnd">
+               위키백과
+              </span>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="vbShOe kCrYT">
+        <div class="AVsepf">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            설계자
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            <span class="BNeawe">
+             <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBA" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%EA%B7%80%EB%8F%84+%EB%B0%98+%EB%A1%9C%EC%84%AC&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfiBLEMMwxMk7XEiout9MtTk9ISk0uKrd60LHm1ueXNvAmLWAVfbW943d-i8HrDDIXXC-e8aVkDAKTdRbZDAAAA&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBA">
+              <span class="XLloXe AP7Wnd">
+               귀도 반 로섬
+              </span>
+             </a>
+            </span>
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            개발자
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            파이썬 소프트웨어 재단
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            발표일
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            <span class="BNeawe">
+             <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBM" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=1991%EB%85%84&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfi1U_XNzRMMjdPMUsyM9cSKy620i9PTUpLTC4ptnq9Yc7biXPezN2ziJXd0NLS8HVrCwAzoKC8PQAAAA&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBM">
+              <span class="XLloXe AP7Wnd">
+               1991년
+              </span>
+             </a>
+            </span>
+            2월 20일
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            최근 버전
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            3.12.0
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf hwc">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            파일 확장자
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            py,.pyc,.pyd,.pyo
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf hwc">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            패러다임
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            프로그래밍 패러다임: 객체 지향 프로그래밍, 명령형 프로그래밍, 함수형 프로그래밍, 절차적 프로그래밍, 반영
+           </span>
+          </span>
+         </div>
+        </div>
+        <div class="AVsepf u2x1Od hwc">
+         <div class="BNeawe s3v9rd AP7Wnd">
+          <span>
+           <span class="BNeawe s3v9rd AP7Wnd">
+            모회사
+           </span>
+          </span>
+          :
+          <span>
+           <span class="BNeawe tAd8D AP7Wnd">
+            <span class="BNeawe">
+             <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBg" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%9E%AC%EB%8B%A8&amp;si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stF8Y1bjAlM3dUmWFSu2oUUYNow3UWPc8J6pn-ugfjxx0nUlEIpYmVFVWKq4bKCzOk_FOpNdlNmynEgi4fV2mfwiWmIF_3brT8CiTrrPTXxZPiXNq7hGSIOUIK-rLcIuS_uEbU_sxZ8QgqtYQnw3ID821yToxg9BChSFmxZsCfT7ivC02dg%3D%3D&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQmxN6BAgKEBg">
+              <span class="XLloXe AP7Wnd">
+               파이썬소프트웨어재단
+              </span>
+             </a>
+            </span>
+           </span>
+          </span>
+         </div>
+        </div>
+       </div>
+       <hr/>
+      </div>
+      <div class="duf-h">
+       <div aria-expanded="false" class="fLtXsc iIWm4b" id="tsuid_5" role="button" style="text-align:center" tabindex="0">
+        <div class="Lym8W">
+         <div class="AeQQub hwc">
+         </div>
+         <div class="YCU7eb hwc">
+         </div>
+         <div class="IyYaEd hwx">
+         </div>
+         <div class="ECUHQe hwx">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAgQAg" href="/url?q=https://www.python.org/downloads/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAgQAg&amp;usg=AOvVaw2i8PyK6RMu3swv83huoKEr">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           Download Python - Python.org
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          www.python.org › downloads
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div class="v9i61e">
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands as a successor of a language called ABC. Guido ...
+          </div>
+         </div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           <span class="BNeawe">
+            <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAU" href="/url?q=https://www.python.org/downloads/release/python-3115/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAU&amp;usg=AOvVaw2wNkHxUlL6EHxRJXjmbBY5">
+             <span class="XLloXe AP7Wnd">
+              Python 3.11.5
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAY" href="/url?q=https://www.python.org/downloads/windows/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAY&amp;usg=AOvVaw1TSZ0JQfjolGd2TOSLeKbh">
+             <span class="XLloXe AP7Wnd">
+              Python Releases for Windows
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAc" href="/url?q=https://www.python.org/downloads/release/python-3114/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAc&amp;usg=AOvVaw33vuenNBNz5eG9UxwZ1OK6">
+             <span class="XLloXe AP7Wnd">
+              Python 3.11.4
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAg" href="/url?q=https://www.python.org/downloads/release/python-31013/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ0gJ6BAgIEAg&amp;usg=AOvVaw1zyxQArgtsW7r5j0WNNjwA">
+             <span class="XLloXe AP7Wnd">
+              Python 3.10.13
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="K8tyEc">
+      <div class="mEUgP">
+       <span>
+        <div class="BNeawe">
+         <span class="FCUp0c rQMQod">
+          관련 질문
+         </span>
+        </div>
+       </span>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuk56BAgEEAI" id="tsuid_1" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          파이썬은 어떤 언어인가?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_1">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuk56BAgEEAk" id="tsuid_2" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          파이썬은 뭘로 만들었나요?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_3">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuk56BAgEEBA" id="tsuid_3" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          파이썬 라이브러리가 뭔가요?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_5">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuk56BAgEEBc" id="tsuid_4" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          파이선은 몇세대 언어인가?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_7">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAUQAg" href="/url?q=https://wikidocs.net/8&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAUQAg&amp;usg=AOvVaw0X8zXtjZWw_LpPHHtEYMLm">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           01-4 파이썬 설치하기 - 위키독스
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          wikidocs.net › ...
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           파이썬이 정상적으로 설치되었다면 [시작] 메뉴의 검색 창에서 python을 검색하여 파이썬 실행 프로그램을 찾을 수 있다. 맥에서 파이썬 설치하기. 파이썬 공식 홈페이지( ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAAQAg" href="/url?q=https://wikidocs.net/43&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAAQAg&amp;usg=AOvVaw00NaLIEfq2cKCNV3AovFBH">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           1. 파이썬 시작하기 - 왕초보를 위한 Python: 쉽게 풀어 쓴 기초 문법과 ...
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          wikidocs.net › ...
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           이 강좌는 프로그래밍을 처음 하는 분들을 위해서 파이썬을 통해 프로그래밍의 기초를 차근차근 익힐 수 있도록 진행하려고 합니다. 우리 함께 파이썬 탐험을 떠나 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQtwJ6BAgGEAE" href="/url?q=https://www.youtube.com/watch%3Fv%3DmEeZoDGITGw&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQtwJ6BAgGEAE&amp;usg=AOvVaw3OoCVtVTQnfSqfaCHF4CqQ">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           최신 파이썬 기초 - 1강 파이썬이란 무엇인가? | 2023 점프 투 파이썬
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          www.youtube.com › watch
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuAJ6BAgGEAI" href="/url?q=https://www.youtube.com/watch%3Fv%3DmEeZoDGITGw&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQuAJ6BAgGEAI&amp;usg=AOvVaw3q7YwLkhE1l6Rv5pcV81p_">
+       <div class="lcJF1d Q6Xouf G6SP0b eeoFaf">
+        <div style="width:120px;height:67px;position:static">
+         <img alt="파이썬 동영상" class="h1hFNe" data-deferred="1" id="dimg_5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width:120px;height:67px"/>
+        </div>
+        <div class="S9HcI oz9fhd">
+        </div>
+        <div class="S9HcI UhWgBb" style="background-size:36px">
+        </div>
+       </div>
+      </a>
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           <span class="r0bn4c rQMQod">
+            2023. 6. 30.
+           </span>
+           <span class="r0bn4c rQMQod">
+            ·
+           </span>
+           점프 투 파이썬과 함께하는 파이썬 입문용 코딩 기초 강의 1강으로 프로그래밍을 전혀 모르는 왕초보도 누구나 쉽게 코딩 ...
+           <br/>
+           기간:
+           <span class="r0bn4c rQMQod">
+            53:42
+           </span>
+           <br/>
+           게시:
+           <span class="r0bn4c rQMQod">
+            2023. 6. 30.
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="rl7ilb">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAcQAg" href="/url?q=https://wikidocs.net/51&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAcQAg&amp;usg=AOvVaw27K86SrtL-c--68NkacMMs">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           1.1 파이썬 맛보기 - 왕초보를 위한 Python: 쉽게 풀어 쓴 기초 문법과 ...
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          wikidocs.net › ...
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           그래서 여러분과 함께 배우기 쉬운 파이썬이라는 언어를 함께 공부해 보려고 합니다. 프로그래밍이 뭐냐고요? 사람이 컴퓨터에게 일을 시키려면 컴퓨터가 알아듣는 말로 일 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAwQAg" href="/url?q=https://library.gabia.com/contents/9256/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAwQAg&amp;usg=AOvVaw2utq-T6mr_RAGHOPOEp5HL">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           파이썬(Python) 바로 알기 – 특징, 장점, 활용 사례 - 가비아 라이브러리
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          library.gabia.com › contents
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Python(이하 파이썬)은 직관적이고 간결한 문법으로, 프로그래머들은 물론 비전공자들 사이에서도 최근 가장 주목받는 언어입니다. 간단한 유틸리티 제작을 넘어 웹 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAsQAg" href="/url?q=https://aws.amazon.com/ko/what-is/python/&amp;sa=U&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAsQAg&amp;usg=AOvVaw3O6-rtg9SkAk3iJJOOBQt5">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           Python란 무엇인가요? - Python 언어 설명 - AWS
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          aws.amazon.com › ... › 개발자 센터 › 개발자 도구
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Phython은 웹 애플리케이션, 소프트웨어 개발, 데이터 과학, 기계 학습(ML)에 널리 사용되는 프로그래밍 언어입니다. 개발자는 Python이 효율적이고 배우기 쉬우며 ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="K8tyEc">
+      <div class="mEUgP">
+       <span>
+        <div class="BNeawe">
+         추가 검색어
+        </div>
+       </span>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAI" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+//+%EC%97%B0%EC%82%B0%EC%9E%90&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAI">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 // 연산자
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAQ" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAQ">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 다운로드
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAY" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%84%A4%EC%B9%98&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAY">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 설치
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAg" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%9D%98%EB%AF%B8&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAg">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 의미
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAo" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EB%8F%85%ED%95%99&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAo">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_11" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 독학
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAw" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EA%B8%B0%EC%B4%88&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEAw">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 기초
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEA4" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%BD%94%EB%94%A9&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEA4">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_15" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 코딩
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" data-ved="2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEBA" href="/search?sca_esv=573057508&amp;ie=UTF-8&amp;q=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%82%AC%EC%9D%B4%ED%8A%B8&amp;sa=X&amp;ved=2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ1QJ6BAgDEBA">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_17" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           파이썬 사이트
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <div>
+     <div class="Gx5Zad xpd EtOod pkphOe BmP5tf">
+      <div class="nMymef MUxGbd lyLwlc">
+       <a aria-label="다음 페이지" class="nBDE1b G5eFlf" href="/search?q=%ED%8C%8C%EC%9D%B4%EC%8D%AC&amp;sca_esv=573057508&amp;ie=UTF-8&amp;ei=Lp0oZbXNONuP2roP87WcuAY&amp;start=10&amp;sa=N">
+        다음 &gt;
+       </a>
+      </div>
+     </div>
+    </div>
+    <div id="EOlPnc">
+     <div class="Srfpq">
+      <div>
+       <span class="EYqSq unknown_loc">
+       </span>
+       <span class="dfB0uf">
+        진미동 경상북도 구미시
+       </span>
+      </div>
+      <span>
+       IP 주소 기반
+      </span>
+      <span>
+       -
+      </span>
+      <a aria-label="이 위치에 관해 자세히 알아보기" class="IffyKc" href="/url?q=https://support.google.com/websearch%3Fp%3Dws_settings_location%26hl%3Dko&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQty4IkAE&amp;usg=AOvVaw0ueYhYOTrzC-SCqbVFkByY" tabindex="0">
+       자세히 알아보기
+      </a>
+     </div>
+     <div>
+      <a href="/url?q=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttps://www.google.com/search%253Fq%253D%2525ED%25258C%25258C%2525EC%25259D%2525B4%2525EC%25258D%2525AC%26hl%3Dko&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQxs8CCJEB&amp;usg=AOvVaw2VuPhVIT8SgHtvvk2jVL9t">
+       로그인
+      </a>
+     </div>
+     <div>
+      <a class="xeDNfc" href="https://www.google.com/preferences?hl=ko&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQ5fUCCJIB">
+       설정
+      </a>
+      <a class="xeDNfc" href="https://policies.google.com/privacy?hl=ko&amp;fg=1">
+       개인정보처리방침
+      </a>
+      <a class="xeDNfc" href="https://policies.google.com/terms?hl=ko&amp;fg=1">
+       약관
+      </a>
+      <a class="xeDNfc" href="/setprefs?hl=ko&amp;prev=https://www.google.com/search?q%3D%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC%26pccc%3D1&amp;sig=0_1kt9afPbiNmrwMPpRgbEx0HWoM4%3D&amp;cs=2&amp;sa=X&amp;ved=0ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQjcAJCJMB">
+       어두운 테마: 사용 안함
+      </a>
+     </div>
+    </div>
+   </footer>
+   <script nonce="86nhzoKFs7eYIRAfekUTuw">
+    (function(){var hl='ko';(function(){
+var f=this||self,g=function(a){return a};var h,k=function(){if(void 0===h){var a=null,b=f.trustedTypes;if(b&&b.createPolicy){try{a=b.createPolicy("goog#html",{createHTML:g,createScript:g,createScriptURL:g})}catch(c){f.console&&f.console.error(c.message)}h=a}else h=a}return h};var p=function(a,b){this.h=a===l&&b||"";this.g=m},q=function(a){return a instanceof p&&a.constructor===p&&a.g===m?a.h:"type_error:Const"},m={},l={};var r=function(a){this.g=a};r.prototype.toString=function(){return this.g+""};var t=function(a){return a instanceof r&&a.constructor===r?a.g:"type_error:TrustedResourceUrl"},x=function(){var a={},b=q(new p(l,"/complete/search"));if(!u.test(b))throw Error("e`"+b);var c=b.replace(v,function(e,d){if(!Object.prototype.hasOwnProperty.call(a,d))throw Error("f`"+d+"`"+b+"`"+JSON.stringify(a));e=a[d];return e instanceof p?q(e):encodeURIComponent(String(e))});return w(c)},v=/%{(\w+)}/g,u=RegExp("^((https:)?//[0-9a-z.:[\\]-]+/|/[^/\\\\]|[^:/\\\\%]+/|[^:/\\\\%]*[?#]|about:blank#)","i"),y=/^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,z={},w=function(a){var b=k();a=b?b.createScriptURL(a):a;return new r(a,z)},A=function(a,b,c){if(null==c)return b;if("string"===typeof c)return c?a+encodeURIComponent(c):"";for(var e in c)if(Object.prototype.hasOwnProperty.call(c,e)){var d=c[e];d=Array.isArray(d)?d:[d];for(var n=0;n<d.length;n++){var O=d[n];null!=O&&(b||(b=a),b+=(b.length>a.length?"&":"")+encodeURIComponent(e)+"="+encodeURIComponent(String(O)))}}return b};var B={},C=function(a){this.g=a};C.prototype.toString=function(){return this.g.toString()};
+function D(a,b){if(1===a.nodeType){var c=a.tagName;if("SCRIPT"===c||"STYLE"===c)throw Error("g");}a.innerHTML=b instanceof C&&b.constructor===C?b.g:"type_error:SafeHtml"};function E(a){a=null===a?"null":void 0===a?"undefined":a;var b=k();a=b?b.createHTML(a):a;return new C(a,B)};var F=document.querySelector(".l"),G=document.querySelector("#sf"),H=G.querySelector(".sbc"),I=G.querySelector("[type=text]"),J=G.querySelector("[type=submit]"),K=G.querySelector(".sc"),L=G.querySelector(".x"),M=I.value,N=[],P=-1,Q=M,R,S,T;M||(L&&(L.style.display="none"),U(!1));function U(a){if(H.classList.contains("esbc")){var b=H.classList.contains("chsbc"),c=H.classList.contains("rtlsbc");a&&(K.style.display="block",b?(G.style.borderRadius="20px 20px 0 0",K.style.borderBottom="1px solid #DFE1E5",J.style.borderRadius=c?"20px 0 0 0":"0 20px 0 0"):H.style.borderRadius=c?"0 8px 0 0":"8px 0 0 0");a||(K.style.display="none",b?(G.style.borderRadius="20px",K.style.borderBottom="none",J.style.borderRadius=c?"20px 0 0 20px":"0 20px 20px 0"):H.style.borderRadius=c?"0 8px 8px 0":"8px 0 0 8px")}}function V(){G.querySelector("[name=oq]").value=Q;G.querySelector("[name=aqs]").value="heirloom-srp."+(0<=P?P:"")+"."+(0<N.length?"0l"+N.length:"")}
+function W(){R=null;if(S){var a={client:"heirloom-srp",hl:hl,json:"t",callback:"hS",q:S};"undefined"!==typeof ds&&ds&&(a.ds=ds);var b=document;var c="SCRIPT";"application/xhtml+xml"===b.contentType&&(c=c.toLowerCase());c=b.createElement(c);b=x();b=y.exec(t(b).toString());var e=b[3]||"";a=w(b[1]+A("?",b[2]||"",a)+A("#",e));c.src=t(a);var d,n;(d=(a=null==(n=(d=(c.ownerDocument&&c.ownerDocument.defaultView||window).document).querySelector)?void 0:n.call(d,"script[nonce]"))?a.nonce||a.getAttribute("nonce")||
+"":"")&&c.setAttribute("nonce",d);document.body.appendChild(c);S=null;R=setTimeout(W,500)}}function X(){for(;K.firstChild;)K.removeChild(K.firstChild);N=[];P=-1;U(!1)}function Y(){var a=K.querySelector(".scs");a&&(a.className="");0<=P?(a=K.childNodes[P],a.className="scs",M=a.textContent):M=Q;I.value=M}I.addEventListener("focus",function(){F&&(F.style.display="none")},!1);I.addEventListener("blur",function(){X();F&&(F.style.display="")},!1);I.addEventListener("keyup",function(a){M=I.value;T=!1;13===a.which?V():27===a.which?(X(),F&&(F.style.display=""),M=Q,I.value=M):40===a.which?(P++,P>=N.length&&(P=-1),Y()):38===a.which?(P--,-1>P&&(P=N.length-1),Y()):(a=M)?(L&&(L.style.display=""),S=a,R||W(),Q=a):(L&&(L.style.display="none"),U(!1),X(),Q="",T=!0)},!1);J.addEventListener("click",V,!1);L.addEventListener("click",function(){I.value="";L.style.display="none";U(!1)},!1);H.addEventListener("click",function(){I.focus()},!1);window.hS=function(a){if(!T){X();0===a[1].length&&U(!1);for(var b=0;b<a[1].length;b++){var c=a[1][b][0],e=document.createElement("div");D(e,E(c));e.addEventListener("mousedown",function(d){d.preventDefault();return!1},!1);c=c.replace(/<\/?b>/g,"");e.addEventListener("click",function(d){return function(){P=d;V();Y();X();G.submit()}}(b),!1);e.addEventListener("mouseover",function(d){return function(){P!==d&&(P=d,Y())}}(b),!1);K.appendChild(e);U(!0);N.push(c)}}};}).call(this);})();(function(){function b(a){for(a=a.target||a.srcElement;a&&"A"!==a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientWidth,a.href+="&bih="+document.documentElement.clientHeight)}document.addEventListener("click",b,!1);document.addEventListener("touchStart",b,!1);}).call(this);
+   </script>
+  </div>
+  <!-- cctlcm 5 cctlcm -->
+  <textarea class="csi" name="csi" style="display:none"></textarea>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var e='Lp0oZbXNONuP2roP87WcuAY';var sn='web';var timl=false;(function(){function B(a){if(!a||C(a))return 0;if(!a.getBoundingClientRect)return 1;var c=function(b){return b.getBoundingClientRect()};return D(a,c)?0:J(a,c)}function D(a,c){var b;a:{for(b=a;b&&null!==b;b=b.parentElement)if("hidden"===b.style.overflow||"G-EXPANDABLE-CONTENT"===b.tagName&&"hidden"===getComputedStyle(b).getPropertyValue("overflow"))break a;b=null}if(!b)return!1;a=c(a);c=c(b);return a.bottom<c.top||a.top>=c.bottom||a.right<c.left||a.left>=c.right}
+function C(a){return"none"===a.style.display?!0:document.defaultView&&document.defaultView.getComputedStyle?(a=document.defaultView.getComputedStyle(a),!!a&&("hidden"===a.visibility||"0px"===a.height&&"0px"===a.width)):!1}
+function J(a,c){var b=c(a);a=b.left+window.pageXOffset;c=b.top+window.pageYOffset;var f=b.width;b=b.height;var g=0;if(0>=b&&0>=f)return g;var q=window.innerHeight||document.documentElement.clientHeight;0>c+b?g=2:c>=q&&(g=4);if(0>a+f||a>=(window.innerWidth||document.documentElement.clientWidth))g|=8;g||(g=1,c+b>q&&(g|=4));return g};var K=e,L=sn,M="undefined"===typeof de?!0:!1!==de,N=[];function O(a,c,b){a="/gen_204?atyp=csi&s="+L+"&t="+a+("&lite=1&ei="+K+"&conn="+(window.navigator&&window.navigator.connection?window.navigator.connection.type:-1)+c);c="&rt=";for(var f in b)a+=""+c+f+"."+b[f],c=",";return a}function P(a){a={prt:a};window.wsrt&&(a.wsrt=window.wsrt);return a}function Q(a){window.ping?window.ping(a):(new Image).src=a}
+(function(){for(var a=(new Date).getTime()-window.start,c=P(a),b=0,f=0,g=0,q=document.getElementsByTagName("img"),r=M?"&biw="+window.innerWidth+"&bih="+window.innerHeight:"",E=function(){r+="&ima="+g;c.aft=b;Q(O("aft",r,c))},x=0,R=function(h,t,u){var n=h.src;h.onload=function(){u&&n&&n===h.src||(f=(new Date).getTime()-window.start,t&&++x===g&&(b=f,E()),h.onload=null)}},S=0,d=void 0;d=q[S++];){var v=B(d),p=!!(v&1);p&&++g;var l=d.hasAttribute("data-ilite"),w=d.hasAttribute("data-deferred"),F=d.hasAttribute("data-src")||
+d.hasAttribute("data-lzysrc"),y=!w&&!l&&F;N.push([v,w||l,y,!!(google.ldi&&d.id&&google.ldi[d.id])||l&&F]);l=(v=d.complete&&!w&&!(p&&y))&&Number(d.getAttribute("data-iml"))||0;v&&l?(p&&++x,l&&(d=l-window.start,p&&(b=Math.max(b,d)),f=Math.max(f,d))):R(d,p,w||y)}b||(b=a);f||(f=b);x===g&&E();google.rglh&&google.rglh();window.addEventListener("load",function(){window.setTimeout(function(){c.ol=(new Date).getTime()-window.start;timl&&(c.iml=f);var h=window.performance&&window.performance.timing;h&&(c.rqst=
+h.responseEnd-h.requestStart,c.rspt=h.responseEnd-h.responseStart);for(var t=h=0,u=0,n=0,G=0,H=0,T=0,k;k=N[T++];){var m=k[0],z=k[1],I=k[2];k=k[3];var U=0==m,V=m&8,A=m&1;m=!A&&m&4;A&&(z&&!k||++u,I&&++H);z&&(A&&k&&++h,m&&!k&&++t);U||V?I||++G:z||++n}r+="&ime="+u+"&imel="+H+("&imex="+n+"&imeh="+G)+("&imea="+h+"&imeb="+t);Q(O("all",r,c))},0)},!1)})();}).call(this);})();
+  </script>
+  <style>
+   .HbX59e{margin-left:0px}sentinel{}.r2fjmd{margin-bottom:0px;margin-top:0px}sentinel{}
+  </style>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   window._setImagesSrc=function(f,c){function h(a){a.onerror=function(){a.style.display="none"};a.setAttribute("data-deferred","2");"data:"!==c.substring(0,5)&&a.setAttribute("data-defe","1");a.src=c;var g;(null==(g=google.c)?0:g.di)&&a.decode()}for(var d=0;d<f.length;++d){var b=f[d],e=document.getElementById(b)||document.querySelector('img[data-iid="'+b+'"]');e?(b=void 0,(null==(b=google.c)?0:b.setup)&&google.c.setup(e),h(e)):(google.iir=google.iir||{},google.iir[b]=c)}};"undefined"===typeof window.google&&(window.google={});
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/png;base64,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\x3d';var i=['dimg_19'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/jpeg;base64,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';var i=['dimg_21'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/png;base64,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';var i=['dimg_23'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/jpeg;base64,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';var i=['dimg_25'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAADFBMVEVMaXFChfRChfRChfT0tCPZAAAAA3RSTlMAgFJEkGxNAAAAL0lEQVR4AWPADxgdwBT3BTDF9AUiuhdC6WNK/v///y+UggrClSA07EWVglmEFwAA5eYSExeCwigAAAAASUVORK5CYII\x3d';var i=['dimg_27'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/jpeg;base64,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\x3d';var i=['dimg_5'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\x3d';var i=['dimg_1','dimg_3','dimg_7','dimg_9','dimg_11','dimg_13','dimg_15','dimg_17'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="86nhzoKFs7eYIRAfekUTuw">
+   (function(){var e='Lp0oZbXNONuP2roP87WcuAY';(function(){var a=e;if(2===(window.performance&&window.performance.navigation&&window.performance.navigation.type)){var b="",c=[],d=void 0!==window.google&&void 0!==window.google.kOPI&&0!==window.google.kOPI?window.google.kOPI:null;null!=d&&c.push(["opi",d.toString()]);for(var f=0;f<c.length;f++){if(0===f||0<f)b+="&";b+=c[f][0]+"="+c[f][1]}window.ping("/gen_204?ct=backbutton&ei="+a+b)};}).call(this);})();(function(){var b=[function(){google.tick&&google.tick("load","dcl")}];google.dclc=function(a){b.length?b.push(a):a()};function c(){for(var a=b.shift();a;)a(),a=b.shift()}window.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);(function(){var b=function(a){var c=0;return function(){return c<a.length?{done:!1,value:a[c++]}:{done:!0}}};
+var e=this||self;var g,h;a:{for(var k=["CLOSURE_FLAGS"],l=e,n=0;n<k.length;n++)if(l=l[k[n]],null==l){h=null;break a}h=l}var p=h&&h[610401301];g=null!=p?p:!1;var q,r=e.navigator;q=r?r.userAgentData||null:null;function t(a){return g?q?q.brands.some(function(c){return(c=c.brand)&&-1!=c.indexOf(a)}):!1:!1}function u(a){var c;a:{if(c=e.navigator)if(c=c.userAgent)break a;c=""}return-1!=c.indexOf(a)};function v(){return g?!!q&&0<q.brands.length:!1}function w(){return u("Safari")&&!(x()||(v()?0:u("Coast"))||(v()?0:u("Opera"))||(v()?0:u("Edge"))||(v()?t("Microsoft Edge"):u("Edg/"))||(v()?t("Opera"):u("OPR"))||u("Firefox")||u("FxiOS")||u("Silk")||u("Android"))}function x(){return v()?t("Chromium"):(u("Chrome")||u("CriOS"))&&!(v()?0:u("Edge"))||u("Silk")}function y(){return u("Android")&&!(x()||u("Firefox")||u("FxiOS")||(v()?0:u("Opera"))||u("Silk"))};var z=v()?!1:u("Trident")||u("MSIE");y();x();w();var A=!z&&!w(),D=function(a){if(/-[a-z]/.test("ved"))return null;if(A&&a.dataset){if(y()&&!("ved"in a.dataset))return null;a=a.dataset.ved;return void 0===a?null:a}return a.getAttribute("data-"+"ved".replace(/([A-Z])/g,"-$1").toLowerCase())};var E=[],F=null;function G(a){a=a.target;var c=performance.now(),f=[],H=f.concat,d=E;if(!(d instanceof Array)){var m="undefined"!=typeof Symbol&&Symbol.iterator&&d[Symbol.iterator];if(m)d=m.call(d);else if("number"==typeof d.length)d={next:b(d)};else throw Error("a`"+String(d));for(var B=[];!(m=d.next()).done;)B.push(m.value);d=B}E=H.call(f,d,[c]);if(a&&a instanceof HTMLElement)if(a===F){if(c=4<=E.length)c=5>(E[E.length-1]-E[E.length-4])/1E3;if(c){c=google.getEI(a);a.hasAttribute("data-ved")?f=a?D(a)||"":"":f=(f=
+a.closest("[data-ved]"))?D(f)||"":"";f=f||"";if(a.hasAttribute("jsname"))a=a.getAttribute("jsname");else{var C;a=null==(C=a.closest("[jsname]"))?void 0:C.getAttribute("jsname")}google.log("rcm","&ei="+c+"&ved="+f+"&jsname="+(a||""))}}else F=a,E=[c]}window.document.addEventListener("DOMContentLoaded",function(){document.body.addEventListener("click",G)});}).call(this);var w=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}};window.jsl=window.jsl||{};window.jsl.dh=function(a,b,m){try{var h=document.getElementById(a),e;if(!h&&(null==(e=google.stvsc)?0:e.dds)){e=[];var f=e.concat,c=google.stvsc.dds;if(c instanceof Array)var n=c;else{var p="undefined"!=typeof Symbol&&Symbol.iterator&&c[Symbol.iterator];if(p)var g=p.call(c);else if("number"==typeof c.length)g={next:w(c)};else throw Error(String(c)+" is not an iterable or ArrayLike");c=g;var q;for(g=[];!(q=c.next()).done;)g.push(q.value);n=g}var r=f.call(e,n);for(f=0;f<r.length&&!(h=r[f].getElementById(a));f++);}if(h)h.innerHTML=b,m&&m();else{var d={id:a,script:String(!!m),milestone:String(google.jslm||0)};google.jsla&&(d.async=google.jsla);var t=a.indexOf("_"),k=0<t?a.substring(0,t):"",u=document.createElement("div");u.innerHTML=b;var l=u.children[0];if(l&&(d.tag=l.tagName,d["class"]=String(l.className||null),d.name=String(l.getAttribute("jsname")),k)){a=[];var v=document.querySelectorAll('[id^="'+k+'_"]');for(b=0;b<v.length;++b)a.push(v[b].id);d.ids=a.join(",")}google.ml(Error(k?"Missing ID with prefix "+
+k:"Missing ID"),!1,d)}}catch(x){google.ml(x,!0,{"jsl.dh":!0})}};(function(){var x=false;google.jslm=x?2:1;})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw1xoxVsY9cfQwhhWZ9MZUSn\x26ust\x3d1697246894957726';})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){google.csct.rl=true;})();})();(function(){window.xp=function(b){function f(k,g,h){return"xp"+("x"==g?"c":"x")+h}for(var c=/\bxp(x|c)(\d?)\b/,a=b;a;){var e=a.className,d=e.match(c);if(d){d="c"==d[1];a.className=e.replace(c,f);b&&b.setAttribute("aria-expanded",d);if(d)for(b=a.getElementsByTagName("img"),c=0;c<b.length;++c)if(a=b[c],e=a.getAttribute("data-ll"))a.src=e,a.removeAttribute("data-ll");break}a=a.parentElement}};})();(function(){(function(){var id='tsuid_5';var lve=false;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){(function(){window.logVe=function(a){a&&a.attributes["data-ved"]&&window.ping("/gen_204?ved="+a.attributes["data-ved"].value)};}).call(this);})();(function(){(function(){var id='tsuid_1';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl=window.jsl||{};window.jsl.dh=window.jsl.dh||function(i,c,d){try{var e=document.getElementById(i);if(e){e.innerHTML=c;if(d){d();}}else{if(window.jsl.el){window.jsl.el(new Error('Missing ID.'),{'id':i});}}}catch(e){if(window.jsl.el){window.jsl.el(new Error('jsl.dh'));}}};})();(function(){window.jsl.dh('accdef_1','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\ud30c\uc774\uc36c(\uc601\uc5b4: Python)\uc740 1991\ub144 \ub124\ub35c\ub780\ub4dc\uacc4 \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uc5d4\uc9c0\ub2c8\uc5b4\uc778 \uadc0\ub3c4 \ubc18 \ub85c\uc12c\uc774 \ubc1c\ud45c\ud55c \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3e\uace0\uae09 \ud504\ub85c\uadf8\ub798\ubc0d \uc5b8\uc5b4\x3c/span\x3e\ub85c, \x27\uc778\ud130\ud504\ub9ac\ud130\ub97c \uc0ac\uc6a9\ud558\ub294 \uac1d\uccb4\uc9c0\ud5a5 \uc5b8\uc5b4\x27\uc774\uc790 \ud50c\ub7ab\ud3fc\uc5d0 \ub3c5\ub9bd\uc801\uc778, \ub3d9\uc801 \ud0c0\uc774\ud551(dynamically typed) \ub300\ud654\ud615 \uc5b8\uc5b4\uc774\ub2e4.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://ko.wikipedia.org/wiki/%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQBg\x26amp;usg\x3dAOvVaw3Aimza--h6XCPDh-jKmsH3\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQBg\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3e\ud30c\uc774\uc36c - \uc704\ud0a4\ubc31\uacfc, \uc6b0\ub9ac \ubaa8\ub450\uc758 \ubc31\uacfc\uc0ac\uc804\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3eko.wikipedia.org \u203a wiki \u203a \ud30c\uc774\uc36c\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d573057508\x26amp;ie\x3dUTF-8\x26amp;ei\x3dLp0oZbXNONuP2roP87WcuAY\x26amp;q\x3d%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%80+%EC%96%B4%EB%96%A4+%EC%96%B8%EC%96%B4%EC%9D%B8%EA%B0%80?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEAc\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEAc\x22\x3e\uacb0\uacfc \ub354\ubcf4\uae30\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_2';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_3','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\ud504\ub85c\uadf8\ub798\ubc0d \uc5b8\uc5b4 \ud30c\uc774\uc36c\uc740 1980\ub144\ub300 \ub9d0\uc5d0 \uad6c\uc0c1\ub418\uc5c8\uc73c\uba70 \uadf8 \uad6c\ud604\uccb4\ub294 1989\ub144 12\uc6d4 \uc608\uc678 \ucc98\ub9ac\uac00 \uac00\ub2a5\ud558\uace0 \uc544\uba54\ubc14 \uc6b4\uc601 \uccb4\uc81c\uc640 \ud1b5\uc2e0\uc774 \uac00\ub2a5\ud55c ABC\uc758 \ud6c4\uc18d \ud504\ub85c\uadf8\ub798\ubc0d \uc5b8\uc5b4\ub85c\uc11c \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3eCWI(Centrum Wiskunde \x26amp; Informatica)\uc758 \uadc0\ub3c4 \ubc18 \ub85c\uc12c\x3c/span\x3e\uc5d0 \uc758\ud574 \uc2dc\uc791\ub418\uc5c8\ub2e4.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://ko.wikipedia.org/wiki/%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC%25EC%259D%2598_%25EC%2597%25AD%25EC%2582%25AC\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQDQ\x26amp;usg\x3dAOvVaw2UuLFujHmAU-28ql-66iK5\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQDQ\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3e\ud30c\uc774\uc36c\uc758 \uc5ed\uc0ac - \uc704\ud0a4\ubc31\uacfc, \uc6b0\ub9ac \ubaa8\ub450\uc758 \ubc31\uacfc\uc0ac\uc804\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3eko.wikipedia.org \u203a wiki \u203a \ud30c\uc774\uc36c\uc758_\uc5ed\uc0ac\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d573057508\x26amp;ie\x3dUTF-8\x26amp;ei\x3dLp0oZbXNONuP2roP87WcuAY\x26amp;q\x3d%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%80+%EB%AD%98%EB%A1%9C+%EB%A7%8C%EB%93%A4%EC%97%88%EB%82%98%EC%9A%94?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEA4\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEA4\x22\x3e\uacb0\uacfc \ub354\ubcf4\uae30\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_3';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_5','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3ePython \ub77c\uc774\ube0c\ub7ec\ub9ac\ub780 \ubb34\uc5c7\uc778\uac00\uc694? \ub77c\uc774\ube0c\ub7ec\ub9ac\ub294 \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3e\uac1c\ubc1c\uc790\uac00 \ucf54\ub4dc\ub97c \ucc98\uc74c\ubd80\ud130 \uc791\uc131\ud560 \ud544\uc694\uac00 \uc5c6\ub3c4\ub85d Python \ud504\ub85c\uadf8\ub7a8\uc5d0 \ud3ec\ud568\uc2dc\ud0ac \uc218 \uc788\ub294 \uc790\uc8fc \uc0ac\uc6a9\ub418\ub294 \ucf54\ub4dc \ubaa8\uc74c\x3c/span\x3e\uc785\ub2c8\ub2e4. \uae30\ubcf8\uc801\uc73c\ub85c Python\uc5d0\ub294 \uc7ac\uc0ac\uc6a9 \uac00\ub2a5\ud55c \ub9ce\uc740 \ud568\uc218\ub97c \ud3ec\ud568\ud558\ub294 \ud45c\uc900 \ub77c\uc774\ube0c\ub7ec\ub9ac\uac00 \uc81c\uacf5\ub429\ub2c8\ub2e4.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://aws.amazon.com/ko/what-is/python/\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQFA\x26amp;usg\x3dAOvVaw3Q75sHONvjJo236iIXKb0T\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQFA\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3ePython\ub780 \ubb34\uc5c7\uc778\uac00\uc694? - Python \uc5b8\uc5b4 \uc124\uba85 - AWS\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3eaws.amazon.com \u203a ... \u203a \uac1c\ubc1c\uc790 \uc13c\ud130 \u203a \uac1c\ubc1c\uc790 \ub3c4\uad6c\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d573057508\x26amp;ie\x3dUTF-8\x26amp;ei\x3dLp0oZbXNONuP2roP87WcuAY\x26amp;q\x3d%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EA%B0%80+%EB%AD%94%EA%B0%80%EC%9A%94?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEBU\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEBU\x22\x3e\uacb0\uacfc \ub354\ubcf4\uae30\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_4';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_7','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\ud30c\uc774\uc36c\uc740 \uc800\uae09 \uc5b8\uc5b4\uc778 \uae30\uacc4\uc5b4(1\uc138\ub300)\uc640 \uc5b4\uc148\ube14\ub9ac\uc5b4(2\uc138\ub300)\ubcf4\ub2e4 \uc790\uc5f0\uc5b4\uc640 \uc720\uc0ac\ud55c \ubb38\ubc95\uc73c\ub85c \uac00\ub3c5\uc131\uc774 \uc88b\uc740 \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3e3\uc138\ub300\x3c/span\x3e \uace0\uae09\uc5b8\uc5b4\ub85c\uc368 \uc708\ub3c4\uc6b0, \ub9e5, \uc720\ub2c9\uc2a4, \ub9ac\ub205\uc2a4 \ub4f1 \uc6b4\uc601\uccb4\uc81c\ub97c \uc9c0\uc6d0\ud558\uace0 \uc788\uc73c\uba70 \ud55c \ubc88\uc5d0 \uba85\ub839\uc5b4 \ud55c \ud589\uc529 \ubc88\uc5ed \ubc0f \ucc98\ub9ac\ud558\ub294 \uc778\ud130\ud504\ub9ac\ud130\uc2dd \uc5b8\uc5b4\uc774\ub2e4.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://asummerz.tistory.com/39\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQGw\x26amp;usg\x3dAOvVaw0WyX0UakMEG-Br34Qq-6Uw\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQFnoECAQQGw\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3e[Python] Python\uc774\ub780? - Maker\x27s VAP - \ud2f0\uc2a4\ud1a0\ub9ac\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3easummerz.tistory.com \u203a ...\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d573057508\x26amp;ie\x3dUTF-8\x26amp;ei\x3dLp0oZbXNONuP2roP87WcuAY\x26amp;q\x3d%ED%8C%8C%EC%9D%B4%EC%84%A0%EC%9D%80+%EB%AA%87%EC%84%B8%EB%8C%80+%EC%96%B8%EC%96%B4%EC%9D%B8%EA%B0%80?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEBw\x22 data-ved\x3d\x222ahUKEwi1nLXD7_GBAxXbh1YBHfMaB2cQzmd6BAgEEBw\x22\x3e\uacb0\uacfc \ub354\ubcf4\uae30\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();if (!google.stvsc){google.drty && google.drty(undefined,true);}
+  </script>
+ </body>
+</html>
