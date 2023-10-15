@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} 인증된 사용자라면 {% endcomment %}
+    {% if request.user.is_authenticated  %}
+    <h2>반갑습니다. {{request.user}}님!</h2>
+    <form action="{% url "accounts:logout" %}" method='POST'>
+        {% csrf_token %}
+        <input type="submit" value='Logout'>
+    </form>
+    <p>
+        <a href="{% url "accounts:index" %}">[전체 직원 목록]</a>
+        <a href="{% url "stores:index" %}">[전체 매장 목록]</a>
+    </p>
+    {% else %}
+    <h3>로그인 해주세요</h3>
+    <p>
+        <a href="{% url "accounts:login" %}">[Login]</a>
+        <a href="{% url "accounts:signup" %}">[Sign Up]</a>
+    </p>
+    {% endif %}
+    {% block content %}{% endblock content %}
+</body>
+</html>

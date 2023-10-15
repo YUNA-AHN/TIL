@@ -134,14 +134,13 @@ def crawling_advanced(request):
 
     for kw in keywords:
         name, result = get_google_data(kw['name'])
-        # name이 있으면.. update... 없으면 save...
-        if Trend.objects.filter(name=name).exists():
-            if not Trend.objects.filter(name=name, search_period='year').exists():
-                trends = Trend(name=name, result=result, search_period = 'year')
-                trends.save()
+        # name이 있고, year가 존재한다면 update
+        if Trend.objects.filter(name=name, search_period='year').exists():
+            trends = Trend.objects.get(name=name, search_period = 'year')
+            trends.result = result
         else: # 존재하지 않는다면
             trends = Trend(name=name, result=result, search_period = 'year')
-            trends.save()
+        trends.save()
 
     # 그래프
     data = Trend.objects.filter(search_period='year').values_list('name', 'result')

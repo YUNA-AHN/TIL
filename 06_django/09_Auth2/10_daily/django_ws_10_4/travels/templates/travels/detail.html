@@ -1,0 +1,20 @@
+<!-- templates/articles/detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h3>{{ travel.pk }} 번째 여행</h3>
+  <hr>
+    <p>장소 : {{ travel.location }}</p>
+    <p>계획 : {{ travel.plan }}</p>
+    <p>시작일 : {{ travel.start_date }}</p>
+    <p>종료일 : {{ travel.end_date }}</p>
+  <hr>
+  <form action="{% url 'travels:delete' travel.pk%}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value = "DELETE">
+  </form>
+    <a href="{% url 'travels:update' travel.pk%}">[UPDATE]</a>
+  <hr>
+  <a href="{% url 'travels:index' %}">[back]</a>
+{% endblock  %}

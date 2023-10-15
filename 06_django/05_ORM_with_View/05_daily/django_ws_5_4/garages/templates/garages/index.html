@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>주차 정보 관리 시스템</h1>
+  <p>모든 차고지 정보</p>
+  <ul>
+  {% for garage in garages %}
+    <li>위치 : {{ garage.location }}</li>
+    <li>주차 가능 대 수 : {{ garage.capacity }}</li>
+    <li>현재 주차 가능 여부 : {{ garage.is_parking_avaliable }}</li>
+    <hr>
+  {% endfor %}
+  </ul>
+{% endblock content %}

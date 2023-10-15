@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block contetn %}
+    <h1>편의점 상세 정보</h1>
+    <p>점장: {{store.user}} </p>
+    <p>주소: {{store.address}}</p>
+    <p>체인점 여부 : {{store.is_fanchise}}</p>
+{% endblock contetn %}
