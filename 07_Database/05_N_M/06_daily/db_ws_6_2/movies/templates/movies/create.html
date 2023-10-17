@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+  <h1>영화 정보 작성</h1>
+  <form action="{% url 'movies:create' %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <input type="submit" value="작성" class="btn btn-primary btn-sm">
+  </form>
+  <a href="{% url 'movies:index' %}" class="btn btn-secondary btn-sm">이전</a>
+{% endblock content %}
