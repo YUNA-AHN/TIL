@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center">
+    <h1>영화 게시판</h1>
+    {% if request.user.is_authenticated %}
+      <a href="{% url 'movies:create' %}" class="btn btn-primary btn-sm">영화 정보 작성</a>
+    {% else %}
+      <a href="{% url 'accounts:login' %}" class="btn btn-success">새 영화 정보를 작성하려면 로그인하세요.</a>
+    {% endif %}
+  </div>
+  <hr>
+  {% for movie in movies %}
+    <p>{{ movie.pk }}번째 영화</p>
+    <h3>{{ movie.title }}</h3>
+    <br>
+    <p>{{ movie.content }}</p>
+    <br>
+    <p>
+      <a href="{% url 'accounts:profile' movie.user %}">{{ movie.user }}</a>님 작성
+    </p>
+    <div>
+      <form action="{% url 'movies:likes' movie.pk %}" method="post">
+        {% csrf_token %}
+        {% if user in movie.like_users.all %}
+          <input type="submit" value="좋아요 취소" class="btn btn-primary btn-sm">
+        {% else %}
+          <input type="submit" value="좋아요" class="btn btn-primary btn-sm">
+        {% endif %}
+      </form>
+		  <span>{{ movie.like_users.all|length }} 명이 이 글을 좋아합니다.</span>
+    </div>
+    <a href="{% url 'movies:detail' movie.pk %}" class="btn btn-warning btn-sm">영화 상세 정보 보기</a>
+    <hr>
+  {% endfor %}
+{% endblock content %}

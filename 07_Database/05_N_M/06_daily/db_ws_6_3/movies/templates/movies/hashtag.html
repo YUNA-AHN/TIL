@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> {{hashtag}} </h1>
+<p> {{movies|length}}개의 게시글</p>
+<hr>
+
+<h2> {{hashtag}} (을)를 태그한 글 </h2>
+{% for movie in movies %}
+    <p>영화 {{ movie.title }}</p>
+    <p>{{ movie.comment_set.all|length }}개의 댓글</p>
+    <a href="{% url "movies:detail" movie.pk %}" class='btn btn-primary'>상세글로 바로 가기</a>
+    <hr>
+{% endfor %}
+{% endblock content %}
