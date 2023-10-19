@@ -269,11 +269,20 @@ Model Serializer
 
 ## PUT
 - 게시글 데이터 수정하기
-- 요청에 대한 데이터 수정이 성고했을 경우는 200 ok 응답
+- 요청에 대한 데이터 수정이 성공했을 경우는 200 ok 응답
 
 ![Alt text](image-29.png)
 ![Alt text](image-30.png)
 ![Alt text](image-31.png)
+
++) 데이터 일부분만 수정하는 경우 발생하는 이슈
+- fields = '__all__'로 설정되어 있기 때문
+
+![Alt text](image.png)
+
+- prtial = True로 해결
+
+![Alt text](image-1.png)
 
 # 참고
 ## raise_exception
