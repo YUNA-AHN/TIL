@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <div class="d-flex justify-content-between">
+        <h1> {{person.username}}님의 프로필 페이지 </h1>
+            <div class="d-flex align-items-center">
+                <div class="mx-2">
+                팔로잉: {{person.following|length}} / 팔로워 : {{person.followers.all|length}} 
+                </div>
+                <div>
+                {% if request.user != person %}
+                <form action="{% url "accounts:follow" person.pk%}">
+                    {% if request.user in person.followers.all %}
+                        <input type="submit" value="unfollow" class="btn btn-light">
+                    {% else %}
+                        <input type="submit" value="follow" class="btn btn-light">
+                    {% endif %}
+                </form>
+                {% endif %}
+                </div>
+            </div>
+    </div>
+</div>
+
+<p>회원번호: {{person.pk}}</p>
+<p>유저이름: {{person.username}}</p>
+<p>가입날짜: {{person.date_joined}}</p>
+<hr>
+
+<h2>유저가 쓴 글</h2>
+{% for article in person.board_set.all %}
+<div class='px-2 bg-light'>
+    <p> 글 번호: {{article.pk}} </p>
+    <p> 
+        글 제목: <a href="{% url "boards:detail" article.pk %}">{{article.title}}</a> 
+    </p>
+</div>
+{% endfor %}
+<hr>
+
+<h2>유저가 쓴 댓글</h2>
+{% for comment in person.comment_set.all %}
+<p> {{comment.content}} </p>
+{% endfor %}
+<hr>
+<h2>팔로워</h2>
+{% for person in person.follwers.all %}
+<p> {{person.username}} </p>
+{% endfor %}
+{% endblock content %}

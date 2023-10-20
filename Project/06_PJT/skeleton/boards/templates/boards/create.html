@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <h1 class="mb-4">생성 페이지</h1>
+  <form action="{% url 'boards:create' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-light">생성하기</button>
+  </form>
+</div>
+{% endblock content %}
