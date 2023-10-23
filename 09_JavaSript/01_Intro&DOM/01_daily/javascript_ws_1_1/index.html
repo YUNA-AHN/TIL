@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>오늘 할 일</h1>
+  <hr>
+  <ul>
+    <li>수업 복습 하기</li>
+    <li>실습 문제 풀기</li>
+    <li>스터디 참여하기</li>
+    <li>1 일 1 커밋하기</li>
+    <li id="game">게임 하기</li>
+  </ul>
+  <script>
+    // 아래에 코드 작성
+    // h1 태그 요소를 선택하여 title 변수에 할당
+    const title = document.querySelector('h1')
+    console.log(title)
+
+    // li 태그를 모두 선택하여 todoList 변수에 할당
+    const todoList = document.querySelectorAll('li')
+    console.log(todoList)
+
+    // id가 game인 요소를 선택하여 itemGame 변수에 할당
+    const itemGame = document.querySelector('#game')
+    console.log(itemGame)
+  </script>
+</body>
+</html>

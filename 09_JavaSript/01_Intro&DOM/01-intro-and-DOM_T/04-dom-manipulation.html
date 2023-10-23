@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+
+  <script>
+    // h1 태그를 생성하라!
+    const h1Tag = document.createElement("h1")
+    console.log(h1Tag)
+    //  그 후에 컨텐츠로 "제목" 텍스트를 할당하라
+    h1Tag.textContent = "제목"
+    console.log(h1Tag)
+
+    // h1Tag.textContent = "내용이 바뀌었네요.."
+
+    // 상단에 있는 div 태그를 선택해서 h1 태그를 자식으로 넣어라!
+    const divTag = document.createElement("div")
+    divTag.appendChild(h1Tag)
+    
+    divTag.removeChild(h1Tag)
+    console.log(divTag)
+
+    // 클래식하게 innerHTML 속성값에다가 문자열 할당
+    // innerHTML HTML 자체를 변경
+    // 내가 의도하지 않았는데 사용자가 공격 XSS INJECTION ⭐⭐⭐⭐⭐
+    //  speed performance 2배 빨라진다...!
+    divTag.innnerHTML = "<h1>새로 추가된 헤딩</h1>"
+  </script>
+</body>
+
+</html>

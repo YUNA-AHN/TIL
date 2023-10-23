@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>안녕하세용 힣히힣</h1>
+  <h1 class="heading">DOM 선택</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="content">content1</p>
+  <p class="content">content2</p>
+  <p class="content">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+  <script>
+    // querySelector -- 단일 선택
+    const h1Tag1 = document.querySelector("h1")
+    const h1Tag2 = document.querySelector("h1.heading")
+    h1Tag2.textContent = "DOOM 선택"
+
+    // querySelectorAll -- 다중 선택
+    const pTags = document.querySelectorAll("p.content")
+    console.log(pTags)
+
+    const pTag = pTags[2]
+    console.log(pTag)
+
+    for (let index = 0; index < pTags.length; index++) {
+      const pTag = pTags[index];
+      console.log(pTag)
+    }
+
+    // 없는 HTML 요소를 선택했을 때
+    const h2Tag1 = document.querySelector("h2")
+    console.log(h2Tag1)
+
+    const h2Tags = document.querySelectorAll("h2")
+    console.log(h2Tags)
+  </script>
+</body>
+
+</html>

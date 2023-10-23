@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>오늘 할 일</h1>
+  <hr>
+  <ul>
+    <li>수업 복습 하기</li>
+    <li>실습 문제 풀기</li>
+    <li>스터디 참여하기</li>
+    <li>1 일 1 커밋하기</li>
+    <li id="game">게임 하기</li>
+  </ul>
+  <script>
+    // 아래에 코드 작성
+    // 1. h1 태그의 텍스트 콘텐츠를 오늘 공부 목록으로 변경
+    const h1Tag = document.querySelector('h1')
+    h1Tag.textContent = '오늘 공부 목록'
+
+    // 2. ul 태그를 선택하여 stuyList 변수에 할당
+    // 3. study clss 추가
+    const studyList = document.querySelector('ul')
+    studyList.classList.add('study')
+    console.log(studyList.classList)
+
+    // 4. ul태그의 자식 요소 중, id가 game인 요소를 삭제
+    const itemGame =  document.querySelector('#game')
+    studyList.removeChild(itemGame)
+    console.log(studyList)
+  </script>
+</body>
+</html>

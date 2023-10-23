@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red {
+      color: crimson;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">DOM 선택</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="content">content1</p>
+  <p class="content">content2</p>
+  <p class="content">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+  <script>
+    // 1. 해당 특정 요소를 선택한다.
+    const h1Tag = document.querySelector("h1.heading")
+    // 현재 있는 클래스 속성 리스트 출력
+    console.log(h1Tag.classList)
+
+    // 클래식하게 수정하기
+    // h1Tag.classList.value += " red"
+
+    // 2. // 를 조작한다.
+    // 클래스 조작 멧거드를 사용해서 조작을 수행
+    //  "red" 라는 class 속성을 추가! classList의 add 메서드를 추가
+    h1Tag.classList.add("red")
+
+    h1Tag.classList.remove("headomg")
+
+    h1Tag.classList.toggle("red")
+
+    // a 태그의 href를 네이버로 변경
+    // 1. 해당 a 태그를 선택한다.
+    const aTag =  document.querySelector("a")
+    // 2. 조작한다.
+    aTag.href = "https://www.naver.com" // 클래식한 방식
+
+    // 일반 속성을 조회. 수정하는 getAttribute, setAttribute
+    console.log(aTag.getAttribute("href"))
+    aTag.setAttribute("href", "https://www.daum.net")
+  </script>
+</body>
+
+</html>
