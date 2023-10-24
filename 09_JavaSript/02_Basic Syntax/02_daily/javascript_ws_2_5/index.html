@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const citiesInfo = [
+      {
+        city: '서울',
+        utcOffset: ['한국 표준시', 'KST', 'UTC+9'],
+        latitude: 37,
+        longitude: 126
+      },
+      {
+        city: '도쿄',
+        utcOffset: ['일본 표준시', 'JST', 'UTC+9'],
+        latitude: 35,
+        longitude: 139
+      },
+      {
+        city: '상하이',
+        utcOffset: ['중국 표준시', 'CST', 'UTC+8'],
+        latitude: 31,
+        longitude: 121
+      }
+    ]
+    
+    // 배열 순회하면서 각 도시 정보 city를 얻는다.
+    for (city of citiesInfo) {
+      for (info in city) {
+        if (info == "city"){
+          console.log(`수도 : ${city['city']}`)
+        } else if (typeof city[info] == "object") {
+          console.log(`${info} : ${city[info][2]}`)
+        } else {
+          console.log(`${info} : ${city[info]}`)
+        }
+      }
+      console.log("")
+    }
+  </script>
+</body>
+</html>

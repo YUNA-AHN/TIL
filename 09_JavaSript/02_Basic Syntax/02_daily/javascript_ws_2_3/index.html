@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const scores = [90, 80, 70, 60, 40]
+    let length = 0
+    let total = 0
+    // for .. of 문으로 코드 작성
+    for (score of scores) {
+      length += 1
+      total += score
+    }
+    console.log(length) // 길이
+    console.log(total)  // 총합
+    const avg = total/length  // 평균 계산
+    console.log(avg)
+
+    // while문으로 코드 작성
+    while (length > 0) {
+      console.log(scores[length-1])
+      length--
+    }
+  </script>
+</body>
+</html>

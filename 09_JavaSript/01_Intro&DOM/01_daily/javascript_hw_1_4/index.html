@@ -1,0 +1,91 @@
+<!-- 2단계에서 작성한 코드 활용 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>나의 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>안녕하세요, 제 이름은 <b id="name">홍길동</b>입니다.</h1>
+  
+  <img src="" alt="" width="200">
+  
+  <h2>소개</h2>
+  <p>저는 <b id="job">[직업/전공]</b>으로 일하고 있습니다. <b id="experience">[간단한 경력/학력]</b>을 가지고 있으며, <b>[특기 또는 관심 분야]</b>에 대해 꾸준히 공부하고 있습니다.</p>
+  
+  <h2>프로젝트</h2>
+  <ul id="list-group">
+    <li><b>프로젝트 1:</b> <span class="project-1">[프로젝트 1 제목]</span></li>
+    <li><b>프로젝트 2:</b> <span class="project-2">[프로젝트 2 제목]</span></li>
+    <li><b>프로젝트 3:</b> <span class="project-3">[프로젝트 3 제목]</span></li>
+  </ul>
+  
+  <h2>연락처</h2>
+  <p>이메일: <b id="email">[이메일 주소]</b></p>
+  <p>전화번호: <b id="phone">[전화번호]</b></p>
+  
+  <script>
+    const nameTag = document.querySelector('#name')
+    const jobTag = document.querySelector('#job')
+    const experienceTag = document.querySelector('#experience')
+    const emailTag = document.querySelector('#email')
+    const phoneTag = document.querySelector('#phone')
+
+    nameTag.textContent = "홍길동"
+    jobTag.textContent = "의적"
+    experienceTag.textContent = "서당"
+    emailTag.textContent = "hgd@korea"
+    phoneTag.textContent = "010-1234-1234"
+
+    const image = document.querySelector('img')
+    image.setAttribute('src', 'profile.jpg')
+    image.setAttribute('alt', 'profile')
+
+    // hw4
+    // body 태그를 선택하여 container class 부여
+    const bodyTag = document.querySelector('body')
+    bodyTag.classList.add('container')
+
+    // h1 태그 선택하여 title class 부여
+    const h1Tag = document.querySelector('h1')
+    h1Tag.classList.add('title')
+
+    // img 태그에 img class 부여
+    image.classList.add('img')
+
+    // highlight
+    nameTag.classList.add('highlight')
+    jobTag.classList.add('highlight')
+    experienceTag.classList.add('highlight')
+    emailTag.classList.add('highlight')
+    phoneTag.classList.add('highlight')
+
+    // SNS 정보 추가
+    // <p>전화번호: <b id="phone">[전화번호]</b></p>
+    // p 태그 생성
+    const pTag = document.createElement('p')
+    pTag.textContent = "SNS: "
+
+    // 추가
+    bodyTag.appendChild(pTag)
+
+    // 마지막 p 태그 선택
+    const pTaglast = document.querySelector('p:nth-child(11)')
+    
+    //  b 태그 생성 및 id 요소 생성
+    const bTag = document.createElement('b')
+    bTag.textContent = "hgd@sns.com"
+    bTag.setAttribute("id","SNS")
+
+    // 추가
+    pTaglast.appendChild(bTag)
+
+    // name, job 들과 같이 hihjlight
+    const SNSTag = document.querySelector('#SNS')
+    SNSTag.classList.add('highlight')
+    
+    
+
+  </script>
+</body>
+</html>

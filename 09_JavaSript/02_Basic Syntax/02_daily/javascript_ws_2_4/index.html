@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const roles = ['주연배우', '조연배우', '주연배우', '우정출연', '우정출연', '조연배우']
+    const names = ['홍길동', '이춘향', '금나래', '장보고', '임꺽정', '강감찬']
+    // 길이를 구하기 위한 length
+    let length = 0
+    for (role in roles) {
+      length += 1
+    }
+
+    // index순으로 순회
+    for (let i=0; i < length; i++){
+      if (roles[i] == "주연배우"){
+        console.log(`${roles[i]} : ${names[i]}님 반갑습니다!`)
+      } else if (roles[i] == "조연배우"){
+        console.log(`${names[i]}님 환영합니다!`)
+      } else {
+        console.log(`${names[i]}님 와 주셔서 감사합니다!`)
+      }
+    }
+  </script>
+</body>
+</html>
