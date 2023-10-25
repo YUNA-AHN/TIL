@@ -1,0 +1,36 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // JSON (JavaScript Object Notation)
+      // 텍스트 (문자열) 사람, 기계
+      // JSON -> JS 객체, JS 객체 -> JSON EASY!
+
+      const person = {
+        name: "john",
+        age: 20,
+        city: "Gumi",
+        grades: [100, 100, 100, 98],
+      };
+
+      // JS 객체 -> JSON : JSON.stringify()
+      const json = JSON.stringify(person);
+      console.log(typeof json);
+      console.log(json);
+
+      // JSON -> js 객체 : JSON.parse()
+      const data = JSON.parse(json);
+      console.log(typeof data);
+      console.log(data);
+
+      // 객체에 대한 얕은 복사로 진행
+      const person2 = { ...person };
+
+      // 객체를 깊은복사로 진행 (Object -> JSON -> Object)
+      // const person2 = JSON.parse(JSON.stringify(person));
+      person.grades[3] = 30;
+      console.log("person", person);
+      console.log("person2", person2);
+    </script>
+  </body>
+</html>

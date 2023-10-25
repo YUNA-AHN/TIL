@@ -1,0 +1,33 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // 옵셔널 체이닝 방식이 없었을 때...
+      const obj1 = {
+        name: "john",
+        age: 20,
+        city: {
+          si: "구미",
+          street: "인동",
+        },
+      };
+
+      // ? 그런데 city 가 null 이라면??
+      console.log(obj1.city.street);
+
+      // 1. city 가 있는지 여부를 if 문으로 체크
+      let street = null;
+      if (obj1.city) {
+        street = obj1.city.street;
+      }
+      console.log(street);
+
+      // 2. 단축 평가를 사용해서 하나의 표현식으로
+      /*let*/ street = obj1.city && obj1.city.street;
+
+      // 3. 옵셔널 체이닝이 추가
+      // 속성값이 없는 중첩 객체도 안전하게 접근할 수 있게 도와준다.
+      /*let*/ street = obj1.city?.street;
+    </script>
+  </body>
+</html>

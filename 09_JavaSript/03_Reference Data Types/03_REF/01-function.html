@@ -1,0 +1,67 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // 함수를 정의하고 그 함수를 호출하여 코드 늘리기 위한 것이다...
+      //   function 함수명(매개변수) {
+      //     // 내가 실행할 코드블럭...
+      //     return 반환값;
+      //   }
+      // var greeting;
+
+      // 함수 선언식
+      // 호이스팅 : 내가 마치 해당 식별자가 최상단에 정의한 것 처럼 동작
+      function greeting(name) {
+        return `환영합니다. ${name}님!`;
+      }
+      // 함수 표현식
+      const greeting2 = function (name) {
+        return `환영합니다. ${name}님!`;
+      };
+
+      const text = greeting2("홍길동");
+      console.log(text);
+
+      // 매개변수 불일치
+      // 매개변수가 입력인자 갯수와 차이가 있으면 발생...
+      // 매개변수 > 입력인자,,, 매개변수 나머지를 undefined자동 할당
+      function calculateArea(width, height) {
+        return width * height;
+      }
+
+      console.log(calculateArea(3, 5)); // width = 3, height = 5
+      console.log(calculateArea(3)); // width = 3, height = undefined
+
+      // 매개변수 디폴트 인자
+      function greeting3(name = "익명") {
+        console.log(`안녕하세요 환영합니다 ${name}님!`);
+      }
+
+      greeting3("홍길동");
+      greeting3();
+
+      // 나머지 매개변수 (가변인자)
+      function sum(...numbers) {
+        console.log(numbers);
+        let total = 0;
+        for (const number of numbers) {
+          total += number;
+        }
+        return total;
+      }
+      //   sum([1,2,3,4,5])
+      console.log(sum(1, 2, 3, 4, 5));
+
+      // 스프레드 연산자(spread operator)
+      // 1. 배열 or 객체를 펼쳐서 요소를 분리하는 역할
+      // 2.     //        복사(얇은복사)를 수행할 때 사용
+
+      //   sum(1, 2, 3, 4, 5);
+      const arr1 = [1, 2, 3, 4, 5];
+      console.log(sum(...arr1));
+
+      const arr2 = [...arr1];
+      console.log(arr2);
+    </script>
+  </body>
+</html>

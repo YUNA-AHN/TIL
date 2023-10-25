@@ -1,0 +1,73 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // this는 현재 실행 중인 함수의 컨텍스트를 나타냅니다.
+      //  => 런타임에서 this 가 어떻게 호출되냐에 따라 결정된다!
+
+      function someFunction() {
+        console.log(this);
+      }
+
+      someFunction(); // 호출하는 방법 => 해당 this가 결정!
+      // 1. 전역 범위에서 함수를 호출하는 경우 this가 전역 객체(브라우저 window)를 가리킨다...
+      // node.js -> 전역 객체 : globalThis
+
+      // 2. 메서드 호출 : this는 해당 메서드가 호출한 객체를 가리킨다!
+
+      const obj = {
+        name: "john",
+        greeting: function () {
+          console.log(`안녕하세요 ${this.name}님!`);
+        },
+      };
+
+      obj.greeting(); // 안녕하세요 john님!
+
+      // 3. call, apply, bind 메서드를 사용해서 명시적으로 this 를 결정시키는 방법
+      function greeting() {
+        console.log("hello. " + this.name);
+      }
+
+      const person = {
+        name: "john",
+      };
+
+      greeting.call(person); // Hello. john
+
+      // 4. 화살표 함수를 사용했을 때의 this.
+      // 화살표 함수는 자신만의 this 값x.
+      // 화살표 함수가 정의된 위치! 그 this 상속...!
+      // const greeting_function = function () {
+      //   console.log("hello." + this.name);
+      // };
+
+      // const obj = {
+      //   name: "john",
+      //   greeting: greeting_function,
+      // };
+      // greeting_function(); // "hello." why? window, 전역 객체. undefined <-
+      // obj.greeting(); // "hello.john" why? obj 객체 선택
+
+      const greeting_function = () => {
+        console.log("hello." + this.name); // 항상 this는 전역 window 객체로 고정! (why? 선언된 위치에 따라 결정!)
+      };
+
+      const obj = {
+        name: "john",
+        greeting: greeting_function,
+      };
+      greeting_function(); // "hello."
+      obj.greeting(); // "hello."
+
+      const obj = {
+        name: "john",
+        greeting: () => {
+          // 선언된 위치에 결정! this -> obj 로 선택
+          console.log("hello." + this.name);
+        },
+      };
+      obj.greeting(); // "hello. john"
+    </script>
+  </body>
+</html>

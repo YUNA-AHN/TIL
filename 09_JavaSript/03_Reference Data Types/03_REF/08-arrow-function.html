@@ -1,0 +1,48 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // 화살표 함수 (arrow function)
+      // 함수를 선언하는 방식 중에 하나 (ES6, 2015)
+
+      // 함수 표현식
+      const sum = function (a, b){
+        return a + b;
+      }
+      const tripple = function(a){
+        return a * a * a;
+      }
+      const 함수명 = function (매개변수1, 매개변수2, ...){
+        // 함수 내용
+        return 반환값;
+      }
+      // 1. 함수 표현식에서 function 이라는 키워드를 지우고,
+      // 매개변수 입력과 중괄호 사이에 화살표`=>`를 추가!
+      const 함수명 = (매개변수1, 매개변수2, ...) => {
+        // 함수 내용
+        return 반환값;
+      }
+      const sum = (a, b) => {
+        return a + b;
+      }
+      const tripple = (a) => {
+        return a * a * a;
+      }
+
+      // 2. 함수 내용에 단일 표현식으로 구성이 되어있다.
+      //   => 리턴문과 중괄호를 생략이 가능!
+      const 함수명 = (매개변수1, 매개변수2, ...) => 반환값;
+      const sum = (a, b) => a + b;
+
+      const tripple = (a) =>  a * a * a;
+
+
+      // 3. 매개변수가 하나인 경우. 소괄호() 를 생략이 가능하다!
+      const 함수명 = 매개변수1 => 반환값;
+      const tripple = a =>  a * a * a;
+
+      // 장점 : 함수를 정의할 때에 코드가 간결성을 갖게 된다.
+      // 특징 : this 값은 자신이 선언된 상위 스코프에서 찾는다
+    </script>
+  </body>
+</html>

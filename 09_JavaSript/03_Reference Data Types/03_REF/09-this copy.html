@@ -1,0 +1,34 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // 콜백 함수 (callback function)
+      // => 다른 함수에 전달되어서 어떤 시점에 호출을 하는 함수
+      function someFunction(data, callback) {
+        // 데이터 처리 로직...
+        let result = data;
+        // 콜백 함수 호출
+        callback(result);
+      }
+
+      function handle(result) {
+        // 내부 처리..
+        console.log(result);
+      }
+
+      someFunction({ a: "hhh" }, handle);
+
+      // 콜백 함수를 사용하게 되는 장단점
+      /*
+        장점 :
+        1. 코드 재사용성 : 콜백함수를 작성하고 다른 함수에 전달해서 재사용할 수 있다.
+        2. 유연성 : 콜백 함수를 호출함으로서 함수 동작을 다양하게 확장
+        3. 비동기 작업 처리 : 비동기 작업 처리에 적합 (네트워크 요청, 데이터 로딩, 파일 읽기)
+
+        단점 : 
+        1. 콜백 헬(Callback Hell) : 콜백 함수가 너무 많이 중첩되어서 오히려 가독성 떨어져버리는 문제 + 디버깅 난이도도 높아진다. => async/await + Promise
+        2. 순차적인 작업 처리 어려움 많다. : 콜백 함수를 사용한 비동기 작업처리에 순차적인 처리를 요구하는 것은 어려움이 따를 수 있다.
+      */
+    </script>
+  </body>
+</html>

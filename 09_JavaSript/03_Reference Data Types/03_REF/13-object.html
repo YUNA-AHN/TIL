@@ -1,0 +1,64 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      const name = "john";
+      const age = 20;
+
+      const obj1 = {
+        name: name,
+        age: age,
+      };
+      // 단축 속성
+      const obj2 = {
+        name,
+        age,
+      };
+
+      const obj10 = {
+        greeting: function () {
+          return "hello! :) ";
+        },
+      };
+      // 단축 메서드 : 메서드의 function 키워드와 콜론 생략하는 방식
+      const obj11 = {
+        greeting() {
+          return "hello! :) ";
+        },
+      };
+
+      obj10.greeting();
+
+      // 계산된 속성
+      // 키에다가 특정 값을 사용하고 싶을 때
+      const data = "MY_DATA";
+      const obj3 = {
+        [data]: "my infomation", // "MY_DATA": "my infmation",
+        ["DATA" + 1]: "twice infomation", // "DATA1" : "twice information"
+      };
+
+      // 구조 분해 할당
+      // 속성값을 일부 한꺼번에 가져올 수 있게하는 방법
+
+      const person = {
+        name: "john",
+        age: 20,
+        city: "Seoul",
+      };
+
+      // const name = person.name;
+      // const age = person.age;
+      // const city = person.city;
+
+      const { name, age, city } = person;
+
+      const printInfo = function ({ name, age, city }) {
+        console.log(name);
+        console.log(age);
+        console.log(city);
+      };
+
+      printInfo(person);
+    </script>
+  </body>
+</html>

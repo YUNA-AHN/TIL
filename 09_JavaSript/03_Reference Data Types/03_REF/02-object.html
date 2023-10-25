@@ -1,0 +1,20 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      const person = {
+        name: "Alice",
+        age: 20,
+        city: "Gumi",
+        greetings: function () {
+          console.log(`안녕하세요, 저는 ${this.name}입니다.`);
+        },
+      };
+
+      console.log(person);
+      console.log(person.name);
+      console.log(person["name"]);
+      person.greetings();
+    </script>
+  </body>
+</html>

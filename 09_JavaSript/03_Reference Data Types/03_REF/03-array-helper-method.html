@@ -1,0 +1,43 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];
+
+      // Array Helper Method
+      // 배열을 다루고 조작...
+      // 요소에 대한 반복문을 따로 사용하지 않고
+      // 요소들을 조작하고 변형할 수 있게 해주는 특징 메서드들
+
+      // forEach : 배열에 주어진 요소에 대해 해당 함수를 각각 실행
+      numbers.forEach((number) => console.log(number));
+
+      // map : 주어진 함수를 사용해서 사로운 배열을 생성
+      const numbers1 = numbers.map((number) => number + 10);
+      console.log(numbers1); // [11, 12, 13, 14, 15]
+
+      // filter : 주어진 함수의 조건을 만족하는 배열의 요소로만 이루어진 새로운 배열을 생성
+      const numbers2 = numbers.filter((number) => number % 2 == 0);
+      console.log(numbers); // [2, 4]
+      // reduce : 배열에 주어진 요소의 값들을 하나의 값으로 만들어준다
+      const result = numbers.reduce((acc, cur, idx) => {
+        return acc + cur;
+      }, 8);
+      console.log(result); // 23
+      // find : 주어진 함수를 사용해서 조건을 만족하는 첫번째 요소를 반환
+      const element = numbers.find((number) => number % 2 == 0);
+      console.log(element); // 2
+      // every : 주어진 함수의 조건을 만족하는지를 확인, 모든 요소가 만족한다면 true(아니라면 false)
+      console.log(numbers.every((number) => number > 0)); // true
+      // some : 주어진 함수의 조건을 만족하는지를 확인, 하나라도 요소가 조건을 만족하면 true(아니라면 false)
+      console.log(numbers.every((number) => number > 3)); // true
+
+      // 해당 요소들 중에서 2의 배수에 해당하는 값만 하나의 문자열로 반환...
+      const result2 = numbers
+        .filter((x) => x % 2 == 0)
+        .map((x) => String(x))
+        // .map((x) => x + ", ")
+        .reduce((acc, cur, idx) => acc + ", " + cur, ""); // "2, 4"
+    </script>
+  </body>
+</html>
