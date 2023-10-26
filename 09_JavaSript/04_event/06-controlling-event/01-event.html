@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button id="btn">버튼</button>
+
+    <script>
+      // 1. 버튼 선택
+      const btn = document.querySelector("#btn");
+
+      // 2. 콜백 함수 작성
+      // PoinerEvent : click의 하위 이벤트
+      //  콘솔에 btn을 출력하는 콜백함수
+      const clickCallbackFunc = function (event) {
+        console.log(event);
+        console.log(event.target);
+        console.log(event.currentTarget);
+        console.log(this); // 화살표 함수 작성 시 window 출력
+      };
+
+      // 3. 버튼에 이벤트 핸들러를 부착
+      btn.addEventListener("click", clickCallbackFunc);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="outer">
+      <button id="inner">버튼</button>
+    </div>
+    <script>
+      const innerTag = document.querySelector("inner");
+      const outerTag = document.querySelector("outer");
+
+      innerTag.addEventListener("click", function (evnet) {
+        alert("inner 태그가 클릭되었습니다!");
+        event.stopPropagation(); // 이벤트 버블링이 중단
+      });
+
+      outerTag.addEventListener("click", function (evnet) {
+        alert("outer 태그가 클릭되었습니다!");
+      });
+    </script>
+  </body>
+</html>
