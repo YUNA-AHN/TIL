@@ -5,7 +5,7 @@ API(Apllication Programming Interface)
 - 클라이언트-서버처럼 서로 다른 프로그램에서 요청과 응답을 받을 수 있도록 만든 체계
 
 API란?  
-![Alt text](image.png)
+![Alt text](images/image.png)
 - 복잡한 코드를 추상화하여 대신 사용할 수 있는 몇가지 더 쉬운 구문을 제공
 
 Web API
@@ -31,7 +31,7 @@ RESTful API
 REST API
 - REST라는 설계 디자인 약속을 지켜 구현한 API
 
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 REST에서 자원을 정의하고 주소를 지정하는 방법
 1. 자원의 식별
@@ -69,7 +69,7 @@ HTTP 특징
 웹에서 주어진 리소스의 주소
 - 네트워크 상에 리소스가 어디 있는지를 알려주기 위한 약속
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 **Schema (or Protocol)**
 - 브라우저가 리소르를 요청하는 데 사용해야 하는 규약
@@ -106,7 +106,7 @@ HTTP 특징
 **Anchor**
 - 일종의 "북마크"를 나타내며 브라우저에 해당 지점에 있는 콘텐츠를 표시
 - fragement identifier(부분 식별자)라고 부르는 '#' 이후 부분은 서버에 전송되지 않음
-- ![Alt text](image-3.png)
+- ![Alt text](images/image-3.png)
 
 ## 자원의 행위
 ### HTTTP Request Methods
@@ -144,29 +144,29 @@ HTTP 특징
 ### 응답 데이터 타입의 변화
 - 페이지(html)만을 응답하는 서버 : render 함수의 역할  
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 - 이제는 JSON 데이터를 응답하는 REST API 서버로의 변환
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 - Django는 더 이상 Template 부분에 대한 역할을 담당하지 않게 되며, Front-end와 Back-end가 분리되어 구성됨
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 - 이제부터 Django를 사용해 RESTful API 서버를 구축할 것
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 
 ## 사전준비
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 ### python으로 json 응답 받기
 - 준비된 python-request-sample.py 확인
 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 
 # DRF : Django REST framework
 Django에서 Restful API 서버를 쉽게 구축할 수 있도록 도와주는 오프소스 라이브러리
@@ -179,19 +179,19 @@ Django에서 Restful API 서버를 쉽게 구축할 수 있도록 도와주는 �
 ### Serialization 예시
 데이터 구조나 객체 상태를 나중에 재구성할 수 있는 포맷으로 변환하는 과정
 
-![Alt text](image-11.png)
-![Alt text](image-12.png)
+![Alt text](images/image-11.png)
+![Alt text](images/image-12.png)
 
 # DRF with Single Model
 ### 프로젝트 준비
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ### Postman 설치 및 안내
-![Alt text](image-14.png)
-![Alt text](image-15.png)
+![Alt text](images/image-14.png)
+![Alt text](images/image-15.png)
 
 ### Postman 화면 구성
-![Alt text](image-16.png)
+![Alt text](images/image-16.png)
 
 ### URL과 HTTP requests methods 설계  
 게시글 기능 CRUD
@@ -219,21 +219,21 @@ Django에서 Restful API 서버를 쉽게 구축할 수 있도록 도와주는 �
 - Update (특정 게시글에 대한) 특정 댓글 수정
     - "articles/<int:article_pk>/comments/<int:comment_pk>/"
 
-![Alt text](image-17.png)
+![Alt text](images/image-17.png)
 
 ## GET
 ### GET - List
 - 게시글 데이터 목록 조회하기
 - 게시글 데이터 목록을 제공하는 ArticleListSerializer 정의
 
-![Alt text](image-18.png)
+![Alt text](images/image-18.png)
 
 Model Serializer
 - Django 모델과 연결된 Serializer 클래스
 
-![Alt text](image-19.png)
+![Alt text](images/image-19.png)
 
-![Alt text](image-20.png)
+![Alt text](images/image-20.png)
 
 이전 view 함수와의 비교
 - 똑같은 데이터를 HTML에 출력되도록 페이지와 함께 응답했던 과거의 view 함수, JSON 데이터로 serialization 하여 페이지 없이 응답하는 현재의 view 함수
@@ -247,42 +247,42 @@ Model Serializer
 - 단일 게시글 데이터 조회하기
 - 각 게시글의 상세 정보를 제공하는 ArticleSerializer 정의
 
-![Alt text](image-21.png)
-![Alt text](image-22.png)
-![Alt text](image-23.png)
+![Alt text](images/image-21.png)
+![Alt text](images/image-22.png)
+![Alt text](images/image-23.png)
 
 ## POST
 - 게시글 데이터 생성하기
 - 데이터 생성이 성공했을 경우 201 Created 를 응답
 - 데이터 생성이 실패했을 경우 400 Bad request 를 응답
 
-![Alt text](image-24.png)
-![Alt text](image-25.png)
-![Alt text](image-26.png)
+![Alt text](images/image-24.png)
+![Alt text](images/image-25.png)
+![Alt text](images/image-26.png)
 
 ## DELETE
 - 게시글 데이터 삭제하기
 - 요청에 대한 데이터 삭제가 성공했을 경우는 204 No Content 응답
 
-![Alt text](image-27.png)
-![Alt text](image-28.png)
+![Alt text](images/image-27.png)
+![Alt text](images/image-28.png)
 
 ## PUT
 - 게시글 데이터 수정하기
 - 요청에 대한 데이터 수정이 성공했을 경우는 200 ok 응답
 
-![Alt text](image-29.png)
-![Alt text](image-30.png)
-![Alt text](image-31.png)
+![Alt text](images/image-29.png)
+![Alt text](images/image-30.png)
+![Alt text](images/image-31.png)
 
 +) 데이터 일부분만 수정하는 경우 발생하는 이슈
 - fields = '__all__'로 설정되어 있기 때문
 
-![Alt text](image.png)
+![Alt text](images/image-33.png)
 
 - prtial = True로 해결
 
-![Alt text](image-1.png)
+![Alt text](images/image-34.png)
 
 # 참고
 ## raise_exception
