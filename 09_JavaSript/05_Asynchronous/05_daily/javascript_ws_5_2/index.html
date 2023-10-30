@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dog API</h1>
+    <img draggable="false" src="./noResult.png" alt="dog" />
+    <h2>아직 선택된 사진이 없습니다!</h2>
+    <br />
+    <button>Get dog</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      // 이곳에 코드를 작성해 주세요 !
+      const API_URI = "https://dog.ceo/api/breeds/image/random";
+
+      function getDog() {
+        axios.get(API_URI).then((res) => console.log(res));
+        // axios를 사용하여 API_URI로 GET 요청을 보낸다.
+        axios({
+          method: "get",
+          url: API_URI,
+        })
+          // .then 메서드를 통해 요청이 성공적인 경우의 콜백함수를 정의한다.
+          // 응답객체의 데이터에서 이미지에 대한 리소스를 img 요소의 src 속성으로 할당한다.
+          .then((response) => {
+            imgUrl = response.data.message;
+            imgElem = document.querySelector("img");
+            imgElem.setAttribute("src", imgUrl);
+
+            // h2 아직 선택된 사진이 없습니다 삭제!
+            const h2Tag = document.querySelector("h2");
+            document.body.removeChild(h2Tag);
+          });
+      }
+
+      const button = document.querySelector("button");
+      button.addEventListener("click", getDog);
+    </script>
+  </body>
+</html>
