@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>인기 영화들</h1>
+    <ul></ul>
+
+    <!-- axios CDN을 삽입한다. -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+      const ul = document.querySelector("ul");
+      // 코드를 입력한다.
+      const options = {
+        method: "GET",
+        headers: {
+          accept: "application/json",
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NDVkYzc3YmM0ZGRkZmFkNTA3ZWVkYzkzMzBjMWE2NyIsInN1YiI6IjY1M2Y1ZTNhYzhhNWFjMDBjNmQ3YWQyYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.h_7hj5TR4j9r166hp5dJMLIfoZ-2e5sL61JQwhYTpEc",
+        },
+      };
+
+      fetch(
+        "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+        options
+      )
+        .then((response) => response.json())
+        .then((response) => {
+          for (const movie of response.results) {
+            if (movie.vote_average >= 8) {
+              const li = document.createElement("li");
+              li.textContent = movie.original_title;
+              ul.appendChild(li);
+            }
+          }
+        })
+        // original_title
+        // vote_average
+        .catch((err) => console.error(err));
+    </script>
+  </body>
+</html>

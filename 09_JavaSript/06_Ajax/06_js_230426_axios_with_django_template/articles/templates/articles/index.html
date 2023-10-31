@@ -1,0 +1,70 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Articles</h1>
+{% if request.user.is_authenticated %}
+<a href="{% url 'articles:create' %}">CREATE</a>
+{% endif %}
+<hr />
+{% for article in articles %}
+<p>
+  <b
+    >작성자 :
+    <a href="{% url 'accounts:profile' article.user %}"
+      >{{ article.user }}</a
+    ></b
+  >
+</p>
+<p>글 번호 : {{ article.pk }}</p>
+<p>제목 : {{ article.title }}</p>
+<p>내용 : {{ article.content }}</p>
+<div>
+  <form
+    class="like-forms"
+    data-article-id="{{ article.pk }}"
+    action="{% url 'articles:likes' article.pk %}"
+    method="POST"
+  >
+    {% csrf_token %} {% if request.user in article.like_users.all %}
+    <input type="submit" class="like-button" value="좋아요 취소" />
+    {% else %}
+    <input type="submit" class="like-button" value="좋아요" />
+    {% endif %}
+  </form>
+</div>
+<a href="{% url 'articles:detail' article.pk %}">상세 페이지</a>
+<hr />
+{% endfor %} {% endblock content %} {% block script %} {% comment %} axios
+라이브러리를 가져온다 {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  // 좋아요 버튼을 클릭했을 때 이벤트 핸들러를 정의!
+  // const forms = document.querySelector('.like-forms')
+  const likeBtns = document.querySelectorAll(".like-button");
+  for (const likeBtn of likeBtns) {
+    likeBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const form = likeBtn.parentNode;
+      const articleId = form.dataset?.articleId;
+      const csrftoken = form.querySelector(
+        "[name='csrfmiddlewaretoken']"
+      )?.value;
+
+      axios({
+        method: "POST",
+        url: `http://127.0.0.1:8000/articles/${articleId}/likes/`,
+        headers: { "X-CSRFToken": csrftoken },
+      })
+        .then(({ data }) => {
+          if (data.is_liked === true) {
+            likeBtn.value = "좋아요 취소";
+          } else {
+            likeBtn.value = "좋아요";
+          }
+        })
+        .catch((e) => {
+          console.err(e);
+        });
+    });
+  }
+</script>
+{% endblock script %}
