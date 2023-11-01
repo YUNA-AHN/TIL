@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- input 태그를 만들고, 이 input 태그의 값이 변경 -->
+    <input type="text" id="inputField" />
+    <!-- p 태그에 그 결과를 계속 출력 -->
+    <p id="outputField"></p>
+
+    <script>
+      let data = ""; // 이 변수의 값이 변경될 때마다 (반응형)
+      // 화면의 요소를 업데이트
+      // 이벤트 핸들러로 input 값이 변경이되면 datafmf ektl qusrudgkehfhr!
+      const inputField = document.querySelector("#inputField");
+      const outputField = document.querySelector("#outputField");
+
+      inputField.addEventListener("input", function (event) {
+        data = inputField.value; // data 변수에 변경(할당)
+        outputField.textContent = data;
+      });
+
+      //   data 변수에 대한 추가 연산이 일어나도 화면에 적용할 수 있도록 반응형으로 만들겠다.
+      data += "hello :)";
+      // data 변수에 대한  get, set 속성값을 정의
+      // get : 해당되는 데이터를 가져오거나 참조할 때 동작하는 속성
+      // set : 해당되는 데이터를 재할당할 대 동작하는 속성
+      window["data"]; // = data
+      Object.defineProperty(window, "data", {
+        get: function () {
+          return data;
+        },
+        set: function (newValue) {
+          data = newValue;
+          updateDate();
+        },
+      });
+      // 값이 변경되면 동작할 함수를 정의해준다.
+      // 화면 갱신과 관련된 동작을 이 안의 코드로 작성
+      function updateDate() {
+        outputField.textContent = data;
+      }
+    </script>
+  </body>
+</html>

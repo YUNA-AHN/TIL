@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>내 정보</h1>
+      <!--     
+      	- firstName과 lastName을 각각 출력한다.
+				- firstName과 lastName을 하나로 합쳐 출력한다. 단, 별도의 변수를 사용하지 않는다.
+				- age를 출력한다.
+				- birth중, 년도만 출력한다.
+					- js에서 문자열의 특정 부분만 출력하기 위한 방법은 str.slice(start, end) 방식으로 진행한다. 
+				- teacher의 name과 birth를 각각 출력한다.
+    -->
+      <p>이름 : {{myInfo.firstName}}</p>
+      <p>성 : {{myInfo.lastName}}</p>
+      <p>전체 이름 : {{myInfo.firstName}} {{myInfo.lastName}}</p>
+      <p>나이 : {{myInfo.age}}</p>
+      <p>내가 태어난 해 : {{myInfo.birth}}년</p>
+      <p>내 스승님들</p>
+      <ul>
+        <li>
+          나의 첫 번째 스승 : {{myInfo.teacher[0].name}},
+          {{myInfo.teacher[0].birth}}
+        </li>
+        <li>
+          나의 두 번쨰 스승 : {{myInfo.teacher[1].name}},
+          {{myInfo.teacher[1].birth}}
+        </li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          const my_info = {
+            firstName: "William",
+            lastName: "Turner",
+            age: 20,
+            birth: "1775-04-23",
+            teacher: [
+              { name: "Joshua", birth: "1723-1792" },
+              { name: "Thomas", birth: "1748-1804" },
+            ],
+          };
+          const myInfo = ref(my_info);
+
+          return {
+            myInfo,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

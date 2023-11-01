@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 id="name">제 이름은 {{name}} 입니다.</h1>
+      <p>저는 {{age}} 살 입니다.</p>
+      <p>연락처 : {{phone}}</p>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      /*
+      - Vue3 CDN을 사용한다. 
+      1. 아이디가 app인 container 요소에 새로운 앱 인스턴스를 mount 하시오.
+      2. 이름, 나이, 연락처 정보를 각각 name, age, phone 변수에 할당한다.
+        - 단, ref 함수를 사용하여 반응성을 가지는 참조 변수로 만들어야 한다.
+      3. 각 데이터는 template을 수정하여 적절하게 표기 될 수 있도록 작성한다.
+    */
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          const name = ref("홍길동");
+          const age = ref("30");
+          const phone = ref("010-1234-1234");
+          return {
+            name,
+            age,
+            phone,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

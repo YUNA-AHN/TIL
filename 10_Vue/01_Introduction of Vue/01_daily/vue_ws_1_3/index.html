@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>사각형의 특징</h1>
+    <p>가로 길이 : {{width}} </p>
+    <p>세로 길이 : {{height}} </p>
+    <p>넓이 : {{width * height}}</p>
+    <p>둘레 : {{2*(width + height)}} </p>
+    <hr>
+    <h3>정사각형이라면,</p>
+    <p>한 변의 길이 : {{squareSide}} </p>
+    <p>정사각형 넓이 : {{squareSide ** 2}}</p>
+    <p>정사각형 둘레 : {{squareSide * 4}}</p>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    /*
+      - Vue3 CDN을 사용한다. 
+      1. 아이디가 app인 container 요소에 새로운 앱 인스턴스를 mount 하시오.
+      2. 각 변수에 적절한 임의의 정수를 할당하시오.
+        - width 변수에는 사각형의 가로 길이를 할당한다.
+        - height 변수에는 사각형의 세로 길이를 할당한다.
+        - squareSide 변수에는 정사각형의 한 변의 길이를 할당한다.
+          - 각 값들은 최소 2에서 최대 10 사이의 정수로 한다.
+        - 단, ref 함수를 사용하여 반응성을 가지는 참조 변수로 만들어야 한다.
+      3. 사각형의 넓이, 둘레를 계산하여 템플릿에 렌더링 하시오.
+        - 사각형의 넓이는 가로 x 세로로 구할 수 있다.
+        - 사각형의 둘레는 (가로 + 세로) * 2로 구할 수 있다.
+        - 정사각형의 넓이와 둘레는 squeareSide에 할당된 값으로 계산한다.
+        - 각 넓이와 둘레는 별도의 변수에 할당하지 않고 template에서 연산한다.
+    */
+   const { createApp, ref} = Vue
+   const app = createApp({
+    setup() {
+      const width = 5
+      const height = 6
+      const squareSide = 7
+      return {
+        width,
+        height,
+        squareSide
+      }
+    }
+   })
+   app.mount('#app')
+  </script>
+</body>
+</html>

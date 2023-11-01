@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- input 태그를 만들고, 이 input 태그의 값이 변경 -->
+      <input type="text" id="inputField" v-model />
+      <!-- p 태그에 그 결과를 계속 출력 -->
+      <p id="outputField"></p>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          // 반응형 변수 = data
+          const data = ref("");
+          return {
+            data,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

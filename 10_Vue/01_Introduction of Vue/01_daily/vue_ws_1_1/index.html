@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><div id="app">{{ hello }}</div></h1>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      /*
+      - Vue3 CDN을 사용한다.
+      1. 아이디가 app인 div를 생성한다.
+      2. Vue app instancde를 생성한다.
+      3. setup()를 사용하여 hello 변수에 'Hello, Vue' 문자열을 할당한다.
+          - 단, ref 함수를 사용하여 반응성을 가지는 참조 변수로 만들어야 한다.
+      4. template에 Mustache syntax을 사용하여 값을 렌더링한다.
+    */
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const hello = ref("hello, Vue");
+          return {
+            hello,
+          };
+        },
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>

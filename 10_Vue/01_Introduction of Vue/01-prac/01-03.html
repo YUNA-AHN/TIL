@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="count" />
+      <p>{{ count }}</p>
+      <button v-on:click="increment">+1</button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          // 반응형 변수 = data
+          const count = ref(0);
+          // 카운트 값을 1씩 증가시키는 함수
+          function increment() {
+            count.value += 1;
+          }
+          return {
+            count,
+            increment,
+          };
+        },
+      });
+      app.mount("#app"); // vue인스턴스가 #app 태그에 등록(설치 = mount)
+    </script>
+  </body>
+</html>

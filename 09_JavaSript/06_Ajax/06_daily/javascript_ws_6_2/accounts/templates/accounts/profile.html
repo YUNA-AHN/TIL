@@ -1,0 +1,78 @@
+{% block content %}
+<h1>{{ person.username }}님의 프로필</h1>
+
+{% with followings=person.followings.all followers=person.followers.all %}
+<div id="follow-count">
+  <div>팔로잉 : {{ followings|length }} / 팔로워 : {{ followers|length }}</div>
+  {% if request.user != person %}
+  <div>
+    <form id="follow-form" data-user-id="{{person.pk}}">
+      {% csrf_token %} {% if user in followers %}
+      <button>언팔로우</button>
+      {% else %}
+      <button>팔로우</button>
+      {% endif %}
+    </form>
+  </div>
+  {% endif %}
+</div>
+{% endwith %}
+
+<hr />
+
+<h2>{{ person.username }}가 작성한 게시글</h2>
+{% for article in person.article_set.all %}
+<div>{{ article.title }}</div>
+{% endfor %}
+
+<hr />
+
+<h2>{{ person.username }}가 작성한 댓글</h2>
+{% for comment in person.comment_set.all %}
+<div>{{ comment.content }}</div>
+{% endfor %}
+
+<hr />
+
+<h2>{{ person.username }}가 좋아요를 누른 게시글</h2>
+{% for article in person.like_articles.all %}
+<div>{{ article.title }}</div>
+{% endfor %}
+
+<a href="{% url 'articles:index' %}">[back]</a>
+
+{% endblock content %} {% block script %}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const form = document.querySelector("#follow-form");
+  // csrf token
+  const csrftoken = document.querySelector("[name=csrfmiddlewaretoken]").value;
+
+  // form에 이벤트 핸들러 부착
+  form.addEventListener("submit", function (event) {
+    // 기본 동작 막기
+    event.preventDefault();
+
+    const userId = form.dataset.userId;
+
+    axios({
+      method: "POST",
+      url: `/accounts/${userId}/follow/`,
+      headers: { "X-CSRFToken": csrftoken },
+    }).then((response) => {
+      const followBtn = document.querySelector("#follow-form > button");
+      const isFollowed = response.data.isFollowed;
+      const followers_count = response.data.followers_count;
+      const followings_count = response.data.followings_count;
+      const followCountDiv = document.querySelector("#follow-count > div");
+
+      if (isFollowed === true) {
+        followBtn.textContent = "언팔로우";
+      } else {
+        followBtn.textContent = "팔로우";
+      }
+      followCountDiv.innerText = `팔로잉 수 : ${followings_count} / 팔로워 수 : ${followers_count}`;
+    });
+  });
+</script>
+{% endblock script %}

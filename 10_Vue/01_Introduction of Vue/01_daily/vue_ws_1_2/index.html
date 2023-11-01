@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="firstApp">
+      <h1>{{ title }}</h1>
+    </div>
+
+    <div id="secondApp">
+      <h1>{{title}}</h1>
+    </div>
+
+    <div id="thirdApp">
+      <h1>{{title}}</h1>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      /*
+    - Vue3 CDN을 사용한다.
+    1. Vue 앱 인스턴스를 생성하여 firstApp에 할당한다.
+    2. 생성한 앱을 아이디가 firstApp인 container에 mount 한다.
+    3. title 변수에 '첫번째 앱' 문자열을 할당한다.
+      - 단, ref 함수를 사용하여 반응성을 가지는 참조 변수로 만들어야 한다.
+    4. template을 수정하여 적절하게 표기 될 수 있도록 작성한다.
+    5. 두번째, 세번째 앱도 동일하게 작성한다.
+      - 단, title 변수에는 각기 다른 문자열을 할당한다.
+    */
+      const { createApp, ref } = Vue;
+
+      const firstApp = createApp({
+        setup() {
+          const title = ref("첫번째 앱");
+          return {
+            title,
+          };
+        },
+      });
+
+      firstApp.mount("#firstApp");
+
+      const secondApp = createApp({
+        setup() {
+          const title = ref("두번째 앱");
+          return {
+            title,
+          };
+        },
+      });
+
+      secondApp.mount("#secondApp");
+
+      const thirdApp = createApp({
+        setup() {
+          const title = ref("세번째 앱");
+          return {
+            title,
+          };
+        },
+      });
+
+      thirdApp.mount("#thirdApp");
+    </script>
+  </body>
+</html>
