@@ -13,7 +13,7 @@ Client-side frameworks
 
 - 클라리언트 측에서 UI와 상호작용을 개발하기 위해 사용되는 JavaScript 기반 프레임워크
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ### Client-side frameworks가 필요한 이유 - 1
 
@@ -38,15 +38,15 @@ Client-side frameworks
 - 애플리케이션의 기본 데이터를 안정적으로 추적하고 업데이트(렌더링, 추가, 삭제 등)하는 도구가 필요
 - **애플리케이션의 상태를 변경할 때마다 일치하도로 UI를 업데이트헤야 한다는 것**
 
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 ## SPA : Single Page Application
 
 페이지 한 개로 구성된 웹 애플리케이션
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 1. 서버로부터 필요한 모든 정적 HTML을 처음에 한번 가져옴
 2. 브라우저가 페이지를 로드하면 Vue 프레임워크는 각 HTML 요소에 적절한 JavaScript 코드를 실행 (이벤트에 응답, 데이터 요청 후 UI 업데이트 등)
@@ -67,7 +67,7 @@ Client-side frameworks
 2. 그런 다음 JavaScript를 사용하여 DOM을 업데이트하고 페이지를 렌더링
 
 - <-> SSR(Server-side-Redering) : 우리가 장고에서 그려나가던 방식
-  ![Alt text](image-4.png)
+  ![Alt text](images/image-4.png)
 
 ### Client-side Rendering 장점
 
@@ -118,12 +118,12 @@ Client-side frameworks
 - 애플리케이션을 컴포넌트 조각으로 나눌 수 있음
 - 코드의 재사용성을 높이고 유지보수를 용이하게 함
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 ### Vuw의 2가지 핵심 기능
 
-![Alt text](image-6.png)  
-![Alt text](image-7.png)
+![Alt text](images/image-6.png)  
+![Alt text](images/image-7.png)
 
 1. 선언적 렌더링 (Declaratice Rendering)
 
@@ -156,18 +156,18 @@ Client-side frameworks
 
 - CDN 및 Application instance 작성
 
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 - Application instance
   - 모든 Vue 애플리케이션은 createApp 함수로 새 Application instance를 생성하는 것으로 시작
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 - app.mount()
   - 컨테이서 요소에 애플리케이션 인스턴스를 탑재(연결)
   - 각 앱 인스턴스에 대해 mount()는 한 번만 호출할 수 있음
 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 
 ### ref()
 
@@ -181,12 +181,12 @@ Client-side frameworks
 - ref로 선언된 변수의 값이 변경되면, 해당 값을 사용하는 템플릿에서 자동으로업데이트
 - 인자는 어떠한 타입도 가능
 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
 
 - 템플릿의 참조에 접근하려면 setip 함수에서 선언 및 반환 필요
 - 템플릿에서 ref를 사용할 때는 .value를 작성할 필요 없음 (automatically upwrapped)
 
-![Alt text](image-12.png)
+![Alt text](images/image-12.png)
 
 ### ref, reactive 사용법
 
@@ -202,18 +202,18 @@ Vue2에서는 ref와 reative를 사용하여서 데이터를 반응형으로 만
 - createApp()에 전달되는 객체는 Vue 컴포넌트(Component) : 기능 하나를 조각으로 만든 것
 - 컴포넌트의 상태는 setup() 함수 내에서 선언되어야 하며 **객체를 반환해야 함**
 
-![Alt text](image-13.png)
+![Alt text](images/image-13.png)
 
 ### 템플릿 렌더링
 
 - 반환된 객체의 속성은 템플릿에서 사용할 수 있음
 - Mustache syntax(콧수염 구문)를 사용하여 메시지 값을 기반으로 동적 텍스트를 렌더링
 
-![Alt text](image-14.png)
+![Alt text](images/image-14.png)
 
 - 콘텐츠는 식별자나 경로에만 국한되지 않으며 유요한 JavaScript 표현식을 사용할 수 있음
 
-![Alt text](image-15.png)
+![Alt text](images/image-15.png)
 
 ### Event Listeners in Vue
 
@@ -221,7 +221,7 @@ Vue2에서는 ref와 reative를 사용하여서 데이터를 반응형으로 만
 - 함수 내에서 refs를 변경하여 구성 요소 상태를 업데이트
 - click 발생하는 이벤트의 이름
 
-![Alt text](image-16.png)
+![Alt text](images/image-16.png)
 
 # 참고
 
@@ -232,18 +232,18 @@ Vue2에서는 ref와 reative를 사용하여서 데이터를 반응형으로 만
 - 템플릿에서의 unwrap은 ref가 최상위 속성인 경우에만 적용 가능
 - 다음 표현식은 어떻게 출력될까?
 
-![Alt text](image-17.png)
+![Alt text](images/image-17.png)
 
 > - object는 최상위 속성이지만 object.id는 그렇지 않음
 > - 표현식을 평가할 때 object.id가 unwrap되지 않고 ref 객체로 남아 있기 때문
 
 - 이 문제를 해결하기 위해서는 id를 최상위 속성으로 분해해야 함(풀어내야 한다! )
 
-![Alt text](image-18.png)
+![Alt text](images/image-18.png)
 
 - 단, ref가 {{ }}의 최종 평가 값인 경우듣 unwrap 가능
 
-![Alt text](image-19.png)
+![Alt text](images/image-19.png)
 
 ### Why Ref?
 
