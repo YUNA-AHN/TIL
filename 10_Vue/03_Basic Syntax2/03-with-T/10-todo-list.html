@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .is-completed {
+        text-decoration: line-through;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="todo in todos" v-bind:key="`item-${todo.id}`">
+          <!-- 완료 체크박스 input -->
+          <input type="checkbox" v-model="todo.completed" />
+          <!-- todo 에 대한 내용 span -->
+          <span v-bind:class="{'is-completed': todo.completed}">
+            {{todo.text}}
+          </span>
+          <!-- todo 아이템 삭제 button -->
+          <button v-on:click="deleteTodo(todo.id)">x</button>
+        </li>
+      </ul>
+      <input type="text" v-model="message" />
+      <button v-on:click="addTodo">아이템 생성</button>
+
+      <h3>완료된 작업</h3>
+      <ul>
+        <li v-for="todo in completedTodos" v-bind:key="todo.id">
+          {{todo.text}}
+        </li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, ref, computed } = Vue;
+      const app = createApp({
+        setup() {
+          const message = ref("");
+          let idx = ref(1);
+          const todos = ref([
+            // todo 아이템들...
+            { id: idx.value++, text: "밥먹기", completed: false },
+            { id: idx.value++, text: "운동하기", completed: false },
+            { id: idx.value++, text: "잠자기", completed: false },
+          ]);
+          const completedTodos = computed(() => {
+            return todos.value.filter((todo) => todo.completed === true);
+          });
+          const deleteTodo = function (id) {
+            // filter 로 id 값이 같은 요소만 삭제해서 새로운 배열을 생성하여 할당.
+            todos.value = todos.value.filter((todo) => todo.id !== id);
+          };
+
+          const addTodo = function () {
+            let data = message.value;
+            message.value = "";
+            todos.value.push({ id: idx.value++, text: data, completed: false });
+          };
+          return {
+            message,
+            todos,
+            addTodo,
+            deleteTodo,
+            completedTodos,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

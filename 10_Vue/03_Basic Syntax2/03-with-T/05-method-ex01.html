@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="app">
+      <span> {{count}} </span>
+      <button v-on:click="increment">+</button>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          const count = ref(0);
+          const increment = function () {
+            // 메소드
+            count.value++;
+          };
+          return {
+            count,
+            increment,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

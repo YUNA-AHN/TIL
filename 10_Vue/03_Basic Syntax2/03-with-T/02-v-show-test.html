@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="app">
+      <p v-show="isLoggedIn">사용자가 로그인되어 있음</p>
+      <p v-show="!isLoggedIn">사용자가 로그인되어 있지 않음</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const app = createApp({
+        setup() {
+          const isLoggedIn = ref(true);
+          return {
+            isLoggedIn,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

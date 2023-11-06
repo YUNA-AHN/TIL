@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+      <h1>다양한 전시 정보</h1>
+      <ul>
+        <template v-for="exhibition in exhibitions" :key="exhibition.title">
+          <li>
+            <h3>{{exhibition.title}}</h3>
+            <p>{{exhibition.gallery}}</p>
+            <p>가격 : {{exhibition.price}}</p>
+            <hr />
+          </li>
+        </template>
+      </ul>
+    </div>
+
+    <script>
+      const { createApp, ref, computed } = Vue;
+      const app = createApp({
+        setup() {
+          const exhibitions = ref([
+            {
+              title: "무라카미 다카시 : 무라카시좀비",
+              gallery: "부산 시립 미술관",
+              price: 1000,
+            },
+            {
+              title: "마우라치오 카텔란 개인전",
+              gallery: "리움 미술관",
+              price: 30000,
+            },
+            {
+              title: "조선백자전",
+              gallery: "리움 미술관",
+              price: 30000,
+            },
+            {
+              title: "한국 실험미술 1960 - 1970",
+              gallery: "국립현대미술관",
+              price: 0,
+            },
+            {
+              title: "에드워드 호퍼 : 길 위에서",
+              gallery: "서울 시립 미술관",
+              price: 1000,
+            },
+            {
+              title: "알렉산더 칼더 x 이우환",
+              gallery: "국제갤러리 서울점",
+              price: 15000,
+            },
+          ]);
+          return {
+            exhibitions,
+          };
+        },
+      });
+
+      app.mount("#app");
+      /*
+			1. 주어진 전시 정보를 객체에 담고, 모든 객체를 하나의 배열에 할당하시오.
+			2. 반복문을 활용하여 각 전시 정보를 화면에 렌더링하시오.
+				- key 값은 전시 이름으로 할당한다.
+      - 전시 정보
+            무라카미 다카시 : 무라카시좀비
+            부산 시립 미술관
+            1000
+
+            마우라치오 카텔란 개인전
+            리움 미술관
+            30000
+
+            조선백자전
+            리움 미술관
+            30000
+
+            한국 실험미술 1960 - 1970
+            국립현대미술관
+            0
+
+            에드워드 호퍼 : 길 위에서
+            서울 시립 미술관
+            1000
+
+            알렉산더 칼더 x 이우환
+            국제갤러리 서울점
+            15000
+    */
+    </script>
+  </body>
+</html>

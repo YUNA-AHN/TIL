@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="x" />
+      <input type="text" v-model="y" />
+      <input type="text" v-model="z" />
+      <p>{{sumXY()}}</p>
+      <p>{{plusXY}}</p>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, ref, computed } = Vue;
+      const app = createApp({
+        setup() {
+          const x = ref(3);
+          const y = ref(4);
+          const z = ref(5);
+          // 메소드
+          const sumXY = function () {
+            console.log("메소드가 호출되었어요!");
+            return x.value + y.vallue;
+          };
+          const plusXY = computed(() => {
+            console.log("캼퓨티드가 호출되었어요!");
+            return x.vlaue + y.value;
+          });
+          return {
+            x,
+            y,
+            z,
+            sumXY,
+            plusXY,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

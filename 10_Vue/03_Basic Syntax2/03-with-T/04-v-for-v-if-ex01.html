@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="item in filteredItmes" v-bind:key="item.id">
+          {{item.name}}
+        </li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, ref, computed } = Vue;
+      const app = createApp({
+        setup() {
+          const items = ref([
+            { id: 1, name: "사과", isDisplayed: true },
+            { id: 2, name: "바나나", isDisplayed: false },
+            { id: 3, name: "딸기", isDisplayed: true },
+          ]);
+          const filteredItmes = computed(() => {
+            return items.value.filter((item) => item.isDisplayed);
+          });
+          return {
+            items,
+            filteredItmes,
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+      <h1>다양한 전시 정보</h1>
+      <label for="isActive">전시 중인 정보만 보기</label>
+      <input type="checkbox" id="isActive" v-model="isActive" />
+      <ul>
+        <li v-for="exhibition in isActiveExhibition" :key="exhibition.title">
+          <h3>{{exhibition.title}}</h3>
+          <p>{{exhibition.gallery}}</p>
+          <p>가격 : {{exhibition.price}}</p>
+          <hr />
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      /*
+      1. 주어진 전시 정보를 객체에 담고, 모든 객체를 하나의 배열에 할당하시오.
+         2. 전시 정보가 True인 경우만 filtering한 배열을 반환하는 isActiveExhibition computed 함수를 작성한다.
+         3. 전시 중인 정보만 볼 것인지 체크하는 변수 isActive를 작성한다.
+      	- checkBox의 값과 양방향 바인딩 되어야 한다.
+           - isActive가 True인 경우, isActiveExhibition 배열을 화면에 렌더링한다.
+           - 아닌경우, 모든 객체 정보를 담고 있는 배열을 화면에 렌더링한다.
+       */
+      const { createApp, ref, computed } = Vue;
+      const app = createApp({
+        setup() {
+          const isActive = ref(false);
+          const exhibitions = ref([
+            {
+              title: "무라카미 다카시 : 무라카시좀비",
+              gallery: "부산 시립 미술관",
+              price: 1000,
+              active: true,
+            },
+            {
+              title: "마우라치오 카텔란 개인전",
+              gallery: "리움 미술관",
+              price: 30000,
+              active: true,
+            },
+            {
+              title: "조선백자전",
+              gallery: "리움 미술관",
+              price: 30000,
+              active: true,
+            },
+            {
+              title: "한국 실험미술 1960 - 1970",
+              gallery: "국립현대미술관",
+              price: 0,
+              active: true,
+            },
+            {
+              title: "에드워드 호퍼 : 길 위에서",
+              gallery: "서울 시립 미술관",
+              price: 1000,
+              active: false,
+            },
+            {
+              title: "알렉산더 칼더 x 이우환",
+              gallery: "국제갤러리 서울점",
+              price: 15000,
+              active: false,
+            },
+          ]);
+          const isActiveExhibition = computed(() => {
+            if (isActive.value === true) {
+              return exhibitions.value.filter(
+                (exhibition) => exhibition.active
+              );
+            } else {
+              return exhibitions.value;
+            }
+          });
+          return {
+            exhibitions,
+            isActiveExhibition,
+            isActive,
+          };
+        },
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>
