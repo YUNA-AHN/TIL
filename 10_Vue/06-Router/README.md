@@ -402,11 +402,11 @@ router를 추가하지 않고 프로젝트를 생성해주었을 때
 - 추가적으로 설치
 - router/index.js나 views는 스스로 추가해주어야 한다.
 
-![Alt text](image.png)
+![Alt text](images/image-36.png)
 
 - main
 
-![Alt text](image-1.png)
+![Alt text](images/image-37.png)
 
 - index.js
 
