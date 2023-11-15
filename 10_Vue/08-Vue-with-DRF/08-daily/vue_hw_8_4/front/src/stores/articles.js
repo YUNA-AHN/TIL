@@ -8,7 +8,7 @@ export const useArticleStore = defineStore("article", () => {
   const getArticles = function () {
     axios({
       method: "get",
-      url: "http://127.0.0.1:8000/api/v1/articles",
+      url: "http://127.0.0.1:8000/api/v1/articles/",
     }).then((res) => {
       // console.log(res);
       articles.value = res.data;
